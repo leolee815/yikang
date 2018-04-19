@@ -1,0 +1,425 @@
+[ 2017-05-31T11:44:23+08:00 ] 58.247.206.150 /Home/Wx/index/token/gzyikang2016?signature=da32211f81c97ec1e48fab2d93d5c2799f4bf272&timestamp=1496202263&nonce=2142953457&openid=omV0nwqw7tnSgV87iqZCWtDi22bo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000277s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000489s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000556s ]
+SQL: SHOW COLUMNS FROM `yk_shop_set` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `yk_shop_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yk_set` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `yk_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_vip` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `yk_vip_message` [ RunTime:0.0214s ]
+SQL: SHOW COLUMNS FROM `yk_vip_log_sub` [ RunTime:0.0072s ]
+SQL: SHOW COLUMNS FROM `yk_employee` [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `yk_vip_set` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `yk_vip_set` LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000438s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000485s ]
+
+[ 2017-05-31T11:47:02+08:00 ] 223.73.193.1 /Home/Wxpay/pay/oid/20170531114701-287
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000272s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000326s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000365s ]
+SQL: SHOW COLUMNS FROM `yk_set` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `yk_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_shop_set` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `yk_shop_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yk_shop_order` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `yk_shop_order` WHERE `oid` = '20170531114701-287' LIMIT 1   [ RunTime:0.0005s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000591s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000649s ]
+
+[ 2017-05-31T11:47:14+08:00 ] 140.207.54.76 /Home/Wxpay/nd/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000330s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000438s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000483s ]
+SQL: SHOW COLUMNS FROM `yk_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yk_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_shop_set` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `yk_shop_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yk_set` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `yk_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_shop_order` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `yk_shop_order` WHERE `oid` = '20170531114701-287' LIMIT 1   [ RunTime:0.0005s ]
+SQL: UPDATE `yk_shop_order` SET `sid`='0',`oid`='20170531114701-287',`djqid`='0',`totalprice`='680',`totalnum`='1',`payprice`='680',`paytype`='wxpay',`paytime`='1496202433',`aliaccount`=NULL,`yf`='0',`ispay`='1',`vipid`='3997',`vipopenid`='omV0nwiSkfhzOIlK8miap_D949Vo',`vipname`='吴小姐',`vipmobile`='13533417755',`vipaddress`='广东省广州市越秀区桂花岗2街1号301',`vipxqname`=NULL,`vipxqid`=NULL,`msg`='早点发货，着急用',`kfmsg`=NULL,`ctime`='1496202421',`ntime`=NULL,`dtime`=NULL,`etime`=NULL,`changetime`=NULL,`changemsg`=NULL,`changeadmin`=NULL,`closetime`=NULL,`closemsg`=NULL,`closeadmin`=NULL,`tuihuoprice`=NULL,`tuihuosqtime`='0',`tuihuotime`=NULL,`tuihuokd`=NULL,`tuihuokdnum`=NULL,`tuihuomsg`=NULL,`tuihuoadmin`=NULL,`status`='2',`fahuokd`=NULL,`fahuokdnum`=NULL,`items`='a:1:{i:0;a:12:{s:2:\"id\";s:4:\"1065\";s:3:\"sid\";s:1:\"0\";s:5:\"vipid\";s:4:\"3997\";s:7:\"goodsid\";s:2:\"18\";s:3:\"sku\";s:0:\"\";s:3:\"num\";s:1:\"1\";s:5:\"skuid\";i:0;s:4:\"name\";s:39:\"恒压咽鼓管吹张器（儿童型）\";s:7:\"skuattr\";N;s:5:\"price\";s:3:\"680\";s:5:\"total\";i:680;s:3:\"pic\";s:40:\"/Upload/img/2016-07-27/5798797fe244b.jpg\";}}',`fxsid`='66' WHERE `id` = 287 [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `yk_shop_goods` [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `yk_shop_goods_sku` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `yk_shop_syslog_sells` [ RunTime:0.0032s ]
+SQL: UPDATE `yk_shop_goods` SET `num`=num-1 WHERE ( id=18 ) [ RunTime:0.0002s ]
+SQL: UPDATE `yk_shop_goods` SET `sells`=sells+1 WHERE ( id=18 ) [ RunTime:0.0001s ]
+SQL: UPDATE `yk_shop_goods` SET `dissells`=dissells+1 WHERE ( id=18 ) [ RunTime:0.0001s ]
+SQL: INSERT INTO `yk_shop_syslog_sells` (`oid`,`vipid`,`vipopenid`,`vipname`,`ctime`,`num`,`goodsid`,`goodsname`,`skuid`,`skuattr`,`price`,`total`) VALUES ('287','3997','omV0nwiSkfhzOIlK8miap_D949Vo','吴小姐','1496202433','1','18','恒压咽鼓管吹张器（儿童型）','0','0','680','680') [ RunTime:0.0203s ]
+SQL: SHOW COLUMNS FROM `yk_shop_order_log` [ RunTime:0.0028s ]
+SQL: SHOW COLUMNS FROM `yk_shop_order_syslog` [ RunTime:0.0004s ]
+SQL: INSERT INTO `yk_shop_order_log` (`oid`,`msg`,`ctime`) VALUES ('287','微信付款成功','1496202433') [ RunTime:0.0410s ]
+SQL: INSERT INTO `yk_shop_order_syslog` (`oid`,`msg`,`ctime`,`type`,`paytype`) VALUES ('287','微信付款成功','1496202433','2','wxpay') [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yk_vip` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `yk_vip` WHERE ( id=3997 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yk_vip` WHERE ( id=66 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yk_vip` WHERE ( id=66 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yk_vip` WHERE `id` = 66 AND `is_system` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yk_vip` WHERE `id` = 66 AND `is_system` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yk_mail` [ RunTime:0.0227s ]
+SQL: INSERT INTO `yk_mail` (`to`,`name`,`subject`,`body`,`stime`,`ctime`,`status`) VALUES ('949257185@qq.com','逸康商城','【逸康商城】新订单，订单号：20170531114701-287，金额：680元，预设分销商:66','<html>
+									<head>
+									<title>【逸康商城】新订单，订单号：20170531114701-287，金额：680元，预设分销商:66</title>
+									</head>
+									<body>
+									<table>
+									<tr>
+									<th>订单号: </th><td>20170531114701-287</td>
+									</tr>
+									<tr>
+									<th>商品名: </th><td>恒压咽鼓管吹张器（儿童型）</td>
+									</tr>
+									<tr>
+									<th>预设分销商: </th><td>66</td>
+									</tr>
+									<tr>
+									<th>订单总额: </th><td>680元</td>
+									</tr>
+									<tr>
+									<th>收货地址: </th><td>广东省广州市越秀区桂花岗2街1号301</td>
+									</tr>
+									<tr>
+									<th>收货人: </th><td>吴小姐</td>
+									</tr>
+									<tr>
+									<th>收货电话: </th><td>13533417755</td>
+									</tr>
+									<tr>
+									<th>支付时间: </th><td>2017-05-31 11:47:13</td>
+									</tr>
+									<tr>
+									<th>下单时间: </th><td>2017-05-31 11:47:01</td>
+									</tr>
+									</table>
+									</body>
+									</html>','1496202433','1496202433','1') [ RunTime:0.0183s ]
+SQL: SHOW COLUMNS FROM `yk_sms` [ RunTime:0.0034s ]
+SQL: SELECT * FROM `yk_sms` LIMIT 1   [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `yk_wx_template` [ RunTime:0.0036s ]
+SQL: SELECT * FROM `yk_wx_template` WHERE `templateidshort` = 'OPENTM200444326' LIMIT 1   [ RunTime:0.0011s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000604s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000688s ]
+
+[ 2017-05-31T11:56:22+08:00 ] 140.207.185.112 /Home/Wxpay/pay/oid/20170531114701-287
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000266s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000431s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000504s ]
+SQL: SHOW COLUMNS FROM `yk_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yk_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_shop_set` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `yk_shop_set` LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000048s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000107s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.034720s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.034773s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000123s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000162s ]
+
+[ 2017-05-31T12:24:58+08:00 ] 58.247.206.150 /Home/Wx/index/token/gzyikang2016?signature=705e8de52e8c50f4fb643376ebc915e7a6b46ac9&timestamp=1496204698&nonce=70825366&openid=omV0nwpDz87Ka5mXmLoA2sp200TA
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000268s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000364s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000402s ]
+SQL: SHOW COLUMNS FROM `yk_shop_set` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `yk_shop_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yk_set` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `yk_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_vip` [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `yk_vip_message` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `yk_vip_log_sub` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `yk_employee` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `yk_vip_set` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `yk_vip_set` LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000469s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000520s ]
+
+[ 2017-05-31T16:01:12+08:00 ] 140.207.54.73 /Home/Wx/index/token/gzyikang2016?signature=24829a6bac9158a772d3c1265e96d993f6ac1b09&timestamp=1496217672&nonce=31030251&openid=omV0nws2vPo6wXqUovMWYPLx9PF0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000363s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000354s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000392s ]
+SQL: SHOW COLUMNS FROM `yk_shop_set` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `yk_shop_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yk_set` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `yk_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_vip` [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `yk_vip_message` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `yk_vip_log_sub` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `yk_employee` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `yk_vip_set` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `yk_vip_set` LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000413s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000459s ]
+
+[ 2017-05-31T16:02:43+08:00 ] 58.247.206.147 /Home/Wx/index/token/gzyikang2016?signature=6e1c894319199e86d5dc96b85937ad57a69c94a6&timestamp=1496217763&nonce=1756994685&openid=omV0nwpDz87Ka5mXmLoA2sp200TA
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000263s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000348s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000406s ]
+SQL: SHOW COLUMNS FROM `yk_shop_set` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `yk_shop_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yk_set` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `yk_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_vip` [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `yk_vip_message` [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `yk_vip_log_sub` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `yk_employee` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `yk_vip_set` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `yk_vip_set` LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000398s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000443s ]
+
+[ 2017-05-31T16:03:00+08:00 ] 58.247.206.145 /Home/Wx/index/token/gzyikang2016?signature=dffc94643ed41e06436ee792671ace65344f9c38&timestamp=1496217780&nonce=794556872&openid=omV0nwpDz87Ka5mXmLoA2sp200TA
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000262s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000340s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000379s ]
+SQL: SHOW COLUMNS FROM `yk_shop_set` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `yk_shop_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yk_set` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yk_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_vip` [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `yk_vip_message` [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `yk_vip_log_sub` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `yk_employee` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `yk_vip_set` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `yk_vip_set` LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000395s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000439s ]
+
+[ 2017-05-31T16:06:53+08:00 ] 140.207.54.73 /Home/Wx/index/token/gzyikang2016?signature=90eec7e851f699308925c53bb30f0e8ba41fa64e&timestamp=1496218013&nonce=61733085&openid=omV0nwhOnbGl_qJ8O3e_X8q6rW_g
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000277s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000443s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000482s ]
+SQL: SHOW COLUMNS FROM `yk_shop_set` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `yk_shop_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yk_set` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `yk_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_vip` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `yk_vip_message` [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `yk_vip_log_sub` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `yk_employee` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `yk_vip_set` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `yk_vip_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yk_vip` WHERE `openid` = 'omV0nwhOnbGl_qJ8O3e_X8q6rW_g' LIMIT 1   [ RunTime:0.0004s ]
+SQL: UPDATE `yk_vip` SET `subscribe`='1' WHERE `openid` = 'omV0nwhOnbGl_qJ8O3e_X8q6rW_g' [ RunTime:0.0068s ]
+SQL: SHOW COLUMNS FROM `yk_upload_img` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yk_upload_img` WHERE `id` = 167 LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000466s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000508s ]
+
+[ 2017-05-31T16:10:27+08:00 ] 101.226.125.100 /Home/Wx/index/token/gzyikang2016
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000545s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000324s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000362s ]
+SQL: SHOW COLUMNS FROM `yk_shop_set` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `yk_shop_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yk_set` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yk_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_vip` [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `yk_vip_message` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `yk_vip_log_sub` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `yk_employee` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `yk_vip_set` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `yk_vip_set` LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2017-05-31T16:47:16+08:00 ] 58.247.206.152 /Home/Wx/index/token/gzyikang2016?signature=cfaa0c5642724378a763e2a1dc57dfe5aae8fafb&timestamp=1496220436&nonce=2101655059&openid=omV0nwrnm8V3v9o2GkSP_Oq3poZs
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000285s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000349s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000391s ]
+SQL: SHOW COLUMNS FROM `yk_shop_set` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `yk_shop_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yk_set` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `yk_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_vip` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `yk_vip_message` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `yk_vip_log_sub` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `yk_employee` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `yk_vip_set` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `yk_vip_set` LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000411s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000453s ]
+
+[ 2017-05-31T17:59:02+08:00 ] 58.247.206.145 /Home/Wx/index/token/gzyikang2016?signature=ae8337e8e4c707157ad7c3dd67b9b81a1102bf13&timestamp=1496224742&nonce=1866651240&openid=omV0nwpDz87Ka5mXmLoA2sp200TA
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000259s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000347s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000387s ]
+SQL: SHOW COLUMNS FROM `yk_shop_set` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `yk_shop_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yk_set` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `yk_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_vip` [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `yk_vip_message` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `yk_vip_log_sub` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `yk_employee` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `yk_vip_set` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `yk_vip_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `yk_vip` WHERE `openid` = 'omV0nwpDz87Ka5mXmLoA2sp200TA' LIMIT 1   [ RunTime:0.0032s ]
+SQL: UPDATE `yk_vip` SET `subscribe`='0' WHERE `openid` = 'omV0nwpDz87Ka5mXmLoA2sp200TA' [ RunTime:0.0061s ]
+SQL: INSERT INTO `yk_vip_log_sub` (`ppid`,`from`,`fromname`,`to`,`toname`,`issub`,`ctime`) VALUES ('0','3989','淳淳','0','逸康商城','0','1496224742') [ RunTime:0.0234s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000581s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000642s ]
+
+[ 2017-05-31T20:47:09+08:00 ] 58.247.206.140 /Home/Wx/index/token/gzyikang2016?signature=bdaab8518340516d66a11423203ca365344aa563&timestamp=1496234828&nonce=1580601458&openid=omV0nwhGqYrO5ofET6V3GmWJvYYU
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000254s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000398s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000476s ]
+SQL: SHOW COLUMNS FROM `yk_shop_set` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `yk_shop_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yk_set` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yk_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_vip` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `yk_vip_message` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `yk_vip_log_sub` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `yk_employee` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `yk_vip_set` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `yk_vip_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yk_vip` WHERE `openid` = 'omV0nwhGqYrO5ofET6V3GmWJvYYU' LIMIT 1   [ RunTime:0.0029s ]
+SQL: UPDATE `yk_vip` SET `subscribe`='1' WHERE `openid` = 'omV0nwhGqYrO5ofET6V3GmWJvYYU' [ RunTime:0.0060s ]
+SQL: SELECT * FROM `yk_vip` WHERE ( id=3102 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: INSERT INTO `yk_vip_log_sub` (`ppid`,`from`,`fromname`,`to`,`toname`,`issub`,`ctime`) VALUES ('3102','3785','王冬','3102','赵国斌','1','1496234829') [ RunTime:0.0002s ]
+SQL: UPDATE `yk_vip` SET `total_xxsub`=total_xxsub+1 WHERE ( id=3102 ) [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_upload_img` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yk_upload_img` WHERE `id` = 167 LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000513s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000555s ]
+
+[ 2017-05-31T20:47:12+08:00 ] 58.247.206.152 /Home/Wx/index/token/gzyikang2016?signature=0af7e8663ba87f7ea734dbb0497168112425b3f4&timestamp=1496234832&nonce=1292823315&openid=omV0nwhGqYrO5ofET6V3GmWJvYYU
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000263s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000325s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000365s ]
+SQL: SHOW COLUMNS FROM `yk_shop_set` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `yk_shop_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yk_set` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yk_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_vip` [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `yk_vip_message` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `yk_vip_log_sub` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `yk_employee` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `yk_vip_set` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `yk_vip_set` LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000408s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000452s ]
+
+[ 2017-05-31T23:41:46+08:00 ] 58.247.206.145 /Home/Wx/index/token/gzyikang2016?signature=0c586f67c37535ee1e9b9b5b60097fa535fb6d4c&timestamp=1496245306&nonce=715880942&openid=omV0nwulW4fuq8XUe5fMFtmsnXwk
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000286s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000450s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000511s ]
+SQL: SHOW COLUMNS FROM `yk_shop_set` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `yk_shop_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yk_set` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yk_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_vip` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `yk_vip_message` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `yk_vip_log_sub` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `yk_employee` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `yk_vip_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yk_vip_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `yk_vip` WHERE `openid` = 'omV0nwulW4fuq8XUe5fMFtmsnXwk' LIMIT 1   [ RunTime:0.0030s ]
+SQL: UPDATE `yk_vip` SET `subscribe`='1' WHERE `openid` = 'omV0nwulW4fuq8XUe5fMFtmsnXwk' [ RunTime:0.0059s ]
+SQL: SELECT * FROM `yk_vip` WHERE ( id=3102 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: INSERT INTO `yk_vip_log_sub` (`ppid`,`from`,`fromname`,`to`,`toname`,`issub`,`ctime`) VALUES ('3102','3786','陈仓','3102','赵国斌','1','1496245306') [ RunTime:0.0002s ]
+SQL: UPDATE `yk_vip` SET `total_xxsub`=total_xxsub+1 WHERE ( id=3102 ) [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_upload_img` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yk_upload_img` WHERE `id` = 167 LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000497s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000540s ]
+
+[ 2017-05-31T23:41:56+08:00 ] 180.153.206.18 /Home/Wx/index/token/gzyikang2016
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000270s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000332s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000371s ]
+SQL: SHOW COLUMNS FROM `yk_shop_set` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `yk_shop_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yk_set` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yk_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_vip` [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `yk_vip_message` [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `yk_vip_log_sub` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `yk_employee` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `yk_vip_set` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `yk_vip_set` LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2017-05-31T23:42:01+08:00 ] 58.247.206.150 /Home/Wx/index/token/gzyikang2016?signature=480fb8b6383f92204d49bdfa368e3e9b608e91b0&timestamp=1496245320&nonce=844457240&openid=omV0nwulW4fuq8XUe5fMFtmsnXwk
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000261s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000346s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000385s ]
+SQL: SHOW COLUMNS FROM `yk_shop_set` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `yk_shop_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yk_set` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `yk_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_vip` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `yk_vip_message` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `yk_vip_log_sub` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `yk_employee` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `yk_vip_set` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `yk_vip_set` LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000401s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000467s ]
+

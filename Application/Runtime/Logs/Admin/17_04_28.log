@@ -1,0 +1,389 @@
+[ 2017-04-28T10:49:25+08:00 ] 223.73.197.155 /Admin/Shop/order
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000284s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000325s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000360s ]
+SQL: SHOW COLUMNS FROM `yk_set` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `yk_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yk_cms_set` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yk_cms_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_shop_set` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `yk_shop_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yk_shop_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_vip_set` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `yk_vip_set` LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000035s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000075s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004830s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004864s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000124s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000156s ]
+SQL: SHOW COLUMNS FROM `yk_shop_order` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: p /mnt/wwwroot/yikang.mubantang.com/Application/Admin/Controller/ShopController.class.php 第 1101 行.
+NOTIC: [8] Undefined variable: map /mnt/wwwroot/yikang.mubantang.com/Application/Admin/Controller/ShopController.class.php 第 1121 行.
+SQL: SELECT O.*,V.pid,V.name as pname FROM yk_shop_order as O LEFT JOIN `yk_vip` AS V ON V.id = O.vipid  ORDER BY O.ctime desc LIMIT 0,20   [ RunTime:0.0008s ]
+NOTIC: [8] Undefined variable: map /mnt/wwwroot/yikang.mubantang.com/Application/Admin/Controller/ShopController.class.php 第 1127 行.
+SQL: SELECT COUNT(*) AS tp_count FROM yk_shop_order as O LEFT JOIN `yk_vip` AS V ON V.id = O.vipid  LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [2] Missing argument 6 for Admin\Controller\BaseController::getPage(), called in /mnt/wwwroot/yikang.mubantang.com/Application/Admin/Controller/ShopController.class.php on line 1128 and defined /mnt/wwwroot/yikang.mubantang.com/Application/Admin/Controller/BaseController.class.php 第 91 行.
+NOTIC: [8] Undefined variable: map /mnt/wwwroot/yikang.mubantang.com/Application/Admin/Controller/BaseController.class.php 第 103 行.
+NOTIC: [8] Use of undefined constant 尾页 - assumed '尾页' /mnt/wwwroot/yikang.mubantang.com/ThinkPHP/Library/Util/Pagecms.class.php 第 118 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000059s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.016781s ]
+NOTIC: [8] Undefined variable: keyword /mnt/wwwroot/yikang.mubantang.com/Application/Runtime/Cache/Admin/1de6446ae7d2b2aec8b988d31334127b.php 第 31 行.
+NOTIC: [8] Undefined variable: name /mnt/wwwroot/yikang.mubantang.com/Application/Runtime/Cache/Admin/1de6446ae7d2b2aec8b988d31334127b.php 第 34 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014162s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.005286s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000010s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.019334s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000395s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000434s ]
+
+[ 2017-04-28T10:49:39+08:00 ] 223.73.197.155 /Admin/Shop/order/status/2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000260s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000342s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000375s ]
+SQL: SHOW COLUMNS FROM `yk_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yk_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yk_cms_set` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yk_cms_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_shop_set` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `yk_shop_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yk_shop_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_vip_set` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `yk_vip_set` LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000029s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000083s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004766s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004799s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000120s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000150s ]
+SQL: SHOW COLUMNS FROM `yk_shop_order` [ RunTime:0.0009s ]
+NOTIC: [8] Undefined index: p /mnt/wwwroot/yikang.mubantang.com/Application/Admin/Controller/ShopController.class.php 第 1101 行.
+SQL: SELECT O.*,V.pid,V.name as pname FROM yk_shop_order as O LEFT JOIN `yk_vip` AS V ON V.id = O.vipid  WHERE O.status = '2' ORDER BY O.ctime desc LIMIT 0,20   [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM yk_shop_order as O LEFT JOIN `yk_vip` AS V ON V.id = O.vipid  WHERE O.status = '2' LIMIT 1   [ RunTime:0.0006s ]
+NOTIC: [2] Missing argument 6 for Admin\Controller\BaseController::getPage(), called in /mnt/wwwroot/yikang.mubantang.com/Application/Admin/Controller/ShopController.class.php on line 1128 and defined /mnt/wwwroot/yikang.mubantang.com/Application/Admin/Controller/BaseController.class.php 第 91 行.
+NOTIC: [8] Undefined variable: map /mnt/wwwroot/yikang.mubantang.com/Application/Admin/Controller/BaseController.class.php 第 103 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000051s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.013520s ]
+NOTIC: [8] Undefined variable: keyword /mnt/wwwroot/yikang.mubantang.com/Application/Runtime/Cache/Admin/1de6446ae7d2b2aec8b988d31334127b.php 第 31 行.
+NOTIC: [8] Undefined variable: name /mnt/wwwroot/yikang.mubantang.com/Application/Runtime/Cache/Admin/1de6446ae7d2b2aec8b988d31334127b.php 第 34 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012266s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.003909s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000009s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.016061s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000372s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000420s ]
+
+[ 2017-04-28T10:50:09+08:00 ] 223.73.197.155 /Shop/order/status/2/p/2?keyword=&name=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000431s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000555s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000613s ]
+SQL: SHOW COLUMNS FROM `yk_set` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `yk_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yk_cms_set` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yk_cms_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yk_shop_set` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `yk_shop_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yk_shop_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_vip_set` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `yk_vip_set` LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000029s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000065s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004637s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004669s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000117s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000146s ]
+SQL: SHOW COLUMNS FROM `yk_shop_order` [ RunTime:0.0009s ]
+SQL: SELECT O.*,V.pid,V.name as pname FROM yk_shop_order as O LEFT JOIN `yk_vip` AS V ON V.id = O.vipid  WHERE O.status = '2' ORDER BY O.ctime desc LIMIT 20,20   [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM yk_shop_order as O LEFT JOIN `yk_vip` AS V ON V.id = O.vipid  WHERE O.status = '2' LIMIT 1   [ RunTime:0.0006s ]
+NOTIC: [2] Missing argument 6 for Admin\Controller\BaseController::getPage(), called in /mnt/wwwroot/yikang.mubantang.com/Application/Admin/Controller/ShopController.class.php on line 1128 and defined /mnt/wwwroot/yikang.mubantang.com/Application/Admin/Controller/BaseController.class.php 第 91 行.
+NOTIC: [8] Undefined variable: map /mnt/wwwroot/yikang.mubantang.com/Application/Admin/Controller/BaseController.class.php 第 103 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000052s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.012700s ]
+NOTIC: [8] Undefined variable: keyword /mnt/wwwroot/yikang.mubantang.com/Application/Runtime/Cache/Admin/1de6446ae7d2b2aec8b988d31334127b.php 第 31 行.
+NOTIC: [8] Undefined variable: name /mnt/wwwroot/yikang.mubantang.com/Application/Runtime/Cache/Admin/1de6446ae7d2b2aec8b988d31334127b.php 第 34 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011322s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.003863s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000009s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.015075s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000363s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000400s ]
+
+[ 2017-04-28T10:50:35+08:00 ] 223.73.197.155 /Admin/Artical/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000354s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000335s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000370s ]
+SQL: SHOW COLUMNS FROM `yk_set` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `yk_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yk_cms_set` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yk_cms_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_shop_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yk_shop_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yk_artical` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_artical` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `yk_artical` LIMIT 0,12   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000042s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000084s ]
+NOTIC: [8] Undefined variable: vo /mnt/wwwroot/yikang.mubantang.com/Application/Runtime/Cache/Admin/7e5dbafb29008ca3ce98c23ac1c723c3.php 第 40 行.
+NOTIC: [8] Undefined variable: vo /mnt/wwwroot/yikang.mubantang.com/Application/Runtime/Cache/Admin/7e5dbafb29008ca3ce98c23ac1c723c3.php 第 44 行.
+NOTIC: [8] Undefined variable: breadhtml /mnt/wwwroot/yikang.mubantang.com/Application/Runtime/Cache/Admin/7e5dbafb29008ca3ce98c23ac1c723c3.php 第 93 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017677s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017712s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000120s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000150s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000381s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000415s ]
+
+[ 2017-04-28T10:50:51+08:00 ] 223.73.197.155 /Admin/Artical/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000261s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000337s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000374s ]
+SQL: SHOW COLUMNS FROM `yk_set` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `yk_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yk_cms_set` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yk_cms_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_shop_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yk_shop_set` LIMIT 1   [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `yk_artical` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yk_artical` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000046s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000089s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021429s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021463s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000121s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000150s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000349s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000382s ]
+
+[ 2017-04-28T10:52:43+08:00 ] 223.73.197.155 /Admin/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000288s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000324s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000360s ]
+SQL: SHOW COLUMNS FROM `yk_set` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `yk_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yk_cms_set` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yk_cms_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_shop_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yk_shop_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yk_user_oath` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yk_user_oath`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000137s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000194s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024789s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024828s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000178s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000220s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000372s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000431s ]
+
+[ 2017-04-28T10:52:46+08:00 ] 223.73.197.155 /Admin/Upload/indeximg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000263s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000335s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000371s ]
+SQL: SHOW COLUMNS FROM `yk_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yk_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yk_cms_set` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yk_cms_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_shop_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yk_shop_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yk_upload_img` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yk_upload_img` ORDER BY id desc LIMIT 0,8   [ RunTime:0.0078s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000045s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000094s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027713s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027747s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000121s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000152s ]
+
+[ 2017-04-28T10:52:53+08:00 ] 223.73.197.155 /Admin/Upload/getmoreimg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000264s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000320s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000376s ]
+SQL: SHOW COLUMNS FROM `yk_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yk_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yk_cms_set` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yk_cms_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_shop_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yk_shop_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yk_upload_img` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yk_upload_img` ORDER BY id desc LIMIT 8,8   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000035s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000073s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017302s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017339s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000122s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000153s ]
+
+[ 2017-04-28T10:53:04+08:00 ] 223.73.197.155 /Admin/Upload/getmoreimg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000258s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000321s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000357s ]
+SQL: SHOW COLUMNS FROM `yk_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yk_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yk_cms_set` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yk_cms_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_shop_set` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `yk_shop_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yk_upload_img` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yk_upload_img` ORDER BY id desc LIMIT 16,8   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000033s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000070s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004314s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004350s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000142s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000172s ]
+
+[ 2017-04-28T10:53:41+08:00 ] 223.73.197.155 /Admin/Artical/addArtical
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000282s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000327s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000363s ]
+SQL: SHOW COLUMNS FROM `yk_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yk_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yk_cms_set` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yk_cms_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_shop_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yk_shop_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yk_artical` [ RunTime:0.0004s ]
+SQL: INSERT INTO `yk_artical` (`title`,`id`,`listpic`,`author`,`sub`,`visiter`,`content`) VALUES ('美国EARPOPPER 咽鼓管吹张器 治疗中耳炎产品 临床报告','0','177','','','0','<p style=\"text-indent:43px\"><strong><span style=\"font-size:19px;font-family:宋体;letter-spacing:1px\">此产品可恢复听力、消退中耳积液</span></strong><span style=\"font-size:19px;font-family:宋体;letter-spacing:1px\">、排除中耳疾病。</span></p><p style=\"text-indent:32px\"><span style=\"font-size:19px;font-family:宋体;letter-spacing:1px\">是一种治疗中耳炎的新装置，采用无痛、无创、非药物来治疗分泌性中耳炎、咽鼓管机能障碍和其他中耳压相关耳病,避免了在治疗过程中使用</span></p><p style=\"text-indent:32px\"><span style=\"font-size:19px;font-family:宋体;letter-spacing:1px\">&nbsp;A:</span><span style=\"font-size:19px;font-family:宋体;letter-spacing:1px\">抗生素&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; B:鼓室置管术，这两种方法都对患者有隐患。</span></p><p style=\"text-indent:43px\"><span style=\"font-size:19px;font-family:宋体;letter-spacing:1px\">A.</span><span style=\"font-size:19px;font-family:宋体;letter-spacing:1px\">治疗中耳炎的抗生素药性较大、用量较多，过度使用抗生素可能会在以后无病症期间使体内隐藏抗药性细菌，甚至造成聋哑等残疾,30%聋哑病人是因为不合理使用抗生素造成的.</span></p><p style=\"text-indent:43px\"><span style=\"font-size:19px;font-family:宋体;letter-spacing:1px\">B.</span><span style=\"font-size:19px;font-family:宋体;letter-spacing:1px\">鼓室置管术风险高、费用贵，术后并发症降低了耳管的有效性，因为耳管常常会在四至七个月间掉下来。耳管掉落后，40%的患者会复发分泌性中耳炎，其中一半以上的人必须再次手术，以替换耳管]EarPopper 咽鼓管吹张器为手持式、电池操作装置，可在鼻腔内提供一个持续的、可控制的气压流，当患者吞咽时气流被传输到咽鼓管，这种方法可以立即使中耳变干净并使中耳通通气，可立即恢复听力。这种装置可以在家里使用，避免了反复就医治疗的麻烦. （区别于早期传统的人工式、使用比较麻烦，且不容易 控制气流)</span></p><p style=\"text-indent:43px\"><span style=\"font-size:19px;font-family:宋体;letter-spacing:1px\">EarPopper </span><span style=\"font-size:19px;font-family:宋体;letter-spacing:1px\">咽鼓管吹张器 适合儿童和成年人用于治疗由感冒、过敏、鼻窦炎、鼻炎和高度变化而引起的耳病患者，无须药物治疗或鼓室置管术，能够简单又安全地治疗以下有关中耳压力的病症：</span></p><p style=\"text-indent:43px;line-height:17px\"><span style=\"font-size:19px;font-family:宋体;letter-spacing:1px\">1) </span><span style=\"font-size:19px;font-family:宋体;letter-spacing:1px\">分泌性中耳炎（中耳积液）</span></p><p style=\"text-indent:43px;line-height:17px\"><span style=\"font-size:19px;font-family:宋体;letter-spacing:1px\">2) </span><span style=\"font-size:19px;font-family:宋体;letter-spacing:1px\">咽鼓管机能障碍</span></p><p style=\"text-indent:43px;line-height:17px\"><span style=\"font-size:19px;font-family:宋体;letter-spacing:1px\">3) </span><span style=\"font-size:19px;font-family:宋体;letter-spacing:1px\">听力丧失</span></p><p style=\"text-indent:43px;line-height:17px\"><span style=\"font-size:19px;font-family:宋体;letter-spacing:1px\">4) </span><span style=\"font-size:19px;font-family:宋体;letter-spacing:1px\">由乘坐飞机引起的耳朵疼痛和耳压增大</span></p><p style=\"text-indent:43px;line-height:17px\"><span style=\"font-size:19px;font-family:宋体;letter-spacing:1px\">5) </span><span style=\"font-size:19px;font-family:宋体;letter-spacing:1px\">由感冒、过敏、鼻窦炎引起的耳朵肿胀</span></p><p style=\"text-indent:43px;line-height:17px\"><span style=\"font-size:19px;font-family:宋体;letter-spacing:1px\">6) </span><span style=\"font-size:19px;font-family:宋体;letter-spacing:1px\">耳膜内陷 以及引起的各种问题</span></p><p style=\"text-indent:43px\"><strong><span style=\"font-size:19px;font-family:宋体;letter-spacing:1px\">EarPopper </span></strong><strong><span style=\"font-size:19px;font-family:宋体;letter-spacing:1px\">咽鼓管吹张器</span></strong></p><p style=\"text-indent:43px\"><span style=\"font-size:19px;font-family:宋体;letter-spacing:1px\">提供连续的、稳定的空气流进入鼻腔。在患者吞咽时，空气被传送到咽鼓管，从而使中耳通气。可缓解负耳压，并排尽积液和负压，恢复听力专业版用于在诊所进行的治疗，家庭版用于在家里进行的后续治疗。</span></p><p style=\"text-indent:43px\"><strong><span style=\"font-size:19px;font-family:宋体;letter-spacing:1px\">EarPopper </span></strong><strong><span style=\"font-size:19px;font-family:宋体;letter-spacing:1px\">咽鼓管吹张器恢复了 85%的患者的听力。</span></strong></p><p style=\"text-indent:43px\"><span style=\"font-size:19px;font-family:宋体;letter-spacing:1px\">[1] </span><span style=\"font-size:19px;font-family:宋体;letter-spacing:1px\">由国家卫生研究院（NIH）主办、儿科医生 Daniel Arick 及听力学家 Shlomo Silman 指导的为期四年的研究表明，被诊断为因患有持续分泌性中耳炎（OME）而导致听力丧失的儿童和成年人，在使用此产品治疗 7 周后，听力恢复至正常，对于在第一个 7 周治疗周期内未恢复的患者，延长 4 周治疗后，研究组的总治愈率是 85%.</span></p><p style=\"text-indent:43px\"><strong><span style=\"font-size:19px;font-family:宋体;letter-spacing:1px\">EarPopper </span></strong><strong><span style=\"font-size:19px;font-family:宋体;letter-spacing:1px\">咽鼓管吹张器研究成果展示</span></strong></p><p style=\"text-indent:43px\"><span style=\"font-size:19px;font-family:宋体;letter-spacing:1px\">1.</span><span style=\"font-size:19px;font-family:宋体;letter-spacing:1px\">中耳炎和相关儿童听力丧失的无手术家庭治疗第 I 部分 刊登在临床试验 ENT 杂志 2005 年 9 月</span></p><p style=\"text-indent:43px\"><span style=\"font-size:19px;font-family:宋体;letter-spacing:1px\">2.</span><span style=\"font-size:19px;font-family:宋体;letter-spacing:1px\">中耳炎和相关儿童听力丧失的无手术家庭治疗第 II 部分 可行性研究 ENT 杂志 2005 年 10 月</span></p><p style=\"text-indent:43px\"><span style=\"font-size:19px;font-family:宋体;letter-spacing:1px\">中耳积液是儿童常见病症之一，仅次于感冒，致使每年就医人次达 3000 多万，为医疗保健系统增加 40 亿美元的医疗费用,&lt;数据来源美国国家卫生局&gt;。现在人们越来越关注对抗生素的抗性风险，医生也因此建议“观察等待”作为第一线治疗，但是每年仍有 1000 多万个抗生素处方开出用于治疗中耳积液或分泌性中耳炎（OME）。治疗持续性中耳炎通常采用鼓室置管术。</span></p><p style=\"text-indent:43px\"><span style=\"font-size:19px;font-family:宋体;letter-spacing:1px\">而每年接受这种治疗方法的儿童超过 70 万。许多病例证明：抗生素药物治疗和手术治疗都存在问题，往往不能成功治愈中耳炎。</span></p><p style=\"text-indent:43px\"><span style=\"font-size:19px;font-family:宋体;letter-spacing:1px\">EARPOPPER&nbsp; </span><span style=\"font-size:19px;font-family:宋体;letter-spacing:1px\">咽鼓管吹张器是一种治疗中耳炎的新装置，避免了在治疗过程中使用抗生素或安置手术管。产品的发明人之一，布鲁克林学院的听力科学和听力学教授 Shlomo Silman称，现在可以为接受处方治疗的患者提供一个简单、无创性装置，该装置可以提供一种安全的和经临床验证的中耳积液治疗方法。产品 为手持式、电池操作装置，可在鼻腔内提供一个持续的、可控制的气压流，当患者吞咽时，气流被传输到咽鼓管。这种方法可以立即使中耳变干净并使中耳通氧气，可立即恢复听力。这种装置可以在家里使用，避免了反复就医治疗的麻烦。</span></p><p style=\"text-indent:43px\"><span style=\"font-size:19px;font-family:宋体;letter-spacing:1px\">由国家卫生研究院（NIH）主办、儿科医生 Daniel Arick 及听力学家 Shlomo Silman 指导的为期四年的研究表明，74%的因患有持续分泌性中耳炎而丧失听力的儿童，在使用EARPOPPER&nbsp; 咽鼓管吹张器治疗 7 周后，听力恢复至正常，相比较而言，对照组仅有 25%的儿童患者恢复至正常。对于在第一个 7 周治疗周期内未恢复的患者，延长 4 周治疗后，研究组的总治愈率是 85%。该研究成果两次发表于 2005 年 9 月和 10 月的《耳、鼻、喉杂志》中。</span></p><p style=\"text-indent:43px\"><span style=\"font-size:19px;font-family:宋体;letter-spacing:1px\">除分泌性中耳炎外，此产品 还治疗咽鼓管机能障碍、航空耳炎和气压损伤性中耳炎。由于缺乏通风，咽鼓管机能障碍可能导致中耳的负压，导致一个或两个耳朵有不适和“阻塞”的感觉。航空性中耳炎/气压损伤性中耳炎是快速上升或下降（如乘坐飞机和水肺潜水期间）时导致鼓室内形成负压而引起。</span></p><p style=\"text-indent:43px\"><span style=\"font-size:19px;font-family:宋体;letter-spacing:1px\">如果尽早使用此产品，可以使这些患耳病的患者避免使用抗生素或手术治疗。近年来，在耳朵正常状况下经常使用抗生素，可能会在随后的无关病症期间使儿童体内隐藏抗药性细菌。与此同时，许多医生和家长想避免手术的风险。每年有超过 70 万名的儿童要经历耳朵中插管的手术，每次手术费用约为 2，000 美元。并发症降低了耳管的有效性，因为耳管常常会在四至七个月间掉下来。耳管掉落后，40%的患者会复发分泌性中耳炎，其中一半以上的人必须再次手术，以替换耳管。</span></p><p style=\"text-indent:43px;line-height:29px\"><span style=\"font-size:19px;font-family:宋体;letter-spacing:1px\">由<strong>广州逸康商城经销的“金尔康”恒压咽鼓管吹张器</strong>采用精确恒压控制的专利技术，当用电量下降50%，恒压气流压力都能控制在安全范围以内；而且价格仅为EARPOPPER 咽鼓管吹张器的三分之一，是适合我国国情的广大耳疾患者的最佳首选家用护理产品。</span></p><p><br/></p>') [ RunTime:0.0005s ]
+
+[ 2017-04-28T10:53:42+08:00 ] 223.73.197.155 /Admin/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000255s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000350s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000386s ]
+SQL: SHOW COLUMNS FROM `yk_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yk_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yk_cms_set` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `yk_cms_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_shop_set` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `yk_shop_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yk_user_oath` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yk_user_oath`  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000147s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000189s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022995s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023031s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000124s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000279s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000354s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000393s ]
+
+[ 2017-04-28T10:54:55+08:00 ] 163.177.93.219 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000261s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000394s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000433s ]
+SQL: SHOW COLUMNS FROM `yk_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yk_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yk_cms_set` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yk_cms_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_shop_set` [ RunTime:0.0035s ]
+SQL: SELECT * FROM `yk_shop_set` LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2017-04-28T10:54:55+08:00 ] 183.232.118.14 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000248s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000328s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000366s ]
+SQL: SHOW COLUMNS FROM `yk_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yk_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yk_cms_set` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yk_cms_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_shop_set` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `yk_shop_set` LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2017-04-28T11:05:07+08:00 ] 111.161.59.193 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000282s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000367s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000406s ]
+SQL: SHOW COLUMNS FROM `yk_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yk_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yk_cms_set` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `yk_cms_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_shop_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yk_shop_set` LIMIT 1   [ RunTime:0.0002s ]
+

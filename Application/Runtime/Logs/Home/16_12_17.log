@@ -1,0 +1,384 @@
+[ 2016-12-17T10:32:34+08:00 ] 58.247.206.155 /Home/Wx/index/token/gzyikang2016?signature=81a4a9a9a7a24268b9cfa8a773e23523d8c47f7b&timestamp=1481941954&nonce=1007152829&openid=omV0nwnRbv7kFrOEBY92VrZq4BUk
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000369s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000389s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000437s ]
+NOTIC: [2] Missing argument 1 for Home\Controller\WxController::__construct(), called in /mnt/wwwroot/yikang.mubantang.com/ThinkPHP/Common/functions.php on line 681 and defined /mnt/wwwroot/yikang.mubantang.com/Application/Home/Controller/WxController.class.php 第 37 行.
+SQL: SHOW COLUMNS FROM `yk_shop_set` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `yk_shop_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yk_set` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `yk_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_vip` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `yk_vip_message` [ RunTime:0.0347s ]
+SQL: SHOW COLUMNS FROM `yk_vip_log_sub` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `yk_employee` [ RunTime:0.0130s ]
+SQL: SHOW COLUMNS FROM `yk_vip_set` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `yk_vip_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yk_vip` WHERE `openid` = 'omV0nwnRbv7kFrOEBY92VrZq4BUk' LIMIT 1   [ RunTime:0.0020s ]
+SQL: UPDATE `yk_vip` SET `subscribe`='1' WHERE `openid` = 'omV0nwnRbv7kFrOEBY92VrZq4BUk' [ RunTime:0.0034s ]
+SQL: SELECT * FROM `yk_vip` WHERE ( id=552 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: INSERT INTO `yk_vip_log_sub` (`ppid`,`from`,`fromname`,`to`,`toname`,`issub`,`ctime`) VALUES ('552','2562','','552','','1','1481941954') [ RunTime:0.0038s ]
+SQL: UPDATE `yk_vip` SET `total_xxsub`=total_xxsub+1 WHERE ( id=552 ) [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yk_upload_img` [ RunTime:0.0004s ]
+NOTIC: [8192] Function split() is deprecated /mnt/wwwroot/yikang.mubantang.com/Application/Home/Controller/WxController.class.php 第 963 行.
+SQL: SELECT * FROM `yk_upload_img` WHERE `id` = 167 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: temp /mnt/wwwroot/yikang.mubantang.com/Application/Home/Controller/WxController.class.php 第 977 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000545s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000588s ]
+
+[ 2016-12-17T10:32:38+08:00 ] 58.247.206.149 /Home/Wx/index/token/gzyikang2016?signature=f29b0ec0027b2245b4453eda3d36f951882ff5bb&timestamp=1481941958&nonce=390029815&openid=omV0nwnRbv7kFrOEBY92VrZq4BUk
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000283s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000336s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000375s ]
+NOTIC: [2] Missing argument 1 for Home\Controller\WxController::__construct(), called in /mnt/wwwroot/yikang.mubantang.com/ThinkPHP/Common/functions.php on line 681 and defined /mnt/wwwroot/yikang.mubantang.com/Application/Home/Controller/WxController.class.php 第 37 行.
+SQL: SHOW COLUMNS FROM `yk_shop_set` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `yk_shop_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yk_set` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yk_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_vip` [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `yk_vip_message` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `yk_vip_log_sub` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `yk_employee` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `yk_vip_set` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `yk_vip_set` LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000412s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000455s ]
+
+[ 2016-12-17T10:32:44+08:00 ] 112.65.193.13 /Home/Wx/index/token/gzyikang2016
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000281s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000330s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000368s ]
+NOTIC: [2] Missing argument 1 for Home\Controller\WxController::__construct(), called in /mnt/wwwroot/yikang.mubantang.com/ThinkPHP/Common/functions.php on line 681 and defined /mnt/wwwroot/yikang.mubantang.com/Application/Home/Controller/WxController.class.php 第 37 行.
+SQL: SHOW COLUMNS FROM `yk_shop_set` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `yk_shop_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yk_set` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `yk_set` LIMIT 1   [ RunTime:0.0035s ]
+SQL: SHOW COLUMNS FROM `yk_vip` [ RunTime:0.0045s ]
+SQL: SHOW COLUMNS FROM `yk_vip_message` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `yk_vip_log_sub` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `yk_employee` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `yk_vip_set` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `yk_vip_set` LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2016-12-17T13:30:57+08:00 ] 58.247.206.157 /Home/Wx/index/token/gzyikang2016?signature=8ef67bdaee13aec098525c29d79f856ecff74483&timestamp=1481952656&nonce=1502702338&openid=omV0nwo5HyOFwBWFLJxBbbMxhQ2w
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001580s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002091s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002161s ]
+NOTIC: [2] Missing argument 1 for Home\Controller\WxController::__construct(), called in /mnt/wwwroot/yikang.mubantang.com/ThinkPHP/Common/functions.php on line 681 and defined /mnt/wwwroot/yikang.mubantang.com/Application/Home/Controller/WxController.class.php 第 37 行.
+SQL: SHOW COLUMNS FROM `yk_shop_set` [ RunTime:0.0112s ]
+SQL: SELECT * FROM `yk_shop_set` LIMIT 1   [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `yk_set` [ RunTime:0.0033s ]
+SQL: SELECT * FROM `yk_set` LIMIT 1   [ RunTime:0.0044s ]
+SQL: SHOW COLUMNS FROM `yk_vip` [ RunTime:0.0028s ]
+SQL: SHOW COLUMNS FROM `yk_vip_message` [ RunTime:0.0321s ]
+SQL: SHOW COLUMNS FROM `yk_vip_log_sub` [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `yk_employee` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `yk_vip_set` [ RunTime:0.0084s ]
+SQL: SELECT * FROM `yk_vip_set` LIMIT 1   [ RunTime:0.0011s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001387s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001431s ]
+
+[ 2016-12-17T13:31:21+08:00 ] 58.247.206.147 /Home/Wx/index/token/gzyikang2016?signature=ab0cd09ec3a26d8c747fcb40c59d89138e859017&timestamp=1481952681&nonce=234842325&openid=omV0nwo5HyOFwBWFLJxBbbMxhQ2w
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000274s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000353s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000392s ]
+NOTIC: [2] Missing argument 1 for Home\Controller\WxController::__construct(), called in /mnt/wwwroot/yikang.mubantang.com/ThinkPHP/Common/functions.php on line 681 and defined /mnt/wwwroot/yikang.mubantang.com/Application/Home/Controller/WxController.class.php 第 37 行.
+SQL: SHOW COLUMNS FROM `yk_shop_set` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `yk_shop_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yk_set` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yk_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_vip` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `yk_vip_message` [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `yk_vip_log_sub` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `yk_employee` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `yk_vip_set` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `yk_vip_set` LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000494s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000537s ]
+
+[ 2016-12-17T19:51:55+08:00 ] 58.247.206.152 /Home/Wx/index/token/gzyikang2016?signature=b28bebd3d12d880d6d83a12791519009c57a2a11&timestamp=1481975514&nonce=483231245&openid=omV0nwo5HyOFwBWFLJxBbbMxhQ2w
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001355s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002396s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002464s ]
+NOTIC: [2] Missing argument 1 for Home\Controller\WxController::__construct(), called in /mnt/wwwroot/yikang.mubantang.com/ThinkPHP/Common/functions.php on line 681 and defined /mnt/wwwroot/yikang.mubantang.com/Application/Home/Controller/WxController.class.php 第 37 行.
+SQL: SHOW COLUMNS FROM `yk_shop_set` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `yk_shop_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yk_set` [ RunTime:0.0035s ]
+SQL: SELECT * FROM `yk_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_vip` [ RunTime:0.0058s ]
+SQL: SHOW COLUMNS FROM `yk_vip_message` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `yk_vip_log_sub` [ RunTime:0.0141s ]
+SQL: SHOW COLUMNS FROM `yk_employee` [ RunTime:0.0091s ]
+SQL: SHOW COLUMNS FROM `yk_vip_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yk_vip_set` LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003832s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003878s ]
+
+[ 2016-12-17T20:23:49+08:00 ] 140.207.54.73 /Home/Wx/index/token/gzyikang2016?signature=8c292e3be2fb007b6aae1743d817f0c3d49f73f4&timestamp=1481977429&nonce=2078876055&openid=omV0nwvjsYdFTdZxrLeOj02MQHOM
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000255s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000324s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000363s ]
+NOTIC: [2] Missing argument 1 for Home\Controller\WxController::__construct(), called in /mnt/wwwroot/yikang.mubantang.com/ThinkPHP/Common/functions.php on line 681 and defined /mnt/wwwroot/yikang.mubantang.com/Application/Home/Controller/WxController.class.php 第 37 行.
+SQL: SHOW COLUMNS FROM `yk_shop_set` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `yk_shop_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yk_set` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `yk_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_vip` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `yk_vip_message` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `yk_vip_log_sub` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `yk_employee` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `yk_vip_set` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `yk_vip_set` LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000400s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000442s ]
+
+[ 2016-12-17T20:26:18+08:00 ] 140.207.54.73 /Home/Wx/index/token/gzyikang2016?signature=a3dd5434818c9af415e21113f77c32328ff02ebb&timestamp=1481977578&nonce=185361629&openid=omV0nwvjsYdFTdZxrLeOj02MQHOM
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000341s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000355s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000394s ]
+NOTIC: [2] Missing argument 1 for Home\Controller\WxController::__construct(), called in /mnt/wwwroot/yikang.mubantang.com/ThinkPHP/Common/functions.php on line 681 and defined /mnt/wwwroot/yikang.mubantang.com/Application/Home/Controller/WxController.class.php 第 37 行.
+SQL: SHOW COLUMNS FROM `yk_shop_set` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `yk_shop_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yk_set` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yk_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yk_vip` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `yk_vip_message` [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `yk_vip_log_sub` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `yk_employee` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `yk_vip_set` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `yk_vip_set` LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000364s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000417s ]
+
+[ 2016-12-17T20:48:06+08:00 ] 140.207.54.74 /Home/Wx/index/token/gzyikang2016?signature=40f5e7cb852901c05bda942559ab21559c4a55e2&timestamp=1481978886&nonce=217124030&openid=omV0nwvjsYdFTdZxrLeOj02MQHOM
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000277s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000317s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000361s ]
+NOTIC: [2] Missing argument 1 for Home\Controller\WxController::__construct(), called in /mnt/wwwroot/yikang.mubantang.com/ThinkPHP/Common/functions.php on line 681 and defined /mnt/wwwroot/yikang.mubantang.com/Application/Home/Controller/WxController.class.php 第 37 行.
+SQL: SHOW COLUMNS FROM `yk_shop_set` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `yk_shop_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yk_set` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `yk_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_vip` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `yk_vip_message` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `yk_vip_log_sub` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `yk_employee` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `yk_vip_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yk_vip_set` LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000382s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000422s ]
+
+[ 2016-12-17T20:50:41+08:00 ] 123.151.138.100 /Home/Wxpay/pay/oid/20161217205040-70
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000259s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000322s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000361s ]
+SQL: SHOW COLUMNS FROM `yk_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yk_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yk_shop_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yk_shop_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yk_shop_order` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `yk_shop_order` WHERE `oid` = '20161217205040-70' LIMIT 1   [ RunTime:0.0342s ]
+NOTIC: [8] Use of undefined constant CURLOP_TIMEOUT - assumed 'CURLOP_TIMEOUT' /mnt/wwwroot/yikang.mubantang.com/ThinkPHP/Library/Util/Wx/Wxpaysdk.class.php 第 234 行.
+NOTIC: [2] curl_setopt() expects parameter 2 to be long, string given /mnt/wwwroot/yikang.mubantang.com/ThinkPHP/Library/Util/Wx/Wxpaysdk.class.php 第 234 行.
+NOTIC: [2] curl_close(): 33 is not a valid cURL handle resource /mnt/wwwroot/yikang.mubantang.com/ThinkPHP/Library/Util/Wx/Wxpaysdk.class.php 第 253 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000571s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000632s ]
+
+[ 2016-12-17T20:50:51+08:00 ] 101.226.85.67 /Home/Wxpay/pay/oid/20161217205040-70
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000257s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000326s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000364s ]
+SQL: SHOW COLUMNS FROM `yk_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yk_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yk_shop_set` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `yk_shop_set` LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: wxpayopenid /mnt/wwwroot/yikang.mubantang.com/Application/Home/Controller/WxpayController.class.php 第 66 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000038s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000079s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010488s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010553s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000170s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000214s ]
+
+[ 2016-12-17T20:51:01+08:00 ] 140.207.54.76 /Home/Wxpay/nd/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000259s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000341s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000380s ]
+SQL: SHOW COLUMNS FROM `yk_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yk_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yk_shop_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yk_shop_set` LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2] Missing argument 1 for Util\Wx\Wxpayndsdk::__construct(), called in /mnt/wwwroot/yikang.mubantang.com/Application/Home/Controller/WxpayController.class.php on line 232 and defined /mnt/wwwroot/yikang.mubantang.com/ThinkPHP/Library/Util/Wx/Wxpayndsdk.class.php 第 16 行.
+SQL: SHOW COLUMNS FROM `yk_set` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `yk_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_shop_order` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `yk_shop_order` WHERE `oid` = '20161217205040-70' LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `yk_shop_order` SET `sid`='0',`oid`='20161217205040-70',`djqid`='0',`totalprice`='580',`totalnum`='1',`payprice`='580',`paytype`='wxpay',`paytime`='1481979060',`aliaccount`=NULL,`yf`='0',`ispay`='1',`vipid`='1411',`vipopenid`='omV0nwvjsYdFTdZxrLeOj02MQHOM',`vipname`='郭永亮',`vipmobile`='13700861525',`vipaddress`='河南省郑州市东明路117号院7-1702',`vipxqname`=NULL,`vipxqid`=NULL,`msg`='',`kfmsg`=NULL,`ctime`='1481979040',`ntime`=NULL,`dtime`=NULL,`etime`=NULL,`changetime`=NULL,`changemsg`=NULL,`changeadmin`=NULL,`closetime`=NULL,`closemsg`=NULL,`closeadmin`=NULL,`tuihuoprice`=NULL,`tuihuosqtime`='0',`tuihuotime`=NULL,`tuihuokd`=NULL,`tuihuokdnum`=NULL,`tuihuomsg`=NULL,`tuihuoadmin`=NULL,`status`='2',`fahuokd`=NULL,`fahuokdnum`=NULL,`items`='a:1:{i:0;a:12:{s:2:\"id\";s:3:\"613\";s:3:\"sid\";s:1:\"0\";s:5:\"vipid\";s:4:\"1411\";s:7:\"goodsid\";s:2:\"17\";s:3:\"sku\";s:0:\"\";s:3:\"num\";s:1:\"1\";s:5:\"skuid\";i:0;s:4:\"name\";s:35:\"恒压咽鼓管吹张器(成人型)\";s:7:\"skuattr\";N;s:5:\"price\";s:3:\"580\";s:5:\"total\";i:580;s:3:\"pic\";s:40:\"/Upload/img/2016-07-26/57972a3c5c91e.jpg\";}}' WHERE `id` = 70 [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `yk_shop_goods` [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `yk_shop_goods_sku` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `yk_shop_syslog_sells` [ RunTime:0.0034s ]
+SQL: UPDATE `yk_shop_goods` SET `num`=num-1 WHERE ( id=17 ) [ RunTime:0.0002s ]
+SQL: UPDATE `yk_shop_goods` SET `sells`=sells+1 WHERE ( id=17 ) [ RunTime:0.0002s ]
+SQL: UPDATE `yk_shop_goods` SET `dissells`=dissells+1 WHERE ( id=17 ) [ RunTime:0.0001s ]
+SQL: INSERT INTO `yk_shop_syslog_sells` (`oid`,`vipid`,`vipopenid`,`vipname`,`ctime`,`num`,`goodsid`,`goodsname`,`skuid`,`skuattr`,`price`,`total`) VALUES ('70','1411','omV0nwvjsYdFTdZxrLeOj02MQHOM','郭永亮','1481979060','1','17','恒压咽鼓管吹张器(成人型)','0','0','580','580') [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `yk_shop_order_log` [ RunTime:0.0025s ]
+SQL: SHOW COLUMNS FROM `yk_shop_order_syslog` [ RunTime:0.0004s ]
+SQL: INSERT INTO `yk_shop_order_log` (`oid`,`msg`,`ctime`) VALUES ('70','微信付款成功','1481979060') [ RunTime:0.0015s ]
+SQL: SELECT * FROM `yk_shop_order` WHERE `oid` = '20161217205040-70' LIMIT 1   [ RunTime:0.0003s ]
+SQL: INSERT INTO `yk_shop_order_syslog` (`oid`,`msg`,`ctime`,`type`,`paytype`) VALUES ('70','微信付款成功','1481979060','2','wxpay') [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_vip` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `yk_vip` WHERE ( id=1411 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yk_vip` WHERE ( id=87 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yk_sms` [ RunTime:0.0023s ]
+SQL: SELECT * FROM `yk_sms` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `yk_sms` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `yk_vip` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `yk_vip` WHERE ( id=1411 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yk_vip` WHERE ( id=1411 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `yk_fx_dslog` [ RunTime:0.0031s ]
+SQL: SELECT * FROM `yk_shop_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yk_vip` WHERE ( id=87 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yk_shop_order` WHERE `id` IN ('70')  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yk_shop_goods`  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: fx2 /mnt/wwwroot/yikang.mubantang.com/Application/Home/Controller/WxpayController.class.php 第 706 行.
+SQL: INSERT INTO `yk_fx_dslog` (`oid`,`fxprice`,`ctime`,`fxyj`,`from`,`fromname`,`to`,`toname`,`status`) VALUES ('70','580','1481979060','145','1411','王龙海','87','','1') [ RunTime:0.0013s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE ( isfxgd=1 )  [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `yk_wx_template` [ RunTime:0.0024s ]
+SQL: SELECT * FROM `yk_wx_template` WHERE `templateidshort` = 'OPENTM200444326' LIMIT 1   [ RunTime:0.0012s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000566s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000655s ]
+
+[ 2016-12-17T20:51:01+08:00 ] 140.207.54.73 /Home/Wx/index/token/gzyikang2016?signature=542955c1c71745ba17e500e601c8bd7406ffc8b9&timestamp=1481979061&nonce=779691038&openid=omV0nwvjsYdFTdZxrLeOj02MQHOM
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000493s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000385s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000425s ]
+NOTIC: [2] Missing argument 1 for Home\Controller\WxController::__construct(), called in /mnt/wwwroot/yikang.mubantang.com/ThinkPHP/Common/functions.php on line 681 and defined /mnt/wwwroot/yikang.mubantang.com/Application/Home/Controller/WxController.class.php 第 37 行.
+SQL: SHOW COLUMNS FROM `yk_shop_set` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `yk_shop_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yk_set` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `yk_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_vip` [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `yk_vip_message` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `yk_vip_log_sub` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `yk_employee` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `yk_vip_set` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `yk_vip_set` LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000365s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000408s ]
+
+[ 2016-12-17T20:51:12+08:00 ] 140.207.54.76 /Home/Wxpay/nd/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000260s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000331s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000391s ]
+SQL: SHOW COLUMNS FROM `yk_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yk_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yk_shop_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yk_shop_set` LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2] Missing argument 1 for Util\Wx\Wxpayndsdk::__construct(), called in /mnt/wwwroot/yikang.mubantang.com/Application/Home/Controller/WxpayController.class.php on line 232 and defined /mnt/wwwroot/yikang.mubantang.com/ThinkPHP/Library/Util/Wx/Wxpayndsdk.class.php 第 16 行.
+SQL: SHOW COLUMNS FROM `yk_set` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `yk_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_shop_order` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `yk_shop_order` WHERE `oid` = '20161217205040-70' LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000378s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000423s ]
+
+[ 2016-12-17T21:02:29+08:00 ] 140.207.54.74 /Home/Wx/index/token/gzyikang2016?signature=54cf8d336165654e2c172e63ef0d462e15269445&timestamp=1481979748&nonce=635642182&openid=omV0nwvjsYdFTdZxrLeOj02MQHOM
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000257s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000321s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000359s ]
+NOTIC: [2] Missing argument 1 for Home\Controller\WxController::__construct(), called in /mnt/wwwroot/yikang.mubantang.com/ThinkPHP/Common/functions.php on line 681 and defined /mnt/wwwroot/yikang.mubantang.com/Application/Home/Controller/WxController.class.php 第 37 行.
+SQL: SHOW COLUMNS FROM `yk_shop_set` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `yk_shop_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yk_set` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `yk_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_vip` [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `yk_vip_message` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `yk_vip_log_sub` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `yk_employee` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `yk_vip_set` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `yk_vip_set` LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000388s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000430s ]
+
+[ 2016-12-17T23:06:39+08:00 ] 140.207.54.73 /Home/Wx/index/token/gzyikang2016?signature=3bccbc2d5599c0a7bfa3276b7b29bd8e6fb2870a&timestamp=1481987199&nonce=1528290625&openid=omV0nwvjsYdFTdZxrLeOj02MQHOM
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000262s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000349s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000389s ]
+NOTIC: [2] Missing argument 1 for Home\Controller\WxController::__construct(), called in /mnt/wwwroot/yikang.mubantang.com/ThinkPHP/Common/functions.php on line 681 and defined /mnt/wwwroot/yikang.mubantang.com/Application/Home/Controller/WxController.class.php 第 37 行.
+SQL: SHOW COLUMNS FROM `yk_shop_set` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `yk_shop_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yk_set` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `yk_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_vip` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `yk_vip_message` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `yk_vip_log_sub` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `yk_employee` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `yk_vip_set` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `yk_vip_set` LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000396s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000437s ]
+

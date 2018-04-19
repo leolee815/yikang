@@ -1,0 +1,26 @@
+[ 2017-02-04T21:19:53+08:00 ] 140.207.54.74 /Home/Wx/index/token/gzyikang2016?signature=8e40508a8c591859c871d102d014f8972717cd0d&timestamp=1486214392&nonce=1195427838&openid=omV0nwmR-WmNswIU1l3m6OSXYT9A
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000277s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000372s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000423s ]
+NOTIC: [2] Missing argument 1 for Home\Controller\WxController::__construct(), called in /mnt/wwwroot/yikang.mubantang.com/ThinkPHP/Common/functions.php on line 681 and defined /mnt/wwwroot/yikang.mubantang.com/Application/Home/Controller/WxController.class.php 第 37 行.
+SQL: SHOW COLUMNS FROM `yk_shop_set` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `yk_shop_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yk_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yk_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_vip` [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `yk_vip_message` [ RunTime:0.0266s ]
+SQL: SHOW COLUMNS FROM `yk_vip_log_sub` [ RunTime:0.0055s ]
+SQL: SHOW COLUMNS FROM `yk_employee` [ RunTime:0.0117s ]
+SQL: SHOW COLUMNS FROM `yk_vip_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yk_vip_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yk_vip` WHERE `openid` = 'omV0nwmR-WmNswIU1l3m6OSXYT9A' LIMIT 1   [ RunTime:0.0007s ]
+SQL: UPDATE `yk_vip` SET `subscribe`='0' WHERE `openid` = 'omV0nwmR-WmNswIU1l3m6OSXYT9A' [ RunTime:0.0038s ]
+NOTIC: [8] Undefined index: ppid /mnt/wwwroot/yikang.mubantang.com/Application/Home/Controller/WxController.class.php 第 622 行.
+SQL: INSERT INTO `yk_vip_log_sub` (`ppid`,`from`,`fromname`,`to`,`toname`,`issub`,`ctime`) VALUES ('0','396','潇湘夜雨','0','逸康商城','0','1486214393') [ RunTime:0.0067s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000585s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000628s ]
+

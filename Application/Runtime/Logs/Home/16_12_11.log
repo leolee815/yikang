@@ -1,0 +1,31 @@
+[ 2016-12-11T15:53:26+08:00 ] 140.207.54.74 /Home/Wx/index/token/gzyikang2016?signature=74fb3b769ca999ca388cbacfc65a88951e2e7c15&timestamp=1481442806&nonce=827377379&openid=omV0nwjc62o9lqpY3Gch2ZTdw5cI
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000247s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000564s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000631s ]
+NOTIC: [2] Missing argument 1 for Home\Controller\WxController::__construct(), called in /mnt/wwwroot/yikang.mubantang.com/ThinkPHP/Common/functions.php on line 681 and defined /mnt/wwwroot/yikang.mubantang.com/Application/Home/Controller/WxController.class.php 第 37 行.
+SQL: SHOW COLUMNS FROM `yk_shop_set` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `yk_shop_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yk_set` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `yk_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_vip` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `yk_vip_message` [ RunTime:0.0025s ]
+SQL: SHOW COLUMNS FROM `yk_vip_log_sub` [ RunTime:0.0025s ]
+SQL: SHOW COLUMNS FROM `yk_employee` [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `yk_vip_set` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `yk_vip_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yk_vip` WHERE `openid` = 'omV0nwjc62o9lqpY3Gch2ZTdw5cI' LIMIT 1   [ RunTime:0.0019s ]
+SQL: UPDATE `yk_vip` SET `subscribe`='1' WHERE `openid` = 'omV0nwjc62o9lqpY3Gch2ZTdw5cI' [ RunTime:0.0033s ]
+SQL: SELECT * FROM `yk_vip` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: INSERT INTO `yk_vip_log_sub` (`ppid`,`from`,`fromname`,`to`,`toname`,`issub`,`ctime`) VALUES ('4','2533','曹三晓13815955918','4','刘建明','1','1481442806') [ RunTime:0.0014s ]
+SQL: UPDATE `yk_vip` SET `total_xxsub`=total_xxsub+1 WHERE ( id=4 ) [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_upload_img` [ RunTime:0.0004s ]
+NOTIC: [8192] Function split() is deprecated /mnt/wwwroot/yikang.mubantang.com/Application/Home/Controller/WxController.class.php 第 963 行.
+SQL: SELECT * FROM `yk_upload_img` WHERE `id` = 167 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: temp /mnt/wwwroot/yikang.mubantang.com/Application/Home/Controller/WxController.class.php 第 977 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000382s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000422s ]
+

@@ -1,0 +1,1584 @@
+[ 2017-09-20T17:32:22+08:00 ] 223.73.197.41 /Admin/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000256s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000337s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000375s ]
+SQL: SHOW COLUMNS FROM `yk_set` [ RunTime:0.0033s ]
+SQL: SELECT * FROM `yk_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yk_cms_set` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yk_cms_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_shop_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yk_shop_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yk_user_oath` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yk_user_oath`  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000151s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000226s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.045880s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.045924s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000174s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000207s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000399s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000445s ]
+
+[ 2017-09-20T17:32:25+08:00 ] 223.73.197.41 /Admin/Index/main
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000392s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000351s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000387s ]
+SQL: SHOW COLUMNS FROM `yk_set` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `yk_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_cms_set` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yk_cms_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_shop_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yk_shop_set` LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000035s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000071s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004716s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004752s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000123s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000152s ]
+SQL: SHOW COLUMNS FROM `yk_vip` [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_vip` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_vip` WHERE ( subscribe=1 ) LIMIT 1   [ RunTime:0.0050s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_vip` WHERE `ctime` BETWEEN 1505836800 AND 1505923199 LIMIT 1   [ RunTime:0.0049s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_vip` WHERE `ctime` BETWEEN 1505750400 AND 1505836799 LIMIT 1   [ RunTime:0.0048s ]
+SQL: SHOW COLUMNS FROM `yk_shop_order` [ RunTime:0.0009s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_shop_order` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_shop_order` WHERE ( status=0 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_shop_order` WHERE ( status=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_shop_order` WHERE ( status=2 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_shop_order` WHERE ( status=3 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_shop_order` WHERE ( status=4 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_shop_order` WHERE ( status=5 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_shop_order` WHERE ( status=6 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_shop_order` WHERE `ctime` BETWEEN 1505836800 AND 1505923199 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_shop_order` WHERE `ctime` BETWEEN 1505750400 AND 1505836799 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yk_fx_syslog` [ RunTime:0.0005s ]
+SQL: SELECT SUM(fxyj) AS tp_sum FROM `yk_fx_syslog` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT SUM(fxyj) AS tp_sum FROM `yk_fx_syslog` WHERE `ctime` BETWEEN 1505836800 AND 1505923199 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT SUM(fxyj) AS tp_sum FROM `yk_fx_syslog` WHERE `ctime` BETWEEN 1505750400 AND 1505836799 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_vip` WHERE `isfx` = 0 AND `isfxgd` = 0 LIMIT 1   [ RunTime:0.0051s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_vip` WHERE `isfx` = 1 AND `isfxgd` = 0 LIMIT 1   [ RunTime:0.0051s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_vip` WHERE ( isfxgd=1 ) LIMIT 1   [ RunTime:0.0049s ]
+SQL: SHOW COLUMNS FROM `yk_vip_log_sub` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `yk_vip_log_sub` ORDER BY ctime desc LIMIT 5   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `yk_vip` WHERE ( id=6819 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yk_vip` WHERE ( id=6783 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yk_vip` WHERE ( id=6816 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yk_vip` WHERE ( id=6813 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yk_vip` WHERE ( id=6807 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yk_fx_syslog` ORDER BY ctime desc LIMIT 5   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yk_vip` WHERE ( id=6489 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yk_fx_log_tj` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `yk_fx_log_tj` ORDER BY ctime desc LIMIT 5   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `yk_shop_order` WHERE `ispay` = 1 AND `status` = 2 ORDER BY ctime desc LIMIT 5   [ RunTime:0.0003s ]
+SQL: SELECT SUM(totalprice) AS tp_sum FROM `yk_shop_order` WHERE `ispay` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT SUM(totalprice) AS tp_sum FROM `yk_shop_order` WHERE `status` = 5 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT SUM(totalnum) AS tp_sum FROM `yk_shop_order` WHERE `ispay` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yk_vip_tx` [ RunTime:0.0005s ]
+SQL: SELECT SUM(txprice) AS tp_sum FROM `yk_vip_tx` WHERE `status` = 2 LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000100s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.061126s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018216s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.045305s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000011s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.063407s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000398s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000437s ]
+
+[ 2017-09-20T17:32:34+08:00 ] 223.73.197.41 /Admin/Employee/orderCenter/status/5
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000274s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000326s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000363s ]
+SQL: SHOW COLUMNS FROM `yk_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yk_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yk_cms_set` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yk_cms_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_shop_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yk_shop_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_employee` [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000033s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000093s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004745s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004779s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000123s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000155s ]
+SQL: SHOW COLUMNS FROM `yk_vip` [ RunTime:0.0010s ]
+SQL: SELECT `id`,`path` FROM `yk_vip` WHERE `employee` = 17 AND `is_system` = 1  [ RunTime:0.0051s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-91%'  [ RunTime:0.0053s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-92%'  [ RunTime:0.0052s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-93%'  [ RunTime:0.0051s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-94%'  [ RunTime:0.0052s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-95%'  [ RunTime:0.0051s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-96%'  [ RunTime:0.0051s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-97%'  [ RunTime:0.0052s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-98%'  [ RunTime:0.0054s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-99%'  [ RunTime:0.0055s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-110%'  [ RunTime:0.0055s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-111%'  [ RunTime:0.0053s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-112%'  [ RunTime:0.0052s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-113%'  [ RunTime:0.0052s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-114%'  [ RunTime:0.0053s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-115%'  [ RunTime:0.0054s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-116%'  [ RunTime:0.0052s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-117%'  [ RunTime:0.0052s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-118%'  [ RunTime:0.0052s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-119%'  [ RunTime:0.0052s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-206%'  [ RunTime:0.0055s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-208%'  [ RunTime:0.0058s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-209%'  [ RunTime:0.0053s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-210%'  [ RunTime:0.0054s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-211%'  [ RunTime:0.0055s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-212%'  [ RunTime:0.0079s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-213%'  [ RunTime:0.0055s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-214%'  [ RunTime:0.0053s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-215%'  [ RunTime:0.0052s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-216%'  [ RunTime:0.0052s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-217%'  [ RunTime:0.0052s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-218%'  [ RunTime:0.0053s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-219%'  [ RunTime:0.0051s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-220%'  [ RunTime:0.0052s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-221%'  [ RunTime:0.0052s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-222%'  [ RunTime:0.0052s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-223%'  [ RunTime:0.0052s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-224%'  [ RunTime:0.0053s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-225%'  [ RunTime:0.0052s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-226%'  [ RunTime:0.0053s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-227%'  [ RunTime:0.0053s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-228%'  [ RunTime:0.0053s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-229%'  [ RunTime:0.0055s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-230%'  [ RunTime:0.0057s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-231%'  [ RunTime:0.0055s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-232%'  [ RunTime:0.0056s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-233%'  [ RunTime:0.0053s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-234%'  [ RunTime:0.0054s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-235%'  [ RunTime:0.0052s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-236%'  [ RunTime:0.0052s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-237%'  [ RunTime:0.0054s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-238%'  [ RunTime:0.0053s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-239%'  [ RunTime:0.0053s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-240%'  [ RunTime:0.0052s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-241%'  [ RunTime:0.0053s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-242%'  [ RunTime:0.0053s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-243%'  [ RunTime:0.0055s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-244%'  [ RunTime:0.0056s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-245%'  [ RunTime:0.0055s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-246%'  [ RunTime:0.0056s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-247%'  [ RunTime:0.0052s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-248%'  [ RunTime:0.0053s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-249%'  [ RunTime:0.0071s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-250%'  [ RunTime:0.0082s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-251%'  [ RunTime:0.0053s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-252%'  [ RunTime:0.0053s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-253%'  [ RunTime:0.0053s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-254%'  [ RunTime:0.0054s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-2312%'  [ RunTime:0.0052s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-2313%'  [ RunTime:0.0052s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-2314%'  [ RunTime:0.0052s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-2315%'  [ RunTime:0.0052s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-2316%'  [ RunTime:0.0052s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-2317%'  [ RunTime:0.0053s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-2318%'  [ RunTime:0.0052s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-2319%'  [ RunTime:0.0052s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-2320%'  [ RunTime:0.0052s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-2321%'  [ RunTime:0.0052s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-2322%'  [ RunTime:0.0052s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-2323%'  [ RunTime:0.0052s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-2324%'  [ RunTime:0.0052s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-2325%'  [ RunTime:0.0054s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-2326%'  [ RunTime:0.0053s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-2327%'  [ RunTime:0.0052s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-2328%'  [ RunTime:0.0052s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-2329%'  [ RunTime:0.0052s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-2330%'  [ RunTime:0.0052s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-2331%'  [ RunTime:0.0053s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-2332%'  [ RunTime:0.0054s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-2333%'  [ RunTime:0.0052s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-2334%'  [ RunTime:0.0052s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-2335%'  [ RunTime:0.0052s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-2336%'  [ RunTime:0.0053s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-2337%'  [ RunTime:0.0056s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-2338%'  [ RunTime:0.0059s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-2339%'  [ RunTime:0.0056s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-2340%'  [ RunTime:0.0052s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-2341%'  [ RunTime:0.0053s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-2342%'  [ RunTime:0.0057s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-2343%'  [ RunTime:0.0053s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-2344%'  [ RunTime:0.0054s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-2345%'  [ RunTime:0.0053s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-2346%'  [ RunTime:0.0057s ]
+SQL: SHOW COLUMNS FROM `yk_shop_order` [ RunTime:0.0011s ]
+SQL: SELECT O.*,V.pid,V.name as pname FROM yk_shop_order as O LEFT JOIN `yk_vip` AS V ON V.id = O.vipid  WHERE O.status = '5' AND `vipid` IN ('4368','4702','5344','5558','5705','5892','5948','5949','5952','5955','5956','5991','6000','6018','6120','6654','3165','4295','4683','4684','4692','4693','5713','331','149','151','157','4104','4321','4323','4677','4678','6157','6398','5294','6470','6471','6483','6500','6508','6630','6670','6752','6753','6758','6794','6690','6751','2548','5496','5603','6023','6032','6070','5321','5739','2476','5325','5329','5788','6206','6207','6430','6432','6477','6507','6530','6582','6599','6605','6622','6668','6765','5820','5932','6081','6421','4749','6015','6040','6042','6065','6087','6091','6155','6569','6788','2635','2636','3089','3104','3105','3112','3129','4179','2502','2616','2617','2618','2680','2720','2721','2722','2732','2736','2740','2741','2743','2767','2793','2859','2890','2910','2925','3169','3024','3061','3075','3098','3141','3154','3157','3162','3163','3172','3173','3891','3895','3914','3934','3971','3983','4051','4143','4332','4339','4343','4350','4358','4395','6531','6533','6534','6619','6627','6629','6640','6662','6665','6667','6669','6673','6695','6713','5630','5634','5636','5637','5640','5641','5642','5793','5856','5857','6540','6664','6666','5602','5679','5699','5747','6406','6681','6682','2905','2906','2992','3007','4423','2892','2936','2937','2997','2999','3018','3845','4451','4563','4577','4578','4588','4626','4680','4748','5277','5307','5315','5376','5701','5703','5710','5737','5886','5887','5897','5899','5900','5902','6067','6139','6220','6228','6525','6559','6748','6809','4566','4573','4597','5402','5596','5706','5707','5745','5746','6080','6676','6689','4676','4718','4753','5300','5564','5617','5749','5794','5935','5947','6025','6071','6115','6146','6195','6233','6344','6395','6399','6553','6592','6638','6655','6656','6663','6727','6738','6810','6710','6712','2536','2542','4611','5350','5497','4632','4634','4639','4655','4682','5436','5437','5438','5440','5473','5522','5523','5524','5527','5529','5584','5588','5594','5610','5613','5621','5628','5700','5764','5768','5783','5785','5797','5810','5859','5863','5883','5905','6193','6194','6197','6202','6211','6217','6222','6224','6227','6268','6280','6494','6496','6498','6516','6647','6649','6650','6658','6696','6792','3030','4734','5286','5693','5817','5825','5826','5888','5903','4681','4685','4710','4747','4751','4760','5292','5352','5941','5942','6083','6105','6214','6231','6266','6359','6404','6497','6623','6652','4708','4712','4755','4768','4769','5309','5314','5320','5322','5326','5336','5399','5408','5449','5796','6558','6561','6563','5332','5851','6077','6171','6174','6196','6201','6287','6358','6449','6557','6595','6604','6645','5665','6327','6355','6635','6646','5562','5777','5878','5879','5882','5896','5938','6106','6250','6251','6259','6328','6347','6357','6387','6394','4723','5837','6186','5499','5552','6088','6339','5386','5403','6161','6298','6626','6680','6746','6749','6770','6771','6773','6775','6776','6777','6779','6780','6789','6437','6568','6644','6812','6230','336','2511','2856','6313','6519','6524','5292','5352','4710','4708','5309','5314','5320','5322','5326','5336','5399','5408','6558','6561','6563','4712','4769','5449','4755','4768','5796','5332','6196','6201','6287','6449','6557','5851','6077','6358','6171','6174','6595','6604','6645') ORDER BY O.ctime desc LIMIT 0,20   [ RunTime:0.0058s ]
+SQL: SELECT COUNT(*) AS tp_count FROM yk_shop_order as O LEFT JOIN `yk_vip` AS V ON V.id = O.vipid  WHERE O.status = '5' AND `vipid` IN ('4368','4702','5344','5558','5705','5892','5948','5949','5952','5955','5956','5991','6000','6018','6120','6654','3165','4295','4683','4684','4692','4693','5713','331','149','151','157','4104','4321','4323','4677','4678','6157','6398','5294','6470','6471','6483','6500','6508','6630','6670','6752','6753','6758','6794','6690','6751','2548','5496','5603','6023','6032','6070','5321','5739','2476','5325','5329','5788','6206','6207','6430','6432','6477','6507','6530','6582','6599','6605','6622','6668','6765','5820','5932','6081','6421','4749','6015','6040','6042','6065','6087','6091','6155','6569','6788','2635','2636','3089','3104','3105','3112','3129','4179','2502','2616','2617','2618','2680','2720','2721','2722','2732','2736','2740','2741','2743','2767','2793','2859','2890','2910','2925','3169','3024','3061','3075','3098','3141','3154','3157','3162','3163','3172','3173','3891','3895','3914','3934','3971','3983','4051','4143','4332','4339','4343','4350','4358','4395','6531','6533','6534','6619','6627','6629','6640','6662','6665','6667','6669','6673','6695','6713','5630','5634','5636','5637','5640','5641','5642','5793','5856','5857','6540','6664','6666','5602','5679','5699','5747','6406','6681','6682','2905','2906','2992','3007','4423','2892','2936','2937','2997','2999','3018','3845','4451','4563','4577','4578','4588','4626','4680','4748','5277','5307','5315','5376','5701','5703','5710','5737','5886','5887','5897','5899','5900','5902','6067','6139','6220','6228','6525','6559','6748','6809','4566','4573','4597','5402','5596','5706','5707','5745','5746','6080','6676','6689','4676','4718','4753','5300','5564','5617','5749','5794','5935','5947','6025','6071','6115','6146','6195','6233','6344','6395','6399','6553','6592','6638','6655','6656','6663','6727','6738','6810','6710','6712','2536','2542','4611','5350','5497','4632','4634','4639','4655','4682','5436','5437','5438','5440','5473','5522','5523','5524','5527','5529','5584','5588','5594','5610','5613','5621','5628','5700','5764','5768','5783','5785','5797','5810','5859','5863','5883','5905','6193','6194','6197','6202','6211','6217','6222','6224','6227','6268','6280','6494','6496','6498','6516','6647','6649','6650','6658','6696','6792','3030','4734','5286','5693','5817','5825','5826','5888','5903','4681','4685','4710','4747','4751','4760','5292','5352','5941','5942','6083','6105','6214','6231','6266','6359','6404','6497','6623','6652','4708','4712','4755','4768','4769','5309','5314','5320','5322','5326','5336','5399','5408','5449','5796','6558','6561','6563','5332','5851','6077','6171','6174','6196','6201','6287','6358','6449','6557','6595','6604','6645','5665','6327','6355','6635','6646','5562','5777','5878','5879','5882','5896','5938','6106','6250','6251','6259','6328','6347','6357','6387','6394','4723','5837','6186','5499','5552','6088','6339','5386','5403','6161','6298','6626','6680','6746','6749','6770','6771','6773','6775','6776','6777','6779','6780','6789','6437','6568','6644','6812','6230','336','2511','2856','6313','6519','6524','5292','5352','4710','4708','5309','5314','5320','5322','5326','5336','5399','5408','6558','6561','6563','4712','4769','5449','4755','4768','5796','5332','6196','6201','6287','6449','6557','5851','6077','6358','6171','6174','6595','6604','6645') LIMIT 1   [ RunTime:0.0052s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000057s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.595219s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009695s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.587809s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000010s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.597388s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000400s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000440s ]
+
+[ 2017-09-20T17:33:19+08:00 ] 223.73.197.41 /Admin/Vip/vipList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000259s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000356s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000394s ]
+SQL: SHOW COLUMNS FROM `yk_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yk_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_cms_set` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yk_cms_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_shop_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yk_shop_set` LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000028s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000062s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004620s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004652s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000119s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000151s ]
+SQL: SHOW COLUMNS FROM `yk_employee` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yk_employee`  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yk_vip` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `yk_vip` LIMIT 0,20   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `yk_vip_level` [ RunTime:0.0003s ]
+SQL: SELECT `name` FROM `yk_vip_level` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `yk_vip_level` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `yk_vip_level` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `yk_vip_level` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `yk_vip_level` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `yk_vip_level` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `yk_vip_level` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `yk_vip_level` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `yk_vip_level` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `yk_vip_level` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `yk_vip_level` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `yk_vip_level` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `yk_vip_level` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `yk_vip_level` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `yk_vip_level` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `yk_vip_level` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `yk_vip_level` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `yk_vip_level` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `yk_vip_level` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `yk_vip_level` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_vip` LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000038s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.015093s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009455s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.008767s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000008s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.018125s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000369s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000406s ]
+
+[ 2017-09-20T17:33:27+08:00 ] 223.73.197.41 /Admin/Vip/vipList?is_system=&vipid=2435&plv=&search=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000267s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000331s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000367s ]
+SQL: SHOW COLUMNS FROM `yk_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yk_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_cms_set` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yk_cms_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_shop_set` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `yk_shop_set` LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000035s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000073s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004672s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004709s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000166s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000197s ]
+SQL: SHOW COLUMNS FROM `yk_employee` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `yk_employee`  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yk_vip` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `yk_vip` WHERE `id` = 2435 LIMIT 0,20   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yk_vip_level` [ RunTime:0.0003s ]
+SQL: SELECT `name` FROM `yk_vip_level` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_vip` WHERE `id` = 2435 LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000063s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.011334s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007346s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.005240s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000010s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.012447s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000401s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000439s ]
+
+[ 2017-09-20T17:34:00+08:00 ] 223.73.197.41 /Admin/Employee/employeeList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000299s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000347s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000384s ]
+SQL: SHOW COLUMNS FROM `yk_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yk_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yk_cms_set` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yk_cms_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_shop_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yk_shop_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_employee` [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000034s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000074s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004682s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004715s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000122s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000151s ]
+SQL: SHOW COLUMNS FROM `yk_employee` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `yk_employee` LIMIT 0,20   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_employee` LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000048s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.005857s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005361s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.001973s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000009s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.007216s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000403s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000440s ]
+
+[ 2017-09-20T17:34:06+08:00 ] 223.73.197.41 /Admin/Employee/employeeSet/id/17
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000368s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000529s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000584s ]
+SQL: SHOW COLUMNS FROM `yk_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yk_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_cms_set` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yk_cms_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_shop_set` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `yk_shop_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_employee` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `yk_employee` [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000031s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000070s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004701s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004734s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000120s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000150s ]
+SQL: SELECT * FROM `yk_employee` WHERE ( id=17 ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000027s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.002961s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002421s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.000501s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000008s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.002801s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000347s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000379s ]
+
+[ 2017-09-20T17:34:13+08:00 ] 223.73.197.41 /Admin/Employee/employeeList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000259s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000330s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000386s ]
+SQL: SHOW COLUMNS FROM `yk_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yk_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_cms_set` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yk_cms_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_shop_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yk_shop_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_employee` [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000031s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000070s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004751s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004784s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000121s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000151s ]
+SQL: SHOW COLUMNS FROM `yk_employee` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yk_employee` LIMIT 0,20   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_employee` LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000033s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.005880s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005393s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.001963s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000009s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.007240s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000373s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000410s ]
+
+[ 2017-09-20T17:37:37+08:00 ] 223.73.197.41 /Admin/Shop/order
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000260s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000376s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000414s ]
+SQL: SHOW COLUMNS FROM `yk_set` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `yk_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_cms_set` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yk_cms_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_shop_set` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `yk_shop_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `yk_shop_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_vip_set` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `yk_vip_set` LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000029s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000065s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004772s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004805s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000120s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000149s ]
+SQL: SHOW COLUMNS FROM `yk_shop_order` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `yk_shop_order` ORDER BY ctime desc LIMIT 0,20   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_shop_order` LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000056s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.012045s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011602s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.003009s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000009s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.014497s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000360s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000398s ]
+
+[ 2017-09-20T17:37:42+08:00 ] 223.73.197.41 /Shop/order/p/2?stime=&etime=&keyword=&name=&status=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000289s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000323s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000357s ]
+SQL: SHOW COLUMNS FROM `yk_set` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `yk_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yk_cms_set` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yk_cms_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_shop_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yk_shop_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yk_shop_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_vip_set` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `yk_vip_set` LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000034s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000072s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004698s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004731s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000123s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000153s ]
+SQL: SHOW COLUMNS FROM `yk_shop_order` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `yk_shop_order` ORDER BY ctime desc LIMIT 20,20   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_shop_order` LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000059s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.012484s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011989s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.003237s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000009s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.015111s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000381s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000420s ]
+
+[ 2017-09-20T17:37:46+08:00 ] 223.73.197.41 /Shop/order/p/3?stime=&etime=&keyword=&name=&status=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000260s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000354s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000391s ]
+SQL: SHOW COLUMNS FROM `yk_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yk_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_cms_set` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yk_cms_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_shop_set` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `yk_shop_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `yk_shop_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_vip_set` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `yk_vip_set` LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000031s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000067s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004718s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004755s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000121s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000151s ]
+SQL: SHOW COLUMNS FROM `yk_shop_order` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `yk_shop_order` ORDER BY ctime desc LIMIT 40,20   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_shop_order` LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000057s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.012428s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011807s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.003165s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000009s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.014855s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000387s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000426s ]
+
+[ 2017-09-20T17:39:13+08:00 ] 223.73.197.41 /Admin/Shop/order
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000261s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000321s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000357s ]
+SQL: SHOW COLUMNS FROM `yk_set` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `yk_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_cms_set` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yk_cms_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_shop_set` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `yk_shop_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `yk_shop_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yk_vip_set` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `yk_vip_set` LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000028s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000063s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004496s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004528s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000117s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000147s ]
+SQL: SHOW COLUMNS FROM `yk_shop_order` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `yk_shop_order` ORDER BY ctime desc LIMIT 0,20   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_shop_order` LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000062s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.012393s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012247s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.003006s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000011s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.015164s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000397s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000435s ]
+
+[ 2017-09-20T17:39:44+08:00 ] 223.73.197.41 /Admin/Shop/order
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000275s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000330s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000365s ]
+SQL: SHOW COLUMNS FROM `yk_set` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `yk_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yk_cms_set` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `yk_cms_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yk_shop_set` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `yk_shop_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yk_shop_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yk_vip_set` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `yk_vip_set` LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000032s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000068s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004711s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004744s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000121s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000151s ]
+SQL: SHOW COLUMNS FROM `yk_shop_order` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `yk_shop_order` ORDER BY ctime desc LIMIT 0,20   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_shop_order` LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000052s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.012048s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011597s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.002981s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000009s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.014463s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000352s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000389s ]
+
+[ 2017-09-20T17:39:56+08:00 ] 223.73.197.41 /Admin/Wx/qrcodeBgEmpSet
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000266s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000331s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000367s ]
+SQL: SHOW COLUMNS FROM `yk_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yk_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_cms_set` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yk_cms_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_shop_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yk_shop_set` LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000034s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000071s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004809s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004846s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000130s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000170s ]
+SQL: SHOW COLUMNS FROM `yk_autoset` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yk_autoset` LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000025s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.002662s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001477s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.000986s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000008s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.002346s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000358s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000393s ]
+
+[ 2017-09-20T17:43:17+08:00 ] 223.73.197.41 /Admin/Employee/employeeList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000265s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000326s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000361s ]
+SQL: SHOW COLUMNS FROM `yk_set` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `yk_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_cms_set` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yk_cms_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_shop_set` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `yk_shop_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_employee` [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000029s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000067s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004548s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004580s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000119s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000148s ]
+SQL: SHOW COLUMNS FROM `yk_employee` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `yk_employee` LIMIT 0,20   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_employee` LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000033s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.005926s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005375s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.002030s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000008s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.007292s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000342s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000378s ]
+
+[ 2017-09-20T17:43:32+08:00 ] 223.73.197.41 /Admin/Shop/order
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000256s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000324s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000360s ]
+SQL: SHOW COLUMNS FROM `yk_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yk_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_cms_set` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yk_cms_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_shop_set` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `yk_shop_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yk_shop_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_vip_set` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `yk_vip_set` LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000029s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000065s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004568s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004601s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000121s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000150s ]
+SQL: SHOW COLUMNS FROM `yk_shop_order` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `yk_shop_order` ORDER BY ctime desc LIMIT 0,20   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_shop_order` LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000057s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.012060s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011568s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.003026s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000009s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.014477s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000393s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000430s ]
+
+[ 2017-09-20T17:46:00+08:00 ] 223.73.197.41 /Admin/Employee/employeeList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000264s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000329s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000364s ]
+SQL: SHOW COLUMNS FROM `yk_set` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `yk_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_cms_set` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `yk_cms_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_shop_set` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `yk_shop_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_employee` [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000028s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000066s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004599s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004634s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000121s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000152s ]
+SQL: SHOW COLUMNS FROM `yk_employee` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `yk_employee` LIMIT 0,20   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_employee` LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000032s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.005881s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005415s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.001946s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000008s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.007244s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000341s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000381s ]
+
+[ 2017-09-20T20:58:20+08:00 ] 163.177.13.2 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000268s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000458s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000526s ]
+SQL: SHOW COLUMNS FROM `yk_set` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `yk_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_cms_set` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yk_cms_set` LIMIT 1   [ RunTime:0.0093s ]
+SQL: SHOW COLUMNS FROM `yk_shop_set` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `yk_shop_set` LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2017-09-20T20:59:03+08:00 ] 163.177.13.2 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000289s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000323s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000362s ]
+SQL: SHOW COLUMNS FROM `yk_set` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `yk_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_cms_set` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yk_cms_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_shop_set` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `yk_shop_set` LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2017-09-20T22:13:10+08:00 ] 36.106.42.252 /Admin/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000261s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000351s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000389s ]
+SQL: SHOW COLUMNS FROM `yk_set` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `yk_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yk_cms_set` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `yk_cms_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_shop_set` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `yk_shop_set` LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2017-09-20T22:13:10+08:00 ] 36.106.42.252 /Admin/Public/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000260s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000323s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000363s ]
+SQL: SHOW COLUMNS FROM `yk_set` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `yk_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_cms_set` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yk_cms_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_shop_set` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `yk_shop_set` LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000046s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000087s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.061853s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.061919s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000215s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000274s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000397s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000432s ]
+
+[ 2017-09-20T22:13:10+08:00 ] 36.106.42.252 /Admin/Public/verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000286s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000324s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000364s ]
+SQL: SHOW COLUMNS FROM `yk_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yk_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_cms_set` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yk_cms_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_shop_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yk_shop_set` LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000599s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000661s ]
+
+[ 2017-09-20T22:14:37+08:00 ] 36.106.42.252 /Admin/Public/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000351s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000327s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000366s ]
+SQL: SHOW COLUMNS FROM `yk_set` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `yk_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yk_cms_set` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `yk_cms_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_shop_set` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `yk_shop_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yk_user` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `yk_user` WHERE `username` = '15902965048' AND `userpass` = '21218cca77804d2ba1922c33e0151105' LIMIT 1   [ RunTime:0.0112s ]
+SQL: SHOW COLUMNS FROM `yk_employee` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `yk_employee` WHERE `username` = '15902965048' AND `userpass` = '21218cca77804d2ba1922c33e0151105' LIMIT 1   [ RunTime:0.0519s ]
+
+[ 2017-09-20T22:14:37+08:00 ] 36.106.42.252 /Admin/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000276s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000332s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000369s ]
+SQL: SHOW COLUMNS FROM `yk_set` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `yk_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yk_cms_set` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `yk_cms_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_shop_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yk_shop_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yk_user_oath` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yk_user_oath`  [ RunTime:0.0087s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000161s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000229s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.089867s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.089922s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000149s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000182s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000375s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000414s ]
+
+[ 2017-09-20T22:14:44+08:00 ] 36.106.42.252 /Admin/Employee/main
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000257s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000347s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000384s ]
+SQL: SHOW COLUMNS FROM `yk_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yk_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_cms_set` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yk_cms_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_shop_set` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `yk_shop_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_employee` [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000031s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000068s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008033s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000123s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000163s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000377s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000410s ]
+
+[ 2017-09-20T22:15:14+08:00 ] 36.106.42.252 /Admin/Employee/main
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000287s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000343s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000379s ]
+SQL: SHOW COLUMNS FROM `yk_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yk_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_cms_set` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `yk_cms_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_shop_set` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `yk_shop_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yk_employee` [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000034s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000070s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003637s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003674s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000122s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000152s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000379s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000412s ]
+
+[ 2017-09-20T22:15:15+08:00 ] 36.106.42.252 /Admin/Employee/main
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000260s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000346s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000381s ]
+SQL: SHOW COLUMNS FROM `yk_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yk_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yk_cms_set` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yk_cms_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_shop_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yk_shop_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_employee` [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000033s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000076s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003903s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003945s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000129s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000158s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000355s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000389s ]
+
+[ 2017-09-20T22:16:41+08:00 ] 36.106.42.252 /Admin/Employee/orderCenter/status/2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000269s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000330s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000366s ]
+SQL: SHOW COLUMNS FROM `yk_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yk_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_cms_set` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yk_cms_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_shop_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yk_shop_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_employee` [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000032s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000073s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016984s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017017s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000121s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000150s ]
+SQL: SHOW COLUMNS FROM `yk_vip` [ RunTime:0.0012s ]
+SQL: SELECT `id`,`path` FROM `yk_vip` WHERE `employee` = 24 AND `is_system` = 1  [ RunTime:0.2535s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-685%'  [ RunTime:0.0055s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-764%'  [ RunTime:0.0052s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-826%'  [ RunTime:0.0052s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-835%'  [ RunTime:0.0054s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-836%'  [ RunTime:0.0052s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-837%'  [ RunTime:0.0053s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-1003%'  [ RunTime:0.0052s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-1010%'  [ RunTime:0.0053s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-1022%'  [ RunTime:0.0052s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-1038%'  [ RunTime:0.0052s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-1079%'  [ RunTime:0.0052s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-1213%'  [ RunTime:0.0053s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-1216%'  [ RunTime:0.0053s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-1220%'  [ RunTime:0.0053s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-1304%'  [ RunTime:0.0055s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-1328%'  [ RunTime:0.0052s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-1330%'  [ RunTime:0.0052s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-1401%'  [ RunTime:0.0054s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-1622%'  [ RunTime:0.0052s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-1663%'  [ RunTime:0.0052s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-1680%'  [ RunTime:0.0053s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-1685%'  [ RunTime:0.0053s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-1688%'  [ RunTime:0.0059s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-1785%'  [ RunTime:0.0054s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-1867%'  [ RunTime:0.0053s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-2002%'  [ RunTime:0.0054s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-3596%'  [ RunTime:0.0052s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-3600%'  [ RunTime:0.0052s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-3601%'  [ RunTime:0.0052s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-3606%'  [ RunTime:0.0053s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-3670%'  [ RunTime:0.0053s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-3677%'  [ RunTime:0.0052s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-3692%'  [ RunTime:0.0053s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-3701%'  [ RunTime:0.0053s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-3703%'  [ RunTime:0.0054s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-3705%'  [ RunTime:0.0055s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-3747%'  [ RunTime:0.0054s ]
+SQL: SHOW COLUMNS FROM `yk_shop_order` [ RunTime:0.0013s ]
+SQL: SELECT O.*,V.pid,V.name as pname FROM yk_shop_order as O LEFT JOIN `yk_vip` AS V ON V.id = O.vipid  WHERE O.status = '2' AND `vipid` IN ('4575','4595','5283','5287','5424','6180','6492','6759','3890','3896','4437','4241','3926','4074','4571','4572','4574','5615','5885','5889','5894','6116','6141','6213','6274','6277','6383','6384','6391','6444','3781','4643','4644','3866','3875','4001','4002','4064','4161','4162','4207','4211','4213','4214','4246','4296','4319','4329','4333','4389','4412','4415','4444','4445','4613','4665','5430','5451','5544','5836','5854','5927','6046','6144','6491','6577','3832','3836','3972','4015','4035','4036','4044','4050','4053','4054','4055','4056','4083','4085','4088','4092','4096','4099','4116','4117','4145','4146','4188','4190','4192','4195','4196','4200','4237','4240','4265','4267','4547','4286','4336','4337','4344','4349','4552','4553','4557','4599','4600','4603','4606','4645','4653','4672','4703','4740','4752','4759','4762','4764','5303','5312','5327','5351','5356','5366','5367','5423','5482','5551','5916','5528','5543','5612','5627','5638','5660','5683','5687','5716','6010','6017','6021','6156','6433','6438','6440','6446','6523','6527','6528','6529','6661','6781','4308','4039','4094','4122','4138','4147','4247','4387','4671','4705','5297','5347','4638','5305','5310','5770','6509','6728','4169','5720','4283','4101','4106','4113','4114','4119','4121','4123','4125','4153','4156','4157','4163','4165','4174','4175','4176','4181','4183','4218','4239','4251','4252','4258','4261','4263','4264','4290','4294','4313','4316','4325','4338','4355','4356','4359','4373','4385','4388','4405','4452','4462','4473','4486','4491','4499','4500','4537','4584','4589','4616','4652','4699','4700','4701','4706','4707','4711','4720','4733','5341','5406','5407','5425','5426','5429','5446','5452','5453','5456','5457','5462','5465','5466','5470','5474','5475','5520','5531','5600','5601','5672','5708','5811','5895','6005','6022','6033','6062','6102','6104','6117','6145','6147','6148','6402','6705','4654','5391','5478','5507','5816','5819','5831','5855','6167','6337','5872','5906','5907','5957','5958','5959','5960','5961','5962','5963','5964','5965','5966','5967','5968','5969','5970','5971','5972','5973','5974','5975','5976','5977','5978','5979','5980','5981','5982','5983','5984','5985','5988','5989','5990','5992','5993','5994','5995','5997','5998','5999','6001','6002','6003','6007','6009','6013','6016','6634','6639','6660','6729','6730','6734','6741','5593','5595','4662','5563','5771','6056','6133','6140','6415','6419','6624','6716','4737','4744','6109','6184','5509','5512','5898','6107','6108','6590','6687','5609','5655','5838','6060','5727','5798','5802','6252','6253','6320','6361','5401','5624','5629','5654','5343','5579','5585','5607','6054','5904','6293','6459','6486','5649','4746','4765','5281','5285','5400','5422','5443','5536','5553','5571','5583','5698','5702','5715','5730','5731','5743','5789','5814','6166','6172','6258','6331','6377','6389','6390','6392','6549','6565','6726','4346','4360','4377','4503','4545','4594','4602','5289','5378','5472','5505','5535','5606','6596','6606','4287','4330','4363','4526','4601','5413','5419','5461','5489','6122','6123','6718','4089','4191','4224','4279','4669','4670','4776','5852','5869','6510','4210','4422','4673','4598','4687','4690','5481','5483','5486','5577','5690','5704','5890','5893','5920','5944','5945','5946','6030','6068','6159','6221','6229','6234','6237','6238','6240','6241','6314','6401','6426','6428','6429','6434','6466','6526','6551','6566','6611','6671','6677','6701','6702','6818','5721','5735','5861','4479','4518','4527','4535','4732','4741','4742','5295','5337','5362','5373','5393','5398','5421','5427','5435','5504','5506','5517','5525','5738','5566','5568','5569','5598','5678','5718','5740','5741','5757','5765','5766','5767','5779','5782','5827','5828','5940','6031','6037','6051','6069','6073','6163','6199','6246','6272','6410','6442','6518','6541','6548','6621','6787','6815','4197','4198','4612','4617','4625','4694','4771','5331','5365','5392','5526','5589','5591','5936','5937','6336','6388','6675','6697','6700','4199','4204','4206','4227','4229','4235','4238','4257','4371','4458','4488','4492','4493','4517','4538','4543','4556','4582','5338','5342','5374','5726','4724','5348','5353','5372','5540','6158','6271','6375','6550','6552','6580','6583','6723','4298') ORDER BY O.ctime desc LIMIT 0,20   [ RunTime:0.0312s ]
+SQL: SELECT COUNT(*) AS tp_count FROM yk_shop_order as O LEFT JOIN `yk_vip` AS V ON V.id = O.vipid  WHERE O.status = '2' AND `vipid` IN ('4575','4595','5283','5287','5424','6180','6492','6759','3890','3896','4437','4241','3926','4074','4571','4572','4574','5615','5885','5889','5894','6116','6141','6213','6274','6277','6383','6384','6391','6444','3781','4643','4644','3866','3875','4001','4002','4064','4161','4162','4207','4211','4213','4214','4246','4296','4319','4329','4333','4389','4412','4415','4444','4445','4613','4665','5430','5451','5544','5836','5854','5927','6046','6144','6491','6577','3832','3836','3972','4015','4035','4036','4044','4050','4053','4054','4055','4056','4083','4085','4088','4092','4096','4099','4116','4117','4145','4146','4188','4190','4192','4195','4196','4200','4237','4240','4265','4267','4547','4286','4336','4337','4344','4349','4552','4553','4557','4599','4600','4603','4606','4645','4653','4672','4703','4740','4752','4759','4762','4764','5303','5312','5327','5351','5356','5366','5367','5423','5482','5551','5916','5528','5543','5612','5627','5638','5660','5683','5687','5716','6010','6017','6021','6156','6433','6438','6440','6446','6523','6527','6528','6529','6661','6781','4308','4039','4094','4122','4138','4147','4247','4387','4671','4705','5297','5347','4638','5305','5310','5770','6509','6728','4169','5720','4283','4101','4106','4113','4114','4119','4121','4123','4125','4153','4156','4157','4163','4165','4174','4175','4176','4181','4183','4218','4239','4251','4252','4258','4261','4263','4264','4290','4294','4313','4316','4325','4338','4355','4356','4359','4373','4385','4388','4405','4452','4462','4473','4486','4491','4499','4500','4537','4584','4589','4616','4652','4699','4700','4701','4706','4707','4711','4720','4733','5341','5406','5407','5425','5426','5429','5446','5452','5453','5456','5457','5462','5465','5466','5470','5474','5475','5520','5531','5600','5601','5672','5708','5811','5895','6005','6022','6033','6062','6102','6104','6117','6145','6147','6148','6402','6705','4654','5391','5478','5507','5816','5819','5831','5855','6167','6337','5872','5906','5907','5957','5958','5959','5960','5961','5962','5963','5964','5965','5966','5967','5968','5969','5970','5971','5972','5973','5974','5975','5976','5977','5978','5979','5980','5981','5982','5983','5984','5985','5988','5989','5990','5992','5993','5994','5995','5997','5998','5999','6001','6002','6003','6007','6009','6013','6016','6634','6639','6660','6729','6730','6734','6741','5593','5595','4662','5563','5771','6056','6133','6140','6415','6419','6624','6716','4737','4744','6109','6184','5509','5512','5898','6107','6108','6590','6687','5609','5655','5838','6060','5727','5798','5802','6252','6253','6320','6361','5401','5624','5629','5654','5343','5579','5585','5607','6054','5904','6293','6459','6486','5649','4746','4765','5281','5285','5400','5422','5443','5536','5553','5571','5583','5698','5702','5715','5730','5731','5743','5789','5814','6166','6172','6258','6331','6377','6389','6390','6392','6549','6565','6726','4346','4360','4377','4503','4545','4594','4602','5289','5378','5472','5505','5535','5606','6596','6606','4287','4330','4363','4526','4601','5413','5419','5461','5489','6122','6123','6718','4089','4191','4224','4279','4669','4670','4776','5852','5869','6510','4210','4422','4673','4598','4687','4690','5481','5483','5486','5577','5690','5704','5890','5893','5920','5944','5945','5946','6030','6068','6159','6221','6229','6234','6237','6238','6240','6241','6314','6401','6426','6428','6429','6434','6466','6526','6551','6566','6611','6671','6677','6701','6702','6818','5721','5735','5861','4479','4518','4527','4535','4732','4741','4742','5295','5337','5362','5373','5393','5398','5421','5427','5435','5504','5506','5517','5525','5738','5566','5568','5569','5598','5678','5718','5740','5741','5757','5765','5766','5767','5779','5782','5827','5828','5940','6031','6037','6051','6069','6073','6163','6199','6246','6272','6410','6442','6518','6541','6548','6621','6787','6815','4197','4198','4612','4617','4625','4694','4771','5331','5365','5392','5526','5589','5591','5936','5937','6336','6388','6675','6697','6700','4199','4204','4206','4227','4229','4235','4238','4257','4371','4458','4488','4492','4493','4517','4538','4543','4556','4582','5338','5342','5374','5726','4724','5348','5353','5372','5540','6158','6271','6375','6550','6552','6580','6583','6723','4298') LIMIT 1   [ RunTime:0.0066s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000056s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.539102s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025642s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.514823s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000010s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.540356s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000377s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000415s ]
+
+[ 2017-09-20T22:17:33+08:00 ] 36.106.42.252 /Admin/Employee/orderCenter/status/2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000290s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000344s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000380s ]
+SQL: SHOW COLUMNS FROM `yk_set` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `yk_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_cms_set` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `yk_cms_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_shop_set` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `yk_shop_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_employee` [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000030s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000070s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004739s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004774s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000203s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000248s ]
+SQL: SHOW COLUMNS FROM `yk_vip` [ RunTime:0.0013s ]
+SQL: SELECT `id`,`path` FROM `yk_vip` WHERE `employee` = 24 AND `is_system` = 1  [ RunTime:0.0054s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-685%'  [ RunTime:0.0055s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-764%'  [ RunTime:0.0055s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-826%'  [ RunTime:0.0054s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-835%'  [ RunTime:0.0054s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-836%'  [ RunTime:0.0054s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-837%'  [ RunTime:0.0053s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-1003%'  [ RunTime:0.0053s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-1010%'  [ RunTime:0.0073s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-1022%'  [ RunTime:0.0054s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-1038%'  [ RunTime:0.0057s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-1079%'  [ RunTime:0.0061s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-1213%'  [ RunTime:0.0064s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-1216%'  [ RunTime:0.0059s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-1220%'  [ RunTime:0.0056s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-1304%'  [ RunTime:0.0056s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-1328%'  [ RunTime:0.0056s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-1330%'  [ RunTime:0.0056s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-1401%'  [ RunTime:0.0053s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-1622%'  [ RunTime:0.0053s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-1663%'  [ RunTime:0.0055s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-1680%'  [ RunTime:0.0062s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-1685%'  [ RunTime:0.0054s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-1688%'  [ RunTime:0.0055s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-1785%'  [ RunTime:0.0054s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-1867%'  [ RunTime:0.0055s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-2002%'  [ RunTime:0.0053s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-3596%'  [ RunTime:0.0052s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-3600%'  [ RunTime:0.0052s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-3601%'  [ RunTime:0.0053s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-3606%'  [ RunTime:0.0059s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-3670%'  [ RunTime:0.0054s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-3677%'  [ RunTime:0.0053s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-3692%'  [ RunTime:0.0060s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-3701%'  [ RunTime:0.0061s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-3703%'  [ RunTime:0.0052s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-3705%'  [ RunTime:0.0052s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-3747%'  [ RunTime:0.0054s ]
+SQL: SHOW COLUMNS FROM `yk_shop_order` [ RunTime:0.0053s ]
+SQL: SELECT O.*,V.pid,V.name as pname FROM yk_shop_order as O LEFT JOIN `yk_vip` AS V ON V.id = O.vipid  WHERE O.status = '2' AND `vipid` IN ('4575','4595','5283','5287','5424','6180','6492','6759','3890','3896','4437','4241','3926','4074','4571','4572','4574','5615','5885','5889','5894','6116','6141','6213','6274','6277','6383','6384','6391','6444','3781','4643','4644','3866','3875','4001','4002','4064','4161','4162','4207','4211','4213','4214','4246','4296','4319','4329','4333','4389','4412','4415','4444','4445','4613','4665','5430','5451','5544','5836','5854','5927','6046','6144','6491','6577','3832','3836','3972','4015','4035','4036','4044','4050','4053','4054','4055','4056','4083','4085','4088','4092','4096','4099','4116','4117','4145','4146','4188','4190','4192','4195','4196','4200','4237','4240','4265','4267','4547','4286','4336','4337','4344','4349','4552','4553','4557','4599','4600','4603','4606','4645','4653','4672','4703','4740','4752','4759','4762','4764','5303','5312','5327','5351','5356','5366','5367','5423','5482','5551','5916','5528','5543','5612','5627','5638','5660','5683','5687','5716','6010','6017','6021','6156','6433','6438','6440','6446','6523','6527','6528','6529','6661','6781','4308','4039','4094','4122','4138','4147','4247','4387','4671','4705','5297','5347','4638','5305','5310','5770','6509','6728','4169','5720','4283','4101','4106','4113','4114','4119','4121','4123','4125','4153','4156','4157','4163','4165','4174','4175','4176','4181','4183','4218','4239','4251','4252','4258','4261','4263','4264','4290','4294','4313','4316','4325','4338','4355','4356','4359','4373','4385','4388','4405','4452','4462','4473','4486','4491','4499','4500','4537','4584','4589','4616','4652','4699','4700','4701','4706','4707','4711','4720','4733','5341','5406','5407','5425','5426','5429','5446','5452','5453','5456','5457','5462','5465','5466','5470','5474','5475','5520','5531','5600','5601','5672','5708','5811','5895','6005','6022','6033','6062','6102','6104','6117','6145','6147','6148','6402','6705','4654','5391','5478','5507','5816','5819','5831','5855','6167','6337','5872','5906','5907','5957','5958','5959','5960','5961','5962','5963','5964','5965','5966','5967','5968','5969','5970','5971','5972','5973','5974','5975','5976','5977','5978','5979','5980','5981','5982','5983','5984','5985','5988','5989','5990','5992','5993','5994','5995','5997','5998','5999','6001','6002','6003','6007','6009','6013','6016','6634','6639','6660','6729','6730','6734','6741','5593','5595','4662','5563','5771','6056','6133','6140','6415','6419','6624','6716','4737','4744','6109','6184','5509','5512','5898','6107','6108','6590','6687','5609','5655','5838','6060','5727','5798','5802','6252','6253','6320','6361','5401','5624','5629','5654','5343','5579','5585','5607','6054','5904','6293','6459','6486','5649','4746','4765','5281','5285','5400','5422','5443','5536','5553','5571','5583','5698','5702','5715','5730','5731','5743','5789','5814','6166','6172','6258','6331','6377','6389','6390','6392','6549','6565','6726','4346','4360','4377','4503','4545','4594','4602','5289','5378','5472','5505','5535','5606','6596','6606','4287','4330','4363','4526','4601','5413','5419','5461','5489','6122','6123','6718','4089','4191','4224','4279','4669','4670','4776','5852','5869','6510','4210','4422','4673','4598','4687','4690','5481','5483','5486','5577','5690','5704','5890','5893','5920','5944','5945','5946','6030','6068','6159','6221','6229','6234','6237','6238','6240','6241','6314','6401','6426','6428','6429','6434','6466','6526','6551','6566','6611','6671','6677','6701','6702','6818','5721','5735','5861','4479','4518','4527','4535','4732','4741','4742','5295','5337','5362','5373','5393','5398','5421','5427','5435','5504','5506','5517','5525','5738','5566','5568','5569','5598','5678','5718','5740','5741','5757','5765','5766','5767','5779','5782','5827','5828','5940','6031','6037','6051','6069','6073','6163','6199','6246','6272','6410','6442','6518','6541','6548','6621','6787','6815','4197','4198','4612','4617','4625','4694','4771','5331','5365','5392','5526','5589','5591','5936','5937','6336','6388','6675','6697','6700','4199','4204','4206','4227','4229','4235','4238','4257','4371','4458','4488','4492','4493','4517','4538','4543','4556','4582','5338','5342','5374','5726','4724','5348','5353','5372','5540','6158','6271','6375','6550','6552','6580','6583','6723','4298') ORDER BY O.ctime desc LIMIT 0,20   [ RunTime:0.0065s ]
+SQL: SELECT COUNT(*) AS tp_count FROM yk_shop_order as O LEFT JOIN `yk_vip` AS V ON V.id = O.vipid  WHERE O.status = '2' AND `vipid` IN ('4575','4595','5283','5287','5424','6180','6492','6759','3890','3896','4437','4241','3926','4074','4571','4572','4574','5615','5885','5889','5894','6116','6141','6213','6274','6277','6383','6384','6391','6444','3781','4643','4644','3866','3875','4001','4002','4064','4161','4162','4207','4211','4213','4214','4246','4296','4319','4329','4333','4389','4412','4415','4444','4445','4613','4665','5430','5451','5544','5836','5854','5927','6046','6144','6491','6577','3832','3836','3972','4015','4035','4036','4044','4050','4053','4054','4055','4056','4083','4085','4088','4092','4096','4099','4116','4117','4145','4146','4188','4190','4192','4195','4196','4200','4237','4240','4265','4267','4547','4286','4336','4337','4344','4349','4552','4553','4557','4599','4600','4603','4606','4645','4653','4672','4703','4740','4752','4759','4762','4764','5303','5312','5327','5351','5356','5366','5367','5423','5482','5551','5916','5528','5543','5612','5627','5638','5660','5683','5687','5716','6010','6017','6021','6156','6433','6438','6440','6446','6523','6527','6528','6529','6661','6781','4308','4039','4094','4122','4138','4147','4247','4387','4671','4705','5297','5347','4638','5305','5310','5770','6509','6728','4169','5720','4283','4101','4106','4113','4114','4119','4121','4123','4125','4153','4156','4157','4163','4165','4174','4175','4176','4181','4183','4218','4239','4251','4252','4258','4261','4263','4264','4290','4294','4313','4316','4325','4338','4355','4356','4359','4373','4385','4388','4405','4452','4462','4473','4486','4491','4499','4500','4537','4584','4589','4616','4652','4699','4700','4701','4706','4707','4711','4720','4733','5341','5406','5407','5425','5426','5429','5446','5452','5453','5456','5457','5462','5465','5466','5470','5474','5475','5520','5531','5600','5601','5672','5708','5811','5895','6005','6022','6033','6062','6102','6104','6117','6145','6147','6148','6402','6705','4654','5391','5478','5507','5816','5819','5831','5855','6167','6337','5872','5906','5907','5957','5958','5959','5960','5961','5962','5963','5964','5965','5966','5967','5968','5969','5970','5971','5972','5973','5974','5975','5976','5977','5978','5979','5980','5981','5982','5983','5984','5985','5988','5989','5990','5992','5993','5994','5995','5997','5998','5999','6001','6002','6003','6007','6009','6013','6016','6634','6639','6660','6729','6730','6734','6741','5593','5595','4662','5563','5771','6056','6133','6140','6415','6419','6624','6716','4737','4744','6109','6184','5509','5512','5898','6107','6108','6590','6687','5609','5655','5838','6060','5727','5798','5802','6252','6253','6320','6361','5401','5624','5629','5654','5343','5579','5585','5607','6054','5904','6293','6459','6486','5649','4746','4765','5281','5285','5400','5422','5443','5536','5553','5571','5583','5698','5702','5715','5730','5731','5743','5789','5814','6166','6172','6258','6331','6377','6389','6390','6392','6549','6565','6726','4346','4360','4377','4503','4545','4594','4602','5289','5378','5472','5505','5535','5606','6596','6606','4287','4330','4363','4526','4601','5413','5419','5461','5489','6122','6123','6718','4089','4191','4224','4279','4669','4670','4776','5852','5869','6510','4210','4422','4673','4598','4687','4690','5481','5483','5486','5577','5690','5704','5890','5893','5920','5944','5945','5946','6030','6068','6159','6221','6229','6234','6237','6238','6240','6241','6314','6401','6426','6428','6429','6434','6466','6526','6551','6566','6611','6671','6677','6701','6702','6818','5721','5735','5861','4479','4518','4527','4535','4732','4741','4742','5295','5337','5362','5373','5393','5398','5421','5427','5435','5504','5506','5517','5525','5738','5566','5568','5569','5598','5678','5718','5740','5741','5757','5765','5766','5767','5779','5782','5827','5828','5940','6031','6037','6051','6069','6073','6163','6199','6246','6272','6410','6442','6518','6541','6548','6621','6787','6815','4197','4198','4612','4617','4625','4694','4771','5331','5365','5392','5526','5589','5591','5936','5937','6336','6388','6675','6697','6700','4199','4204','4206','4227','4229','4235','4238','4257','4371','4458','4488','4492','4493','4517','4538','4543','4556','4582','5338','5342','5374','5726','4724','5348','5353','5372','5540','6158','6271','6375','6550','6552','6580','6583','6723','4298') LIMIT 1   [ RunTime:0.0065s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000055s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.250115s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008883s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.242701s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000010s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.251379s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000480s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000529s ]
+
+[ 2017-09-20T22:17:55+08:00 ] 36.106.42.252 /Admin/Employee/orderCenter?keyword=&name=&date=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000284s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000329s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000365s ]
+SQL: SHOW COLUMNS FROM `yk_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yk_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_cms_set` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yk_cms_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_shop_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yk_shop_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_employee` [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000034s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000074s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004690s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004725s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000124s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000153s ]
+SQL: SHOW COLUMNS FROM `yk_vip` [ RunTime:0.0010s ]
+SQL: SELECT `id`,`path` FROM `yk_vip` WHERE `employee` = 24 AND `is_system` = 1  [ RunTime:0.0051s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-685%'  [ RunTime:0.0053s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-764%'  [ RunTime:0.0052s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-826%'  [ RunTime:0.0052s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-835%'  [ RunTime:0.0054s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-836%'  [ RunTime:0.0053s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-837%'  [ RunTime:0.0054s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-1003%'  [ RunTime:0.0052s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-1010%'  [ RunTime:0.0052s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-1022%'  [ RunTime:0.0052s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-1038%'  [ RunTime:0.0054s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-1079%'  [ RunTime:0.0052s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-1213%'  [ RunTime:0.0054s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-1216%'  [ RunTime:0.0056s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-1220%'  [ RunTime:0.0057s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-1304%'  [ RunTime:0.0058s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-1328%'  [ RunTime:0.0054s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-1330%'  [ RunTime:0.0086s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-1401%'  [ RunTime:0.0139s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-1622%'  [ RunTime:0.0120s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-1663%'  [ RunTime:0.0086s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-1680%'  [ RunTime:0.0145s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-1685%'  [ RunTime:0.0086s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-1688%'  [ RunTime:0.0119s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-1785%'  [ RunTime:0.0119s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-1867%'  [ RunTime:0.0166s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-2002%'  [ RunTime:0.0056s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-3596%'  [ RunTime:0.0055s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-3600%'  [ RunTime:0.0055s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-3601%'  [ RunTime:0.0054s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-3606%'  [ RunTime:0.0057s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-3670%'  [ RunTime:0.0061s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-3677%'  [ RunTime:0.0053s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-3692%'  [ RunTime:0.0053s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-3701%'  [ RunTime:0.0053s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-3703%'  [ RunTime:0.0053s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-3705%'  [ RunTime:0.0054s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-3747%'  [ RunTime:0.0055s ]
+SQL: SHOW COLUMNS FROM `yk_shop_order` [ RunTime:0.0011s ]
+SQL: SELECT O.*,V.pid,V.name as pname FROM yk_shop_order as O LEFT JOIN `yk_vip` AS V ON V.id = O.vipid  WHERE `vipid` IN ('4575','4595','5283','5287','5424','6180','6492','6759','3890','3896','4437','4241','3926','4074','4571','4572','4574','5615','5885','5889','5894','6116','6141','6213','6274','6277','6383','6384','6391','6444','3781','4643','4644','3866','3875','4001','4002','4064','4161','4162','4207','4211','4213','4214','4246','4296','4319','4329','4333','4389','4412','4415','4444','4445','4613','4665','5430','5451','5544','5836','5854','5927','6046','6144','6491','6577','3832','3836','3972','4015','4035','4036','4044','4050','4053','4054','4055','4056','4083','4085','4088','4092','4096','4099','4116','4117','4145','4146','4188','4190','4192','4195','4196','4200','4237','4240','4265','4267','4547','4286','4336','4337','4344','4349','4552','4553','4557','4599','4600','4603','4606','4645','4653','4672','4703','4740','4752','4759','4762','4764','5303','5312','5327','5351','5356','5366','5367','5423','5482','5551','5916','5528','5543','5612','5627','5638','5660','5683','5687','5716','6010','6017','6021','6156','6433','6438','6440','6446','6523','6527','6528','6529','6661','6781','4308','4039','4094','4122','4138','4147','4247','4387','4671','4705','5297','5347','4638','5305','5310','5770','6509','6728','4169','5720','4283','4101','4106','4113','4114','4119','4121','4123','4125','4153','4156','4157','4163','4165','4174','4175','4176','4181','4183','4218','4239','4251','4252','4258','4261','4263','4264','4290','4294','4313','4316','4325','4338','4355','4356','4359','4373','4385','4388','4405','4452','4462','4473','4486','4491','4499','4500','4537','4584','4589','4616','4652','4699','4700','4701','4706','4707','4711','4720','4733','5341','5406','5407','5425','5426','5429','5446','5452','5453','5456','5457','5462','5465','5466','5470','5474','5475','5520','5531','5600','5601','5672','5708','5811','5895','6005','6022','6033','6062','6102','6104','6117','6145','6147','6148','6402','6705','4654','5391','5478','5507','5816','5819','5831','5855','6167','6337','5872','5906','5907','5957','5958','5959','5960','5961','5962','5963','5964','5965','5966','5967','5968','5969','5970','5971','5972','5973','5974','5975','5976','5977','5978','5979','5980','5981','5982','5983','5984','5985','5988','5989','5990','5992','5993','5994','5995','5997','5998','5999','6001','6002','6003','6007','6009','6013','6016','6634','6639','6660','6729','6730','6734','6741','5593','5595','4662','5563','5771','6056','6133','6140','6415','6419','6624','6716','4737','4744','6109','6184','5509','5512','5898','6107','6108','6590','6687','5609','5655','5838','6060','5727','5798','5802','6252','6253','6320','6361','5401','5624','5629','5654','5343','5579','5585','5607','6054','5904','6293','6459','6486','5649','4746','4765','5281','5285','5400','5422','5443','5536','5553','5571','5583','5698','5702','5715','5730','5731','5743','5789','5814','6166','6172','6258','6331','6377','6389','6390','6392','6549','6565','6726','4346','4360','4377','4503','4545','4594','4602','5289','5378','5472','5505','5535','5606','6596','6606','4287','4330','4363','4526','4601','5413','5419','5461','5489','6122','6123','6718','4089','4191','4224','4279','4669','4670','4776','5852','5869','6510','4210','4422','4673','4598','4687','4690','5481','5483','5486','5577','5690','5704','5890','5893','5920','5944','5945','5946','6030','6068','6159','6221','6229','6234','6237','6238','6240','6241','6314','6401','6426','6428','6429','6434','6466','6526','6551','6566','6611','6671','6677','6701','6702','6818','5721','5735','5861','4479','4518','4527','4535','4732','4741','4742','5295','5337','5362','5373','5393','5398','5421','5427','5435','5504','5506','5517','5525','5738','5566','5568','5569','5598','5678','5718','5740','5741','5757','5765','5766','5767','5779','5782','5827','5828','5940','6031','6037','6051','6069','6073','6163','6199','6246','6272','6410','6442','6518','6541','6548','6621','6787','6815','4197','4198','4612','4617','4625','4694','4771','5331','5365','5392','5526','5589','5591','5936','5937','6336','6388','6675','6697','6700','4199','4204','4206','4227','4229','4235','4238','4257','4371','4458','4488','4492','4493','4517','4538','4543','4556','4582','5338','5342','5374','5726','4724','5348','5353','5372','5540','6158','6271','6375','6550','6552','6580','6583','6723','4298') ORDER BY O.ctime desc LIMIT 0,20   [ RunTime:0.0624s ]
+SQL: SELECT COUNT(*) AS tp_count FROM yk_shop_order as O LEFT JOIN `yk_vip` AS V ON V.id = O.vipid  WHERE `vipid` IN ('4575','4595','5283','5287','5424','6180','6492','6759','3890','3896','4437','4241','3926','4074','4571','4572','4574','5615','5885','5889','5894','6116','6141','6213','6274','6277','6383','6384','6391','6444','3781','4643','4644','3866','3875','4001','4002','4064','4161','4162','4207','4211','4213','4214','4246','4296','4319','4329','4333','4389','4412','4415','4444','4445','4613','4665','5430','5451','5544','5836','5854','5927','6046','6144','6491','6577','3832','3836','3972','4015','4035','4036','4044','4050','4053','4054','4055','4056','4083','4085','4088','4092','4096','4099','4116','4117','4145','4146','4188','4190','4192','4195','4196','4200','4237','4240','4265','4267','4547','4286','4336','4337','4344','4349','4552','4553','4557','4599','4600','4603','4606','4645','4653','4672','4703','4740','4752','4759','4762','4764','5303','5312','5327','5351','5356','5366','5367','5423','5482','5551','5916','5528','5543','5612','5627','5638','5660','5683','5687','5716','6010','6017','6021','6156','6433','6438','6440','6446','6523','6527','6528','6529','6661','6781','4308','4039','4094','4122','4138','4147','4247','4387','4671','4705','5297','5347','4638','5305','5310','5770','6509','6728','4169','5720','4283','4101','4106','4113','4114','4119','4121','4123','4125','4153','4156','4157','4163','4165','4174','4175','4176','4181','4183','4218','4239','4251','4252','4258','4261','4263','4264','4290','4294','4313','4316','4325','4338','4355','4356','4359','4373','4385','4388','4405','4452','4462','4473','4486','4491','4499','4500','4537','4584','4589','4616','4652','4699','4700','4701','4706','4707','4711','4720','4733','5341','5406','5407','5425','5426','5429','5446','5452','5453','5456','5457','5462','5465','5466','5470','5474','5475','5520','5531','5600','5601','5672','5708','5811','5895','6005','6022','6033','6062','6102','6104','6117','6145','6147','6148','6402','6705','4654','5391','5478','5507','5816','5819','5831','5855','6167','6337','5872','5906','5907','5957','5958','5959','5960','5961','5962','5963','5964','5965','5966','5967','5968','5969','5970','5971','5972','5973','5974','5975','5976','5977','5978','5979','5980','5981','5982','5983','5984','5985','5988','5989','5990','5992','5993','5994','5995','5997','5998','5999','6001','6002','6003','6007','6009','6013','6016','6634','6639','6660','6729','6730','6734','6741','5593','5595','4662','5563','5771','6056','6133','6140','6415','6419','6624','6716','4737','4744','6109','6184','5509','5512','5898','6107','6108','6590','6687','5609','5655','5838','6060','5727','5798','5802','6252','6253','6320','6361','5401','5624','5629','5654','5343','5579','5585','5607','6054','5904','6293','6459','6486','5649','4746','4765','5281','5285','5400','5422','5443','5536','5553','5571','5583','5698','5702','5715','5730','5731','5743','5789','5814','6166','6172','6258','6331','6377','6389','6390','6392','6549','6565','6726','4346','4360','4377','4503','4545','4594','4602','5289','5378','5472','5505','5535','5606','6596','6606','4287','4330','4363','4526','4601','5413','5419','5461','5489','6122','6123','6718','4089','4191','4224','4279','4669','4670','4776','5852','5869','6510','4210','4422','4673','4598','4687','4690','5481','5483','5486','5577','5690','5704','5890','5893','5920','5944','5945','5946','6030','6068','6159','6221','6229','6234','6237','6238','6240','6241','6314','6401','6426','6428','6429','6434','6466','6526','6551','6566','6611','6671','6677','6701','6702','6818','5721','5735','5861','4479','4518','4527','4535','4732','4741','4742','5295','5337','5362','5373','5393','5398','5421','5427','5435','5504','5506','5517','5525','5738','5566','5568','5569','5598','5678','5718','5740','5741','5757','5765','5766','5767','5779','5782','5827','5828','5940','6031','6037','6051','6069','6073','6163','6199','6246','6272','6410','6442','6518','6541','6548','6621','6787','6815','4197','4198','4612','4617','4625','4694','4771','5331','5365','5392','5526','5589','5591','5936','5937','6336','6388','6675','6697','6700','4199','4204','4206','4227','4229','4235','4238','4257','4371','4458','4488','4492','4493','4517','4538','4543','4556','4582','5338','5342','5374','5726','4724','5348','5353','5372','5540','6158','6271','6375','6550','6552','6580','6583','6723','4298') LIMIT 1   [ RunTime:0.0127s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000061s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.368130s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017347s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.355591s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000011s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.372837s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000386s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000425s ]
+
+[ 2017-09-20T22:18:13+08:00 ] 36.106.42.252 /Admin/Employee/orderCenter?keyword=&name=1401&date=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000283s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000320s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000356s ]
+SQL: SHOW COLUMNS FROM `yk_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yk_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_cms_set` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yk_cms_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_shop_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yk_shop_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_employee` [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000031s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000072s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004601s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004634s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000120s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000149s ]
+SQL: SHOW COLUMNS FROM `yk_vip` [ RunTime:0.0010s ]
+SQL: SELECT `id`,`path` FROM `yk_vip` WHERE `employee` = 24 AND `is_system` = 1  [ RunTime:0.0053s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-685%'  [ RunTime:0.0053s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-764%'  [ RunTime:0.0052s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-826%'  [ RunTime:0.0053s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-835%'  [ RunTime:0.0052s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-836%'  [ RunTime:0.0053s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-837%'  [ RunTime:0.0053s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-1003%'  [ RunTime:0.0052s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-1010%'  [ RunTime:0.0052s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-1022%'  [ RunTime:0.0053s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-1038%'  [ RunTime:0.0052s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-1079%'  [ RunTime:0.0052s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-1213%'  [ RunTime:0.0052s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-1216%'  [ RunTime:0.0053s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-1220%'  [ RunTime:0.0053s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-1304%'  [ RunTime:0.0052s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-1328%'  [ RunTime:0.0052s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-1330%'  [ RunTime:0.0052s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-1401%'  [ RunTime:0.0054s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-1622%'  [ RunTime:0.0053s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-1663%'  [ RunTime:0.0053s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-1680%'  [ RunTime:0.0052s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-1685%'  [ RunTime:0.0053s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-1688%'  [ RunTime:0.0052s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-1785%'  [ RunTime:0.0052s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-1867%'  [ RunTime:0.0052s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-2002%'  [ RunTime:0.0053s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-3596%'  [ RunTime:0.0053s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-3600%'  [ RunTime:0.0055s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-3601%'  [ RunTime:0.0053s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-3606%'  [ RunTime:0.0052s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-3670%'  [ RunTime:0.0052s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-3677%'  [ RunTime:0.0052s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-3692%'  [ RunTime:0.0052s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-3701%'  [ RunTime:0.0052s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-3703%'  [ RunTime:0.0053s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-3705%'  [ RunTime:0.0053s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-3747%'  [ RunTime:0.0057s ]
+SQL: SHOW COLUMNS FROM `yk_shop_order` [ RunTime:0.0011s ]
+SQL: SELECT O.*,V.pid,V.name as pname FROM yk_shop_order as O LEFT JOIN `yk_vip` AS V ON V.id = O.vipid  WHERE `vipid` IN ('4575','4595','5283','5287','5424','6180','6492','6759','3890','3896','4437','4241','3926','4074','4571','4572','4574','5615','5885','5889','5894','6116','6141','6213','6274','6277','6383','6384','6391','6444','3781','4643','4644','3866','3875','4001','4002','4064','4161','4162','4207','4211','4213','4214','4246','4296','4319','4329','4333','4389','4412','4415','4444','4445','4613','4665','5430','5451','5544','5836','5854','5927','6046','6144','6491','6577','3832','3836','3972','4015','4035','4036','4044','4050','4053','4054','4055','4056','4083','4085','4088','4092','4096','4099','4116','4117','4145','4146','4188','4190','4192','4195','4196','4200','4237','4240','4265','4267','4547','4286','4336','4337','4344','4349','4552','4553','4557','4599','4600','4603','4606','4645','4653','4672','4703','4740','4752','4759','4762','4764','5303','5312','5327','5351','5356','5366','5367','5423','5482','5551','5916','5528','5543','5612','5627','5638','5660','5683','5687','5716','6010','6017','6021','6156','6433','6438','6440','6446','6523','6527','6528','6529','6661','6781','4308','4039','4094','4122','4138','4147','4247','4387','4671','4705','5297','5347','4638','5305','5310','5770','6509','6728','4169','5720','4283','4101','4106','4113','4114','4119','4121','4123','4125','4153','4156','4157','4163','4165','4174','4175','4176','4181','4183','4218','4239','4251','4252','4258','4261','4263','4264','4290','4294','4313','4316','4325','4338','4355','4356','4359','4373','4385','4388','4405','4452','4462','4473','4486','4491','4499','4500','4537','4584','4589','4616','4652','4699','4700','4701','4706','4707','4711','4720','4733','5341','5406','5407','5425','5426','5429','5446','5452','5453','5456','5457','5462','5465','5466','5470','5474','5475','5520','5531','5600','5601','5672','5708','5811','5895','6005','6022','6033','6062','6102','6104','6117','6145','6147','6148','6402','6705','4654','5391','5478','5507','5816','5819','5831','5855','6167','6337','5872','5906','5907','5957','5958','5959','5960','5961','5962','5963','5964','5965','5966','5967','5968','5969','5970','5971','5972','5973','5974','5975','5976','5977','5978','5979','5980','5981','5982','5983','5984','5985','5988','5989','5990','5992','5993','5994','5995','5997','5998','5999','6001','6002','6003','6007','6009','6013','6016','6634','6639','6660','6729','6730','6734','6741','5593','5595','4662','5563','5771','6056','6133','6140','6415','6419','6624','6716','4737','4744','6109','6184','5509','5512','5898','6107','6108','6590','6687','5609','5655','5838','6060','5727','5798','5802','6252','6253','6320','6361','5401','5624','5629','5654','5343','5579','5585','5607','6054','5904','6293','6459','6486','5649','4746','4765','5281','5285','5400','5422','5443','5536','5553','5571','5583','5698','5702','5715','5730','5731','5743','5789','5814','6166','6172','6258','6331','6377','6389','6390','6392','6549','6565','6726','4346','4360','4377','4503','4545','4594','4602','5289','5378','5472','5505','5535','5606','6596','6606','4287','4330','4363','4526','4601','5413','5419','5461','5489','6122','6123','6718','4089','4191','4224','4279','4669','4670','4776','5852','5869','6510','4210','4422','4673','4598','4687','4690','5481','5483','5486','5577','5690','5704','5890','5893','5920','5944','5945','5946','6030','6068','6159','6221','6229','6234','6237','6238','6240','6241','6314','6401','6426','6428','6429','6434','6466','6526','6551','6566','6611','6671','6677','6701','6702','6818','5721','5735','5861','4479','4518','4527','4535','4732','4741','4742','5295','5337','5362','5373','5393','5398','5421','5427','5435','5504','5506','5517','5525','5738','5566','5568','5569','5598','5678','5718','5740','5741','5757','5765','5766','5767','5779','5782','5827','5828','5940','6031','6037','6051','6069','6073','6163','6199','6246','6272','6410','6442','6518','6541','6548','6621','6787','6815','4197','4198','4612','4617','4625','4694','4771','5331','5365','5392','5526','5589','5591','5936','5937','6336','6388','6675','6697','6700','4199','4204','4206','4227','4229','4235','4238','4257','4371','4458','4488','4492','4493','4517','4538','4543','4556','4582','5338','5342','5374','5726','4724','5348','5353','5372','5540','6158','6271','6375','6550','6552','6580','6583','6723','4298') AND ( `oid` LIKE '%1401%' OR `vipmobile` LIKE '%1401%' ) ORDER BY O.ctime desc LIMIT 0,20   [ RunTime:0.0065s ]
+SQL: SELECT COUNT(*) AS tp_count FROM yk_shop_order as O LEFT JOIN `yk_vip` AS V ON V.id = O.vipid  WHERE `vipid` IN ('4575','4595','5283','5287','5424','6180','6492','6759','3890','3896','4437','4241','3926','4074','4571','4572','4574','5615','5885','5889','5894','6116','6141','6213','6274','6277','6383','6384','6391','6444','3781','4643','4644','3866','3875','4001','4002','4064','4161','4162','4207','4211','4213','4214','4246','4296','4319','4329','4333','4389','4412','4415','4444','4445','4613','4665','5430','5451','5544','5836','5854','5927','6046','6144','6491','6577','3832','3836','3972','4015','4035','4036','4044','4050','4053','4054','4055','4056','4083','4085','4088','4092','4096','4099','4116','4117','4145','4146','4188','4190','4192','4195','4196','4200','4237','4240','4265','4267','4547','4286','4336','4337','4344','4349','4552','4553','4557','4599','4600','4603','4606','4645','4653','4672','4703','4740','4752','4759','4762','4764','5303','5312','5327','5351','5356','5366','5367','5423','5482','5551','5916','5528','5543','5612','5627','5638','5660','5683','5687','5716','6010','6017','6021','6156','6433','6438','6440','6446','6523','6527','6528','6529','6661','6781','4308','4039','4094','4122','4138','4147','4247','4387','4671','4705','5297','5347','4638','5305','5310','5770','6509','6728','4169','5720','4283','4101','4106','4113','4114','4119','4121','4123','4125','4153','4156','4157','4163','4165','4174','4175','4176','4181','4183','4218','4239','4251','4252','4258','4261','4263','4264','4290','4294','4313','4316','4325','4338','4355','4356','4359','4373','4385','4388','4405','4452','4462','4473','4486','4491','4499','4500','4537','4584','4589','4616','4652','4699','4700','4701','4706','4707','4711','4720','4733','5341','5406','5407','5425','5426','5429','5446','5452','5453','5456','5457','5462','5465','5466','5470','5474','5475','5520','5531','5600','5601','5672','5708','5811','5895','6005','6022','6033','6062','6102','6104','6117','6145','6147','6148','6402','6705','4654','5391','5478','5507','5816','5819','5831','5855','6167','6337','5872','5906','5907','5957','5958','5959','5960','5961','5962','5963','5964','5965','5966','5967','5968','5969','5970','5971','5972','5973','5974','5975','5976','5977','5978','5979','5980','5981','5982','5983','5984','5985','5988','5989','5990','5992','5993','5994','5995','5997','5998','5999','6001','6002','6003','6007','6009','6013','6016','6634','6639','6660','6729','6730','6734','6741','5593','5595','4662','5563','5771','6056','6133','6140','6415','6419','6624','6716','4737','4744','6109','6184','5509','5512','5898','6107','6108','6590','6687','5609','5655','5838','6060','5727','5798','5802','6252','6253','6320','6361','5401','5624','5629','5654','5343','5579','5585','5607','6054','5904','6293','6459','6486','5649','4746','4765','5281','5285','5400','5422','5443','5536','5553','5571','5583','5698','5702','5715','5730','5731','5743','5789','5814','6166','6172','6258','6331','6377','6389','6390','6392','6549','6565','6726','4346','4360','4377','4503','4545','4594','4602','5289','5378','5472','5505','5535','5606','6596','6606','4287','4330','4363','4526','4601','5413','5419','5461','5489','6122','6123','6718','4089','4191','4224','4279','4669','4670','4776','5852','5869','6510','4210','4422','4673','4598','4687','4690','5481','5483','5486','5577','5690','5704','5890','5893','5920','5944','5945','5946','6030','6068','6159','6221','6229','6234','6237','6238','6240','6241','6314','6401','6426','6428','6429','6434','6466','6526','6551','6566','6611','6671','6677','6701','6702','6818','5721','5735','5861','4479','4518','4527','4535','4732','4741','4742','5295','5337','5362','5373','5393','5398','5421','5427','5435','5504','5506','5517','5525','5738','5566','5568','5569','5598','5678','5718','5740','5741','5757','5765','5766','5767','5779','5782','5827','5828','5940','6031','6037','6051','6069','6073','6163','6199','6246','6272','6410','6442','6518','6541','6548','6621','6787','6815','4197','4198','4612','4617','4625','4694','4771','5331','5365','5392','5526','5589','5591','5936','5937','6336','6388','6675','6697','6700','4199','4204','4206','4227','4229','4235','4238','4257','4371','4458','4488','4492','4493','4517','4538','4543','4556','4582','5338','5342','5374','5726','4724','5348','5353','5372','5540','6158','6271','6375','6550','6552','6580','6583','6723','4298') AND ( `oid` LIKE '%1401%' OR `vipmobile` LIKE '%1401%' ) LIMIT 1   [ RunTime:0.0064s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000056s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.232152s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008625s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.224816s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000009s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.233333s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000370s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000409s ]
+
+[ 2017-09-20T22:18:39+08:00 ] 36.106.42.252 /Admin/Employee/orderCenter?keyword=%E7%8E%8B%E5%BB%BA%E7%8F%89&name=1401&date=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000312s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000358s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000394s ]
+SQL: SHOW COLUMNS FROM `yk_set` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `yk_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yk_cms_set` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yk_cms_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_shop_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yk_shop_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_employee` [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000032s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000071s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004638s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004671s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000141s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000171s ]
+SQL: SHOW COLUMNS FROM `yk_vip` [ RunTime:0.0010s ]
+SQL: SELECT `id`,`path` FROM `yk_vip` WHERE `employee` = 24 AND `is_system` = 1  [ RunTime:0.0052s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-685%'  [ RunTime:0.0055s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-764%'  [ RunTime:0.0053s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-826%'  [ RunTime:0.0052s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-835%'  [ RunTime:0.0052s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-836%'  [ RunTime:0.0052s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-837%'  [ RunTime:0.0053s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-1003%'  [ RunTime:0.0053s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-1010%'  [ RunTime:0.0055s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-1022%'  [ RunTime:0.0052s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-1038%'  [ RunTime:0.0055s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-1079%'  [ RunTime:0.0053s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-1213%'  [ RunTime:0.0052s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-1216%'  [ RunTime:0.0058s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-1220%'  [ RunTime:0.0054s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-1304%'  [ RunTime:0.0053s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-1328%'  [ RunTime:0.0059s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-1330%'  [ RunTime:0.0054s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-1401%'  [ RunTime:0.0055s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-1622%'  [ RunTime:0.0054s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-1663%'  [ RunTime:0.0055s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-1680%'  [ RunTime:0.0054s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-1685%'  [ RunTime:0.0052s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-1688%'  [ RunTime:0.0052s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-1785%'  [ RunTime:0.0054s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-1867%'  [ RunTime:0.0052s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-2002%'  [ RunTime:0.0053s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-3596%'  [ RunTime:0.0052s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-3600%'  [ RunTime:0.0053s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-3601%'  [ RunTime:0.0054s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-3606%'  [ RunTime:0.0055s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-3670%'  [ RunTime:0.0052s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-3677%'  [ RunTime:0.0052s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-3692%'  [ RunTime:0.0052s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-3701%'  [ RunTime:0.0052s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-3703%'  [ RunTime:0.0053s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-3705%'  [ RunTime:0.0052s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-3747%'  [ RunTime:0.0053s ]
+SQL: SHOW COLUMNS FROM `yk_shop_order` [ RunTime:0.0011s ]
+SQL: SELECT O.*,V.pid,V.name as pname FROM yk_shop_order as O LEFT JOIN `yk_vip` AS V ON V.id = O.vipid  WHERE `vipid` IN ('4575','4595','5283','5287','5424','6180','6492','6759','3890','3896','4437','4241','3926','4074','4571','4572','4574','5615','5885','5889','5894','6116','6141','6213','6274','6277','6383','6384','6391','6444','3781','4643','4644','3866','3875','4001','4002','4064','4161','4162','4207','4211','4213','4214','4246','4296','4319','4329','4333','4389','4412','4415','4444','4445','4613','4665','5430','5451','5544','5836','5854','5927','6046','6144','6491','6577','3832','3836','3972','4015','4035','4036','4044','4050','4053','4054','4055','4056','4083','4085','4088','4092','4096','4099','4116','4117','4145','4146','4188','4190','4192','4195','4196','4200','4237','4240','4265','4267','4547','4286','4336','4337','4344','4349','4552','4553','4557','4599','4600','4603','4606','4645','4653','4672','4703','4740','4752','4759','4762','4764','5303','5312','5327','5351','5356','5366','5367','5423','5482','5551','5916','5528','5543','5612','5627','5638','5660','5683','5687','5716','6010','6017','6021','6156','6433','6438','6440','6446','6523','6527','6528','6529','6661','6781','4308','4039','4094','4122','4138','4147','4247','4387','4671','4705','5297','5347','4638','5305','5310','5770','6509','6728','4169','5720','4283','4101','4106','4113','4114','4119','4121','4123','4125','4153','4156','4157','4163','4165','4174','4175','4176','4181','4183','4218','4239','4251','4252','4258','4261','4263','4264','4290','4294','4313','4316','4325','4338','4355','4356','4359','4373','4385','4388','4405','4452','4462','4473','4486','4491','4499','4500','4537','4584','4589','4616','4652','4699','4700','4701','4706','4707','4711','4720','4733','5341','5406','5407','5425','5426','5429','5446','5452','5453','5456','5457','5462','5465','5466','5470','5474','5475','5520','5531','5600','5601','5672','5708','5811','5895','6005','6022','6033','6062','6102','6104','6117','6145','6147','6148','6402','6705','4654','5391','5478','5507','5816','5819','5831','5855','6167','6337','5872','5906','5907','5957','5958','5959','5960','5961','5962','5963','5964','5965','5966','5967','5968','5969','5970','5971','5972','5973','5974','5975','5976','5977','5978','5979','5980','5981','5982','5983','5984','5985','5988','5989','5990','5992','5993','5994','5995','5997','5998','5999','6001','6002','6003','6007','6009','6013','6016','6634','6639','6660','6729','6730','6734','6741','5593','5595','4662','5563','5771','6056','6133','6140','6415','6419','6624','6716','4737','4744','6109','6184','5509','5512','5898','6107','6108','6590','6687','5609','5655','5838','6060','5727','5798','5802','6252','6253','6320','6361','5401','5624','5629','5654','5343','5579','5585','5607','6054','5904','6293','6459','6486','5649','4746','4765','5281','5285','5400','5422','5443','5536','5553','5571','5583','5698','5702','5715','5730','5731','5743','5789','5814','6166','6172','6258','6331','6377','6389','6390','6392','6549','6565','6726','4346','4360','4377','4503','4545','4594','4602','5289','5378','5472','5505','5535','5606','6596','6606','4287','4330','4363','4526','4601','5413','5419','5461','5489','6122','6123','6718','4089','4191','4224','4279','4669','4670','4776','5852','5869','6510','4210','4422','4673','4598','4687','4690','5481','5483','5486','5577','5690','5704','5890','5893','5920','5944','5945','5946','6030','6068','6159','6221','6229','6234','6237','6238','6240','6241','6314','6401','6426','6428','6429','6434','6466','6526','6551','6566','6611','6671','6677','6701','6702','6818','5721','5735','5861','4479','4518','4527','4535','4732','4741','4742','5295','5337','5362','5373','5393','5398','5421','5427','5435','5504','5506','5517','5525','5738','5566','5568','5569','5598','5678','5718','5740','5741','5757','5765','5766','5767','5779','5782','5827','5828','5940','6031','6037','6051','6069','6073','6163','6199','6246','6272','6410','6442','6518','6541','6548','6621','6787','6815','4197','4198','4612','4617','4625','4694','4771','5331','5365','5392','5526','5589','5591','5936','5937','6336','6388','6675','6697','6700','4199','4204','4206','4227','4229','4235','4238','4257','4371','4458','4488','4492','4493','4517','4538','4543','4556','4582','5338','5342','5374','5726','4724','5348','5353','5372','5540','6158','6271','6375','6550','6552','6580','6583','6723','4298') AND (  V.name LIKE '%王建珉%' OR V.mobile LIKE '%王建珉%' OR V.pid = '王建珉' ) AND ( `oid` LIKE '%1401%' OR `vipmobile` LIKE '%1401%' ) ORDER BY O.ctime desc LIMIT 0,20   [ RunTime:0.0070s ]
+SQL: SELECT COUNT(*) AS tp_count FROM yk_shop_order as O LEFT JOIN `yk_vip` AS V ON V.id = O.vipid  WHERE `vipid` IN ('4575','4595','5283','5287','5424','6180','6492','6759','3890','3896','4437','4241','3926','4074','4571','4572','4574','5615','5885','5889','5894','6116','6141','6213','6274','6277','6383','6384','6391','6444','3781','4643','4644','3866','3875','4001','4002','4064','4161','4162','4207','4211','4213','4214','4246','4296','4319','4329','4333','4389','4412','4415','4444','4445','4613','4665','5430','5451','5544','5836','5854','5927','6046','6144','6491','6577','3832','3836','3972','4015','4035','4036','4044','4050','4053','4054','4055','4056','4083','4085','4088','4092','4096','4099','4116','4117','4145','4146','4188','4190','4192','4195','4196','4200','4237','4240','4265','4267','4547','4286','4336','4337','4344','4349','4552','4553','4557','4599','4600','4603','4606','4645','4653','4672','4703','4740','4752','4759','4762','4764','5303','5312','5327','5351','5356','5366','5367','5423','5482','5551','5916','5528','5543','5612','5627','5638','5660','5683','5687','5716','6010','6017','6021','6156','6433','6438','6440','6446','6523','6527','6528','6529','6661','6781','4308','4039','4094','4122','4138','4147','4247','4387','4671','4705','5297','5347','4638','5305','5310','5770','6509','6728','4169','5720','4283','4101','4106','4113','4114','4119','4121','4123','4125','4153','4156','4157','4163','4165','4174','4175','4176','4181','4183','4218','4239','4251','4252','4258','4261','4263','4264','4290','4294','4313','4316','4325','4338','4355','4356','4359','4373','4385','4388','4405','4452','4462','4473','4486','4491','4499','4500','4537','4584','4589','4616','4652','4699','4700','4701','4706','4707','4711','4720','4733','5341','5406','5407','5425','5426','5429','5446','5452','5453','5456','5457','5462','5465','5466','5470','5474','5475','5520','5531','5600','5601','5672','5708','5811','5895','6005','6022','6033','6062','6102','6104','6117','6145','6147','6148','6402','6705','4654','5391','5478','5507','5816','5819','5831','5855','6167','6337','5872','5906','5907','5957','5958','5959','5960','5961','5962','5963','5964','5965','5966','5967','5968','5969','5970','5971','5972','5973','5974','5975','5976','5977','5978','5979','5980','5981','5982','5983','5984','5985','5988','5989','5990','5992','5993','5994','5995','5997','5998','5999','6001','6002','6003','6007','6009','6013','6016','6634','6639','6660','6729','6730','6734','6741','5593','5595','4662','5563','5771','6056','6133','6140','6415','6419','6624','6716','4737','4744','6109','6184','5509','5512','5898','6107','6108','6590','6687','5609','5655','5838','6060','5727','5798','5802','6252','6253','6320','6361','5401','5624','5629','5654','5343','5579','5585','5607','6054','5904','6293','6459','6486','5649','4746','4765','5281','5285','5400','5422','5443','5536','5553','5571','5583','5698','5702','5715','5730','5731','5743','5789','5814','6166','6172','6258','6331','6377','6389','6390','6392','6549','6565','6726','4346','4360','4377','4503','4545','4594','4602','5289','5378','5472','5505','5535','5606','6596','6606','4287','4330','4363','4526','4601','5413','5419','5461','5489','6122','6123','6718','4089','4191','4224','4279','4669','4670','4776','5852','5869','6510','4210','4422','4673','4598','4687','4690','5481','5483','5486','5577','5690','5704','5890','5893','5920','5944','5945','5946','6030','6068','6159','6221','6229','6234','6237','6238','6240','6241','6314','6401','6426','6428','6429','6434','6466','6526','6551','6566','6611','6671','6677','6701','6702','6818','5721','5735','5861','4479','4518','4527','4535','4732','4741','4742','5295','5337','5362','5373','5393','5398','5421','5427','5435','5504','5506','5517','5525','5738','5566','5568','5569','5598','5678','5718','5740','5741','5757','5765','5766','5767','5779','5782','5827','5828','5940','6031','6037','6051','6069','6073','6163','6199','6246','6272','6410','6442','6518','6541','6548','6621','6787','6815','4197','4198','4612','4617','4625','4694','4771','5331','5365','5392','5526','5589','5591','5936','5937','6336','6388','6675','6697','6700','4199','4204','4206','4227','4229','4235','4238','4257','4371','4458','4488','4492','4493','4517','4538','4543','4556','4582','5338','5342','5374','5726','4724','5348','5353','5372','5540','6158','6271','6375','6550','6552','6580','6583','6723','4298') AND (  V.name LIKE '%王建珉%' OR V.mobile LIKE '%王建珉%' OR V.pid = '王建珉' ) AND ( `oid` LIKE '%1401%' OR `vipmobile` LIKE '%1401%' ) LIMIT 1   [ RunTime:0.0084s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000057s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.238838s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010333s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.229886s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000011s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.240094s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000383s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000422s ]
+
+[ 2017-09-20T22:19:17+08:00 ] 36.106.42.252 /Admin/Employee/orderCenter?keyword=%E7%8E%8B%E5%BB%BA%E7%8F%89&name=1401&date=8.1-8.30
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000280s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000328s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000364s ]
+SQL: SHOW COLUMNS FROM `yk_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yk_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_cms_set` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yk_cms_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_shop_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yk_shop_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_employee` [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000031s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000089s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004598s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004631s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000121s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000150s ]
+SQL: SHOW COLUMNS FROM `yk_vip` [ RunTime:0.0010s ]
+SQL: SELECT `id`,`path` FROM `yk_vip` WHERE `employee` = 24 AND `is_system` = 1  [ RunTime:0.0051s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-685%'  [ RunTime:0.0054s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-764%'  [ RunTime:0.0052s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-826%'  [ RunTime:0.0052s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-835%'  [ RunTime:0.0053s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-836%'  [ RunTime:0.0056s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-837%'  [ RunTime:0.0054s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-1003%'  [ RunTime:0.0053s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-1010%'  [ RunTime:0.0056s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-1022%'  [ RunTime:0.0061s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-1038%'  [ RunTime:0.0054s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-1079%'  [ RunTime:0.0053s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-1213%'  [ RunTime:0.0054s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-1216%'  [ RunTime:0.0055s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-1220%'  [ RunTime:0.0055s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-1304%'  [ RunTime:0.0062s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-1328%'  [ RunTime:0.0053s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-1330%'  [ RunTime:0.0053s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-1401%'  [ RunTime:0.0056s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-1622%'  [ RunTime:0.0056s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-1663%'  [ RunTime:0.0053s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-1680%'  [ RunTime:0.0055s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-1685%'  [ RunTime:0.0055s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-1688%'  [ RunTime:0.0053s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-1785%'  [ RunTime:0.0053s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-1867%'  [ RunTime:0.0053s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-2002%'  [ RunTime:0.0056s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-3596%'  [ RunTime:0.0053s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-3600%'  [ RunTime:0.0053s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-3601%'  [ RunTime:0.0052s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-3606%'  [ RunTime:0.0053s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-3670%'  [ RunTime:0.0070s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-3677%'  [ RunTime:0.0054s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-3692%'  [ RunTime:0.0053s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-3701%'  [ RunTime:0.0052s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-3703%'  [ RunTime:0.0052s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-3705%'  [ RunTime:0.0052s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-3747%'  [ RunTime:0.0053s ]
+SQL: SHOW COLUMNS FROM `yk_shop_order` [ RunTime:0.0011s ]
+SQL: SELECT O.*,V.pid,V.name as pname FROM yk_shop_order as O LEFT JOIN `yk_vip` AS V ON V.id = O.vipid  WHERE `vipid` IN ('4575','4595','5283','5287','5424','6180','6492','6759','3890','3896','4437','4241','3926','4074','4571','4572','4574','5615','5885','5889','5894','6116','6141','6213','6274','6277','6383','6384','6391','6444','3781','4643','4644','3866','3875','4001','4002','4064','4161','4162','4207','4211','4213','4214','4246','4296','4319','4329','4333','4389','4412','4415','4444','4445','4613','4665','5430','5451','5544','5836','5854','5927','6046','6144','6491','6577','3832','3836','3972','4015','4035','4036','4044','4050','4053','4054','4055','4056','4083','4085','4088','4092','4096','4099','4116','4117','4145','4146','4188','4190','4192','4195','4196','4200','4237','4240','4265','4267','4547','4286','4336','4337','4344','4349','4552','4553','4557','4599','4600','4603','4606','4645','4653','4672','4703','4740','4752','4759','4762','4764','5303','5312','5327','5351','5356','5366','5367','5423','5482','5551','5916','5528','5543','5612','5627','5638','5660','5683','5687','5716','6010','6017','6021','6156','6433','6438','6440','6446','6523','6527','6528','6529','6661','6781','4308','4039','4094','4122','4138','4147','4247','4387','4671','4705','5297','5347','4638','5305','5310','5770','6509','6728','4169','5720','4283','4101','4106','4113','4114','4119','4121','4123','4125','4153','4156','4157','4163','4165','4174','4175','4176','4181','4183','4218','4239','4251','4252','4258','4261','4263','4264','4290','4294','4313','4316','4325','4338','4355','4356','4359','4373','4385','4388','4405','4452','4462','4473','4486','4491','4499','4500','4537','4584','4589','4616','4652','4699','4700','4701','4706','4707','4711','4720','4733','5341','5406','5407','5425','5426','5429','5446','5452','5453','5456','5457','5462','5465','5466','5470','5474','5475','5520','5531','5600','5601','5672','5708','5811','5895','6005','6022','6033','6062','6102','6104','6117','6145','6147','6148','6402','6705','4654','5391','5478','5507','5816','5819','5831','5855','6167','6337','5872','5906','5907','5957','5958','5959','5960','5961','5962','5963','5964','5965','5966','5967','5968','5969','5970','5971','5972','5973','5974','5975','5976','5977','5978','5979','5980','5981','5982','5983','5984','5985','5988','5989','5990','5992','5993','5994','5995','5997','5998','5999','6001','6002','6003','6007','6009','6013','6016','6634','6639','6660','6729','6730','6734','6741','5593','5595','4662','5563','5771','6056','6133','6140','6415','6419','6624','6716','4737','4744','6109','6184','5509','5512','5898','6107','6108','6590','6687','5609','5655','5838','6060','5727','5798','5802','6252','6253','6320','6361','5401','5624','5629','5654','5343','5579','5585','5607','6054','5904','6293','6459','6486','5649','4746','4765','5281','5285','5400','5422','5443','5536','5553','5571','5583','5698','5702','5715','5730','5731','5743','5789','5814','6166','6172','6258','6331','6377','6389','6390','6392','6549','6565','6726','4346','4360','4377','4503','4545','4594','4602','5289','5378','5472','5505','5535','5606','6596','6606','4287','4330','4363','4526','4601','5413','5419','5461','5489','6122','6123','6718','4089','4191','4224','4279','4669','4670','4776','5852','5869','6510','4210','4422','4673','4598','4687','4690','5481','5483','5486','5577','5690','5704','5890','5893','5920','5944','5945','5946','6030','6068','6159','6221','6229','6234','6237','6238','6240','6241','6314','6401','6426','6428','6429','6434','6466','6526','6551','6566','6611','6671','6677','6701','6702','6818','5721','5735','5861','4479','4518','4527','4535','4732','4741','4742','5295','5337','5362','5373','5393','5398','5421','5427','5435','5504','5506','5517','5525','5738','5566','5568','5569','5598','5678','5718','5740','5741','5757','5765','5766','5767','5779','5782','5827','5828','5940','6031','6037','6051','6069','6073','6163','6199','6246','6272','6410','6442','6518','6541','6548','6621','6787','6815','4197','4198','4612','4617','4625','4694','4771','5331','5365','5392','5526','5589','5591','5936','5937','6336','6388','6675','6697','6700','4199','4204','4206','4227','4229','4235','4238','4257','4371','4458','4488','4492','4493','4517','4538','4543','4556','4582','5338','5342','5374','5726','4724','5348','5353','5372','5540','6158','6271','6375','6550','6552','6580','6583','6723','4298') AND (  V.name LIKE '%王建珉%' OR V.mobile LIKE '%王建珉%' OR V.pid = '王建珉' ) AND ( `oid` LIKE '%1401%' OR `vipmobile` LIKE '%1401%' ) AND O.ctime BETWEEN 0 AND 86400 ORDER BY O.ctime desc LIMIT 0,20   [ RunTime:0.0071s ]
+SQL: SELECT COUNT(*) AS tp_count FROM yk_shop_order as O LEFT JOIN `yk_vip` AS V ON V.id = O.vipid  WHERE `vipid` IN ('4575','4595','5283','5287','5424','6180','6492','6759','3890','3896','4437','4241','3926','4074','4571','4572','4574','5615','5885','5889','5894','6116','6141','6213','6274','6277','6383','6384','6391','6444','3781','4643','4644','3866','3875','4001','4002','4064','4161','4162','4207','4211','4213','4214','4246','4296','4319','4329','4333','4389','4412','4415','4444','4445','4613','4665','5430','5451','5544','5836','5854','5927','6046','6144','6491','6577','3832','3836','3972','4015','4035','4036','4044','4050','4053','4054','4055','4056','4083','4085','4088','4092','4096','4099','4116','4117','4145','4146','4188','4190','4192','4195','4196','4200','4237','4240','4265','4267','4547','4286','4336','4337','4344','4349','4552','4553','4557','4599','4600','4603','4606','4645','4653','4672','4703','4740','4752','4759','4762','4764','5303','5312','5327','5351','5356','5366','5367','5423','5482','5551','5916','5528','5543','5612','5627','5638','5660','5683','5687','5716','6010','6017','6021','6156','6433','6438','6440','6446','6523','6527','6528','6529','6661','6781','4308','4039','4094','4122','4138','4147','4247','4387','4671','4705','5297','5347','4638','5305','5310','5770','6509','6728','4169','5720','4283','4101','4106','4113','4114','4119','4121','4123','4125','4153','4156','4157','4163','4165','4174','4175','4176','4181','4183','4218','4239','4251','4252','4258','4261','4263','4264','4290','4294','4313','4316','4325','4338','4355','4356','4359','4373','4385','4388','4405','4452','4462','4473','4486','4491','4499','4500','4537','4584','4589','4616','4652','4699','4700','4701','4706','4707','4711','4720','4733','5341','5406','5407','5425','5426','5429','5446','5452','5453','5456','5457','5462','5465','5466','5470','5474','5475','5520','5531','5600','5601','5672','5708','5811','5895','6005','6022','6033','6062','6102','6104','6117','6145','6147','6148','6402','6705','4654','5391','5478','5507','5816','5819','5831','5855','6167','6337','5872','5906','5907','5957','5958','5959','5960','5961','5962','5963','5964','5965','5966','5967','5968','5969','5970','5971','5972','5973','5974','5975','5976','5977','5978','5979','5980','5981','5982','5983','5984','5985','5988','5989','5990','5992','5993','5994','5995','5997','5998','5999','6001','6002','6003','6007','6009','6013','6016','6634','6639','6660','6729','6730','6734','6741','5593','5595','4662','5563','5771','6056','6133','6140','6415','6419','6624','6716','4737','4744','6109','6184','5509','5512','5898','6107','6108','6590','6687','5609','5655','5838','6060','5727','5798','5802','6252','6253','6320','6361','5401','5624','5629','5654','5343','5579','5585','5607','6054','5904','6293','6459','6486','5649','4746','4765','5281','5285','5400','5422','5443','5536','5553','5571','5583','5698','5702','5715','5730','5731','5743','5789','5814','6166','6172','6258','6331','6377','6389','6390','6392','6549','6565','6726','4346','4360','4377','4503','4545','4594','4602','5289','5378','5472','5505','5535','5606','6596','6606','4287','4330','4363','4526','4601','5413','5419','5461','5489','6122','6123','6718','4089','4191','4224','4279','4669','4670','4776','5852','5869','6510','4210','4422','4673','4598','4687','4690','5481','5483','5486','5577','5690','5704','5890','5893','5920','5944','5945','5946','6030','6068','6159','6221','6229','6234','6237','6238','6240','6241','6314','6401','6426','6428','6429','6434','6466','6526','6551','6566','6611','6671','6677','6701','6702','6818','5721','5735','5861','4479','4518','4527','4535','4732','4741','4742','5295','5337','5362','5373','5393','5398','5421','5427','5435','5504','5506','5517','5525','5738','5566','5568','5569','5598','5678','5718','5740','5741','5757','5765','5766','5767','5779','5782','5827','5828','5940','6031','6037','6051','6069','6073','6163','6199','6246','6272','6410','6442','6518','6541','6548','6621','6787','6815','4197','4198','4612','4617','4625','4694','4771','5331','5365','5392','5526','5589','5591','5936','5937','6336','6388','6675','6697','6700','4199','4204','4206','4227','4229','4235','4238','4257','4371','4458','4488','4492','4493','4517','4538','4543','4556','4582','5338','5342','5374','5726','4724','5348','5353','5372','5540','6158','6271','6375','6550','6552','6580','6583','6723','4298') AND (  V.name LIKE '%王建珉%' OR V.mobile LIKE '%王建珉%' OR V.pid = '王建珉' ) AND ( `oid` LIKE '%1401%' OR `vipmobile` LIKE '%1401%' ) AND O.ctime BETWEEN 0 AND 86400 LIMIT 1   [ RunTime:0.0068s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000055s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.240114s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008603s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.232776s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000009s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.241271s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000372s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000411s ]
+
+[ 2017-09-20T22:20:01+08:00 ] 36.106.42.252 /Admin/Employee/orderCenter/status/3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000268s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000350s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000387s ]
+SQL: SHOW COLUMNS FROM `yk_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yk_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_cms_set` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yk_cms_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_shop_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yk_shop_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_employee` [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000029s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000067s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004638s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004672s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000120s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000150s ]
+SQL: SHOW COLUMNS FROM `yk_vip` [ RunTime:0.0010s ]
+SQL: SELECT `id`,`path` FROM `yk_vip` WHERE `employee` = 24 AND `is_system` = 1  [ RunTime:0.0051s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-685%'  [ RunTime:0.0053s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-764%'  [ RunTime:0.0053s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-826%'  [ RunTime:0.0052s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-835%'  [ RunTime:0.0052s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-836%'  [ RunTime:0.0053s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-837%'  [ RunTime:0.0054s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-1003%'  [ RunTime:0.0053s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-1010%'  [ RunTime:0.0052s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-1022%'  [ RunTime:0.0053s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-1038%'  [ RunTime:0.0053s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-1079%'  [ RunTime:0.0052s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-1213%'  [ RunTime:0.0054s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-1216%'  [ RunTime:0.0054s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-1220%'  [ RunTime:0.0055s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-1304%'  [ RunTime:0.0053s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-1328%'  [ RunTime:0.0052s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-1330%'  [ RunTime:0.0053s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-1401%'  [ RunTime:0.0052s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-1622%'  [ RunTime:0.0053s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-1663%'  [ RunTime:0.0052s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-1680%'  [ RunTime:0.0052s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-1685%'  [ RunTime:0.0052s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-1688%'  [ RunTime:0.0052s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-1785%'  [ RunTime:0.0052s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-1867%'  [ RunTime:0.0052s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-2002%'  [ RunTime:0.0052s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-3596%'  [ RunTime:0.0052s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-3600%'  [ RunTime:0.0053s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-3601%'  [ RunTime:0.0052s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-3606%'  [ RunTime:0.0053s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-3670%'  [ RunTime:0.0052s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-3677%'  [ RunTime:0.0052s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-3692%'  [ RunTime:0.0053s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-3701%'  [ RunTime:0.0052s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-3703%'  [ RunTime:0.0052s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-3705%'  [ RunTime:0.0052s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `path` LIKE '0-3747%'  [ RunTime:0.0052s ]
+SQL: SHOW COLUMNS FROM `yk_shop_order` [ RunTime:0.0011s ]
+SQL: SELECT O.*,V.pid,V.name as pname FROM yk_shop_order as O LEFT JOIN `yk_vip` AS V ON V.id = O.vipid  WHERE O.status = '3' AND `vipid` IN ('4575','4595','5283','5287','5424','6180','6492','6759','3890','3896','4437','4241','3926','4074','4571','4572','4574','5615','5885','5889','5894','6116','6141','6213','6274','6277','6383','6384','6391','6444','3781','4643','4644','3866','3875','4001','4002','4064','4161','4162','4207','4211','4213','4214','4246','4296','4319','4329','4333','4389','4412','4415','4444','4445','4613','4665','5430','5451','5544','5836','5854','5927','6046','6144','6491','6577','3832','3836','3972','4015','4035','4036','4044','4050','4053','4054','4055','4056','4083','4085','4088','4092','4096','4099','4116','4117','4145','4146','4188','4190','4192','4195','4196','4200','4237','4240','4265','4267','4547','4286','4336','4337','4344','4349','4552','4553','4557','4599','4600','4603','4606','4645','4653','4672','4703','4740','4752','4759','4762','4764','5303','5312','5327','5351','5356','5366','5367','5423','5482','5551','5916','5528','5543','5612','5627','5638','5660','5683','5687','5716','6010','6017','6021','6156','6433','6438','6440','6446','6523','6527','6528','6529','6661','6781','4308','4039','4094','4122','4138','4147','4247','4387','4671','4705','5297','5347','4638','5305','5310','5770','6509','6728','4169','5720','4283','4101','4106','4113','4114','4119','4121','4123','4125','4153','4156','4157','4163','4165','4174','4175','4176','4181','4183','4218','4239','4251','4252','4258','4261','4263','4264','4290','4294','4313','4316','4325','4338','4355','4356','4359','4373','4385','4388','4405','4452','4462','4473','4486','4491','4499','4500','4537','4584','4589','4616','4652','4699','4700','4701','4706','4707','4711','4720','4733','5341','5406','5407','5425','5426','5429','5446','5452','5453','5456','5457','5462','5465','5466','5470','5474','5475','5520','5531','5600','5601','5672','5708','5811','5895','6005','6022','6033','6062','6102','6104','6117','6145','6147','6148','6402','6705','4654','5391','5478','5507','5816','5819','5831','5855','6167','6337','5872','5906','5907','5957','5958','5959','5960','5961','5962','5963','5964','5965','5966','5967','5968','5969','5970','5971','5972','5973','5974','5975','5976','5977','5978','5979','5980','5981','5982','5983','5984','5985','5988','5989','5990','5992','5993','5994','5995','5997','5998','5999','6001','6002','6003','6007','6009','6013','6016','6634','6639','6660','6729','6730','6734','6741','5593','5595','4662','5563','5771','6056','6133','6140','6415','6419','6624','6716','4737','4744','6109','6184','5509','5512','5898','6107','6108','6590','6687','5609','5655','5838','6060','5727','5798','5802','6252','6253','6320','6361','5401','5624','5629','5654','5343','5579','5585','5607','6054','5904','6293','6459','6486','5649','4746','4765','5281','5285','5400','5422','5443','5536','5553','5571','5583','5698','5702','5715','5730','5731','5743','5789','5814','6166','6172','6258','6331','6377','6389','6390','6392','6549','6565','6726','4346','4360','4377','4503','4545','4594','4602','5289','5378','5472','5505','5535','5606','6596','6606','4287','4330','4363','4526','4601','5413','5419','5461','5489','6122','6123','6718','4089','4191','4224','4279','4669','4670','4776','5852','5869','6510','4210','4422','4673','4598','4687','4690','5481','5483','5486','5577','5690','5704','5890','5893','5920','5944','5945','5946','6030','6068','6159','6221','6229','6234','6237','6238','6240','6241','6314','6401','6426','6428','6429','6434','6466','6526','6551','6566','6611','6671','6677','6701','6702','6818','5721','5735','5861','4479','4518','4527','4535','4732','4741','4742','5295','5337','5362','5373','5393','5398','5421','5427','5435','5504','5506','5517','5525','5738','5566','5568','5569','5598','5678','5718','5740','5741','5757','5765','5766','5767','5779','5782','5827','5828','5940','6031','6037','6051','6069','6073','6163','6199','6246','6272','6410','6442','6518','6541','6548','6621','6787','6815','4197','4198','4612','4617','4625','4694','4771','5331','5365','5392','5526','5589','5591','5936','5937','6336','6388','6675','6697','6700','4199','4204','4206','4227','4229','4235','4238','4257','4371','4458','4488','4492','4493','4517','4538','4543','4556','4582','5338','5342','5374','5726','4724','5348','5353','5372','5540','6158','6271','6375','6550','6552','6580','6583','6723','4298') ORDER BY O.ctime desc LIMIT 0,20   [ RunTime:0.0067s ]
+SQL: SELECT COUNT(*) AS tp_count FROM yk_shop_order as O LEFT JOIN `yk_vip` AS V ON V.id = O.vipid  WHERE O.status = '3' AND `vipid` IN ('4575','4595','5283','5287','5424','6180','6492','6759','3890','3896','4437','4241','3926','4074','4571','4572','4574','5615','5885','5889','5894','6116','6141','6213','6274','6277','6383','6384','6391','6444','3781','4643','4644','3866','3875','4001','4002','4064','4161','4162','4207','4211','4213','4214','4246','4296','4319','4329','4333','4389','4412','4415','4444','4445','4613','4665','5430','5451','5544','5836','5854','5927','6046','6144','6491','6577','3832','3836','3972','4015','4035','4036','4044','4050','4053','4054','4055','4056','4083','4085','4088','4092','4096','4099','4116','4117','4145','4146','4188','4190','4192','4195','4196','4200','4237','4240','4265','4267','4547','4286','4336','4337','4344','4349','4552','4553','4557','4599','4600','4603','4606','4645','4653','4672','4703','4740','4752','4759','4762','4764','5303','5312','5327','5351','5356','5366','5367','5423','5482','5551','5916','5528','5543','5612','5627','5638','5660','5683','5687','5716','6010','6017','6021','6156','6433','6438','6440','6446','6523','6527','6528','6529','6661','6781','4308','4039','4094','4122','4138','4147','4247','4387','4671','4705','5297','5347','4638','5305','5310','5770','6509','6728','4169','5720','4283','4101','4106','4113','4114','4119','4121','4123','4125','4153','4156','4157','4163','4165','4174','4175','4176','4181','4183','4218','4239','4251','4252','4258','4261','4263','4264','4290','4294','4313','4316','4325','4338','4355','4356','4359','4373','4385','4388','4405','4452','4462','4473','4486','4491','4499','4500','4537','4584','4589','4616','4652','4699','4700','4701','4706','4707','4711','4720','4733','5341','5406','5407','5425','5426','5429','5446','5452','5453','5456','5457','5462','5465','5466','5470','5474','5475','5520','5531','5600','5601','5672','5708','5811','5895','6005','6022','6033','6062','6102','6104','6117','6145','6147','6148','6402','6705','4654','5391','5478','5507','5816','5819','5831','5855','6167','6337','5872','5906','5907','5957','5958','5959','5960','5961','5962','5963','5964','5965','5966','5967','5968','5969','5970','5971','5972','5973','5974','5975','5976','5977','5978','5979','5980','5981','5982','5983','5984','5985','5988','5989','5990','5992','5993','5994','5995','5997','5998','5999','6001','6002','6003','6007','6009','6013','6016','6634','6639','6660','6729','6730','6734','6741','5593','5595','4662','5563','5771','6056','6133','6140','6415','6419','6624','6716','4737','4744','6109','6184','5509','5512','5898','6107','6108','6590','6687','5609','5655','5838','6060','5727','5798','5802','6252','6253','6320','6361','5401','5624','5629','5654','5343','5579','5585','5607','6054','5904','6293','6459','6486','5649','4746','4765','5281','5285','5400','5422','5443','5536','5553','5571','5583','5698','5702','5715','5730','5731','5743','5789','5814','6166','6172','6258','6331','6377','6389','6390','6392','6549','6565','6726','4346','4360','4377','4503','4545','4594','4602','5289','5378','5472','5505','5535','5606','6596','6606','4287','4330','4363','4526','4601','5413','5419','5461','5489','6122','6123','6718','4089','4191','4224','4279','4669','4670','4776','5852','5869','6510','4210','4422','4673','4598','4687','4690','5481','5483','5486','5577','5690','5704','5890','5893','5920','5944','5945','5946','6030','6068','6159','6221','6229','6234','6237','6238','6240','6241','6314','6401','6426','6428','6429','6434','6466','6526','6551','6566','6611','6671','6677','6701','6702','6818','5721','5735','5861','4479','4518','4527','4535','4732','4741','4742','5295','5337','5362','5373','5393','5398','5421','5427','5435','5504','5506','5517','5525','5738','5566','5568','5569','5598','5678','5718','5740','5741','5757','5765','5766','5767','5779','5782','5827','5828','5940','6031','6037','6051','6069','6073','6163','6199','6246','6272','6410','6442','6518','6541','6548','6621','6787','6815','4197','4198','4612','4617','4625','4694','4771','5331','5365','5392','5526','5589','5591','5936','5937','6336','6388','6675','6697','6700','4199','4204','4206','4227','4229','4235','4238','4257','4371','4458','4488','4492','4493','4517','4538','4543','4556','4582','5338','5342','5374','5726','4724','5348','5353','5372','5540','6158','6271','6375','6550','6552','6580','6583','6723','4298') LIMIT 1   [ RunTime:0.0065s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000057s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.232111s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008906s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.224739s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000009s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.233536s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000394s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000435s ]
+

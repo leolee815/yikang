@@ -1,0 +1,72 @@
+<div class="row">
+    <div class="col-xs-12 col-md-12">
+        <div class="widget">
+            <div class="widget-header bg-blue">
+                <i class="widget-icon fa fa-arrow-down"></i>
+                <span class="widget-caption">预设分销商会员列表</span>
+                <div class="widget-buttons">
+                    <a href="#" data-toggle="maximize">
+                        <i class="fa fa-expand"></i>
+                    </a>
+                    <a href="#" data-toggle="collapse">
+                        <i class="fa fa-minus"></i>
+                    </a>
+                    <a href="#" data-toggle="dispose">
+                        <i class="fa fa-times"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="widget-body">
+                <div class="table-toolbar">
+                    <div class="pull-right">
+                        <form id="App-search">
+                            <label style="margin-bottom: 0px;">
+                                <input name="search" type="search" class="form-control input-sm" placeholder="手机号" value="{$search}">
+                            </label>
+                            <a href="{:U('Admin/Vip/vipList/')}" class="btn btn-success" data-loader="App-loader" data-loadername="预设分销商列表" data-search="App-search">
+                                <i class="fa fa-search"></i>搜索
+                            </a>
+                        </form>
+                    </div>
+                </div>
+                <table id="App-table" class="table table-bordered table-hover">
+                    <thead class="bordered-darkorange">
+                        <tr role="row">
+                            <th width="80px">ID</th>
+                            <th width="100px">绑定会员ID</th>
+                            <th width="100px">绑定手机号码</th>
+                            <th width="100px">openid</th>
+                            <th width="150px">注册时间</th>
+                            <th width="150px">生成时间</th>
+                            <th width="60px">状态</th>
+                            <th width="">推广二维码</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <volist name="cache" id="vo">
+                            <tr id="item{$vo.id}">
+                                <td class=" sorting_1">{$vo.id}</td>
+                                <td class=" ">{$vo.vipid}</td>
+                                <td class=" ">{$vo.mobile}</td>
+                                <td class=" ">{$vo.openid}</td>
+                                <td class=" "><neq name="vo.regtime" value="0">{$vo.regtime|date='Y-m-d H:i:s',###}</neq></td>
+                                <td class=" ">{$vo.ctime|date='Y-m-d H:i:s',###}</td>
+                                <td class="center"><eq name="vo.is_reg" value="1"><span style="color:green">已绑定</span><else /><span style="color:red;">未绑定</span></eq></td>
+                                <td class="center "><neq name="vo.qrcode" value=""><a href="{$_SESSION.SHOP.set.url}{$vo.qrcode}" target="_blank">点击打开二维码</a></neq></td>  
+                            </tr>
+                        </volist>
+                    </tbody>
+                </table>
+                <div class="row DTTTFooter">
+                    {$page}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--面包屑导航封装-->
+<div id="tmpbread" style="display: none;">{$breadhtml}</div>
+<script type="text/javascript">
+setBread($('#tmpbread').html());
+</script>
+<!--/面包屑导航封装-->

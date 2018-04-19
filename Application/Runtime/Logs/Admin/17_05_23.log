@@ -1,0 +1,2720 @@
+[ 2017-05-23T11:08:27+08:00 ] 223.73.197.191 /Admin/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000257s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000325s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000384s ]
+SQL: SHOW COLUMNS FROM `yk_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yk_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_cms_set` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yk_cms_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_shop_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yk_shop_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_user_oath` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yk_user_oath`  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000132s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000174s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022931s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022970s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000124s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000156s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000367s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000405s ]
+
+[ 2017-05-23T11:08:28+08:00 ] 223.73.197.191 /Admin/Index/main
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000258s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000326s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000360s ]
+SQL: SHOW COLUMNS FROM `yk_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yk_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yk_cms_set` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yk_cms_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_shop_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yk_shop_set` LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000030s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000065s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004497s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004533s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000121s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000151s ]
+SQL: SHOW COLUMNS FROM `yk_vip` [ RunTime:0.0012s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_vip` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_vip` WHERE ( subscribe=1 ) LIMIT 1   [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_vip` WHERE `ctime` BETWEEN 1495468800 AND 1495555199 LIMIT 1   [ RunTime:0.0029s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_vip` WHERE `ctime` BETWEEN 1495382400 AND 1495468799 LIMIT 1   [ RunTime:0.0029s ]
+SQL: SHOW COLUMNS FROM `yk_shop_order` [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_shop_order` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_shop_order` WHERE ( status=0 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_shop_order` WHERE ( status=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_shop_order` WHERE ( status=2 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_shop_order` WHERE ( status=3 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_shop_order` WHERE ( status=4 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_shop_order` WHERE ( status=5 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_shop_order` WHERE ( status=6 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_shop_order` WHERE `ctime` BETWEEN 1495468800 AND 1495555199 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_shop_order` WHERE `ctime` BETWEEN 1495382400 AND 1495468799 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `yk_fx_syslog` [ RunTime:0.0005s ]
+SQL: SELECT SUM(fxyj) AS tp_sum FROM `yk_fx_syslog` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT SUM(fxyj) AS tp_sum FROM `yk_fx_syslog` WHERE `ctime` BETWEEN 1495468800 AND 1495555199 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT SUM(fxyj) AS tp_sum FROM `yk_fx_syslog` WHERE `ctime` BETWEEN 1495382400 AND 1495468799 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_vip` WHERE `isfx` = 0 AND `isfxgd` = 0 LIMIT 1   [ RunTime:0.0033s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_vip` WHERE `isfx` = 1 AND `isfxgd` = 0 LIMIT 1   [ RunTime:0.0039s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_vip` WHERE ( isfxgd=1 ) LIMIT 1   [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `yk_vip_log_sub` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `yk_vip_log_sub` ORDER BY ctime desc LIMIT 5   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yk_vip` WHERE ( id=3949 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yk_vip` WHERE ( id=3948 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yk_vip` WHERE ( id=3103 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yk_vip` WHERE ( id=3941 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yk_vip` WHERE ( id=3940 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yk_fx_syslog` ORDER BY ctime desc LIMIT 5   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `yk_vip` WHERE ( id=2538 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yk_vip` WHERE ( id=38 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_fx_log_tj` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `yk_fx_log_tj` ORDER BY ctime desc LIMIT 5   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `yk_shop_order` WHERE `ispay` = 1 AND `status` = 2 ORDER BY ctime desc LIMIT 5   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `yk_vip` WHERE ( id=3103 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yk_vip` WHERE ( id=49 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yk_vip` WHERE ( id=49 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yk_vip` WHERE ( id=149 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yk_vip` WHERE ( id=3932 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT SUM(totalprice) AS tp_sum FROM `yk_shop_order` WHERE `ispay` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT SUM(totalprice) AS tp_sum FROM `yk_shop_order` WHERE `status` = 5 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT SUM(totalnum) AS tp_sum FROM `yk_shop_order` WHERE `ispay` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `yk_vip_tx` [ RunTime:0.0005s ]
+SQL: SELECT SUM(txprice) AS tp_sum FROM `yk_vip_tx` WHERE `status` = 2 LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000114s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.055519s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020402s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.037659s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000011s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.057953s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000413s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000450s ]
+
+[ 2017-05-23T11:08:34+08:00 ] 223.73.197.191 /Admin/Shop/order/status/2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000269s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000322s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000358s ]
+SQL: SHOW COLUMNS FROM `yk_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yk_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yk_cms_set` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yk_cms_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_shop_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yk_shop_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yk_shop_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_vip_set` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `yk_vip_set` LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000033s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000071s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004703s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004736s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000141s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000171s ]
+SQL: SHOW COLUMNS FROM `yk_shop_order` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `yk_shop_order` WHERE `status` = 2 ORDER BY ctime desc LIMIT 0,20   [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_shop_order` WHERE `status` = 2 LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000060s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.012644s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012043s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.003475s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000010s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.015387s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000415s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000458s ]
+
+[ 2017-05-23T11:08:40+08:00 ] 223.73.197.191 /Admin/Vip/vipTrack
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000279s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000349s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000387s ]
+SQL: SHOW COLUMNS FROM `yk_set` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `yk_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_cms_set` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yk_cms_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_shop_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yk_shop_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yk_vip` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `yk_vip` WHERE `pid` = 423  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `yk_shop_order` [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_vip` WHERE `pid` = 2630 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_shop_order` WHERE `vipid` = 2630 AND `ispay` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT SUM(payprice) AS tp_sum FROM `yk_shop_order` WHERE `vipid` = 2630 AND `ispay` = 1 AND `payprice` > 0 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `pid` = 2630  [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_shop_order` WHERE `vipid` IN ('-10000000000') AND `ispay` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT SUM(payprice) AS tp_sum FROM `yk_shop_order` WHERE `vipid` IN ('-10000000000') AND `ispay` = 1 AND `payprice` > 0 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `pid` IN ('-10000000000')  [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_shop_order` WHERE `vipid` IN ('-10000000000') AND `ispay` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT SUM(payprice) AS tp_sum FROM `yk_shop_order` WHERE `vipid` IN ('-10000000000') AND `ispay` = 1 AND `payprice` > 0 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `pid` IN ('-10000000000')  [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_shop_order` WHERE `vipid` IN ('-10000000000') AND `ispay` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT SUM(payprice) AS tp_sum FROM `yk_shop_order` WHERE `vipid` IN ('-10000000000') AND `ispay` = 1 AND `payprice` > 0 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_vip` WHERE `pid` = 2860 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_shop_order` WHERE `vipid` = 2860 AND `ispay` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT SUM(payprice) AS tp_sum FROM `yk_shop_order` WHERE `vipid` = 2860 AND `ispay` = 1 AND `payprice` > 0 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `pid` = 2860  [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_shop_order` WHERE `vipid` IN ('-10000000000') AND `ispay` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT SUM(payprice) AS tp_sum FROM `yk_shop_order` WHERE `vipid` IN ('-10000000000') AND `ispay` = 1 AND `payprice` > 0 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `pid` IN ('-10000000000')  [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_shop_order` WHERE `vipid` IN ('-10000000000') AND `ispay` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT SUM(payprice) AS tp_sum FROM `yk_shop_order` WHERE `vipid` IN ('-10000000000') AND `ispay` = 1 AND `payprice` > 0 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `pid` IN ('-10000000000')  [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_shop_order` WHERE `vipid` IN ('-10000000000') AND `ispay` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT SUM(payprice) AS tp_sum FROM `yk_shop_order` WHERE `vipid` IN ('-10000000000') AND `ispay` = 1 AND `payprice` > 0 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_vip` WHERE `pid` = 2988 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_shop_order` WHERE `vipid` = 2988 AND `ispay` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT SUM(payprice) AS tp_sum FROM `yk_shop_order` WHERE `vipid` = 2988 AND `ispay` = 1 AND `payprice` > 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `pid` = 2988  [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_shop_order` WHERE `vipid` IN ('-10000000000') AND `ispay` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT SUM(payprice) AS tp_sum FROM `yk_shop_order` WHERE `vipid` IN ('-10000000000') AND `ispay` = 1 AND `payprice` > 0 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `pid` IN ('-10000000000')  [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_shop_order` WHERE `vipid` IN ('-10000000000') AND `ispay` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT SUM(payprice) AS tp_sum FROM `yk_shop_order` WHERE `vipid` IN ('-10000000000') AND `ispay` = 1 AND `payprice` > 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `pid` IN ('-10000000000')  [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_shop_order` WHERE `vipid` IN ('-10000000000') AND `ispay` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT SUM(payprice) AS tp_sum FROM `yk_shop_order` WHERE `vipid` IN ('-10000000000') AND `ispay` = 1 AND `payprice` > 0 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_vip` WHERE `pid` = 3031 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_shop_order` WHERE `vipid` = 3031 AND `ispay` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT SUM(payprice) AS tp_sum FROM `yk_shop_order` WHERE `vipid` = 3031 AND `ispay` = 1 AND `payprice` > 0 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `pid` = 3031  [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_shop_order` WHERE `vipid` IN ('-10000000000') AND `ispay` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT SUM(payprice) AS tp_sum FROM `yk_shop_order` WHERE `vipid` IN ('-10000000000') AND `ispay` = 1 AND `payprice` > 0 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `pid` IN ('-10000000000')  [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_shop_order` WHERE `vipid` IN ('-10000000000') AND `ispay` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT SUM(payprice) AS tp_sum FROM `yk_shop_order` WHERE `vipid` IN ('-10000000000') AND `ispay` = 1 AND `payprice` > 0 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `pid` IN ('-10000000000')  [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_shop_order` WHERE `vipid` IN ('-10000000000') AND `ispay` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT SUM(payprice) AS tp_sum FROM `yk_shop_order` WHERE `vipid` IN ('-10000000000') AND `ispay` = 1 AND `payprice` > 0 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_vip` WHERE `pid` = 3103 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_shop_order` WHERE `vipid` = 3103 AND `ispay` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT SUM(payprice) AS tp_sum FROM `yk_shop_order` WHERE `vipid` = 3103 AND `ispay` = 1 AND `payprice` > 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `pid` = 3103  [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_shop_order` WHERE `vipid` IN ('-10000000000') AND `ispay` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT SUM(payprice) AS tp_sum FROM `yk_shop_order` WHERE `vipid` IN ('-10000000000') AND `ispay` = 1 AND `payprice` > 0 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `pid` IN ('-10000000000')  [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_shop_order` WHERE `vipid` IN ('-10000000000') AND `ispay` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT SUM(payprice) AS tp_sum FROM `yk_shop_order` WHERE `vipid` IN ('-10000000000') AND `ispay` = 1 AND `payprice` > 0 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `pid` IN ('-10000000000')  [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_shop_order` WHERE `vipid` IN ('-10000000000') AND `ispay` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT SUM(payprice) AS tp_sum FROM `yk_shop_order` WHERE `vipid` IN ('-10000000000') AND `ispay` = 1 AND `payprice` > 0 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_vip` WHERE `pid` = 3853 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_shop_order` WHERE `vipid` = 3853 AND `ispay` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT SUM(payprice) AS tp_sum FROM `yk_shop_order` WHERE `vipid` = 3853 AND `ispay` = 1 AND `payprice` > 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `pid` = 3853  [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_shop_order` WHERE `vipid` IN ('-10000000000') AND `ispay` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT SUM(payprice) AS tp_sum FROM `yk_shop_order` WHERE `vipid` IN ('-10000000000') AND `ispay` = 1 AND `payprice` > 0 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `pid` IN ('-10000000000')  [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_shop_order` WHERE `vipid` IN ('-10000000000') AND `ispay` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT SUM(payprice) AS tp_sum FROM `yk_shop_order` WHERE `vipid` IN ('-10000000000') AND `ispay` = 1 AND `payprice` > 0 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `pid` IN ('-10000000000')  [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_shop_order` WHERE `vipid` IN ('-10000000000') AND `ispay` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT SUM(payprice) AS tp_sum FROM `yk_shop_order` WHERE `vipid` IN ('-10000000000') AND `ispay` = 1 AND `payprice` > 0 LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2017-05-23T11:08:47+08:00 ] 223.73.197.191 /Admin/Vip/vipInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000258s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000330s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000367s ]
+SQL: SHOW COLUMNS FROM `yk_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yk_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_cms_set` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yk_cms_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_shop_set` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `yk_shop_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_vip` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `yk_vip` WHERE `id` = 3103 LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2017-05-23T11:09:00+08:00 ] 223.73.197.191 /Admin/Vip/vipTrack
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000260s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000354s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000410s ]
+SQL: SHOW COLUMNS FROM `yk_set` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `yk_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_cms_set` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yk_cms_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_shop_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yk_shop_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yk_vip` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `yk_vip` WHERE `pid` = 700  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `yk_shop_order` [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_vip` WHERE `pid` = 3797 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_shop_order` WHERE `vipid` = 3797 AND `ispay` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT SUM(payprice) AS tp_sum FROM `yk_shop_order` WHERE `vipid` = 3797 AND `ispay` = 1 AND `payprice` > 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `pid` = 3797  [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_shop_order` WHERE `vipid` IN ('-10000000000') AND `ispay` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT SUM(payprice) AS tp_sum FROM `yk_shop_order` WHERE `vipid` IN ('-10000000000') AND `ispay` = 1 AND `payprice` > 0 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `pid` IN ('-10000000000')  [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_shop_order` WHERE `vipid` IN ('-10000000000') AND `ispay` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT SUM(payprice) AS tp_sum FROM `yk_shop_order` WHERE `vipid` IN ('-10000000000') AND `ispay` = 1 AND `payprice` > 0 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `pid` IN ('-10000000000')  [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_shop_order` WHERE `vipid` IN ('-10000000000') AND `ispay` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT SUM(payprice) AS tp_sum FROM `yk_shop_order` WHERE `vipid` IN ('-10000000000') AND `ispay` = 1 AND `payprice` > 0 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_vip` WHERE `pid` = 3798 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_shop_order` WHERE `vipid` = 3798 AND `ispay` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT SUM(payprice) AS tp_sum FROM `yk_shop_order` WHERE `vipid` = 3798 AND `ispay` = 1 AND `payprice` > 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `pid` = 3798  [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_shop_order` WHERE `vipid` IN ('-10000000000') AND `ispay` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT SUM(payprice) AS tp_sum FROM `yk_shop_order` WHERE `vipid` IN ('-10000000000') AND `ispay` = 1 AND `payprice` > 0 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `pid` IN ('-10000000000')  [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_shop_order` WHERE `vipid` IN ('-10000000000') AND `ispay` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT SUM(payprice) AS tp_sum FROM `yk_shop_order` WHERE `vipid` IN ('-10000000000') AND `ispay` = 1 AND `payprice` > 0 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `pid` IN ('-10000000000')  [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_shop_order` WHERE `vipid` IN ('-10000000000') AND `ispay` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT SUM(payprice) AS tp_sum FROM `yk_shop_order` WHERE `vipid` IN ('-10000000000') AND `ispay` = 1 AND `payprice` > 0 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_vip` WHERE `pid` = 3799 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_shop_order` WHERE `vipid` = 3799 AND `ispay` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT SUM(payprice) AS tp_sum FROM `yk_shop_order` WHERE `vipid` = 3799 AND `ispay` = 1 AND `payprice` > 0 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `pid` = 3799  [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_shop_order` WHERE `vipid` IN ('-10000000000') AND `ispay` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT SUM(payprice) AS tp_sum FROM `yk_shop_order` WHERE `vipid` IN ('-10000000000') AND `ispay` = 1 AND `payprice` > 0 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `pid` IN ('-10000000000')  [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_shop_order` WHERE `vipid` IN ('-10000000000') AND `ispay` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT SUM(payprice) AS tp_sum FROM `yk_shop_order` WHERE `vipid` IN ('-10000000000') AND `ispay` = 1 AND `payprice` > 0 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `pid` IN ('-10000000000')  [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_shop_order` WHERE `vipid` IN ('-10000000000') AND `ispay` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT SUM(payprice) AS tp_sum FROM `yk_shop_order` WHERE `vipid` IN ('-10000000000') AND `ispay` = 1 AND `payprice` > 0 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_vip` WHERE `pid` = 3800 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_shop_order` WHERE `vipid` = 3800 AND `ispay` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT SUM(payprice) AS tp_sum FROM `yk_shop_order` WHERE `vipid` = 3800 AND `ispay` = 1 AND `payprice` > 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `pid` = 3800  [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_shop_order` WHERE `vipid` IN ('-10000000000') AND `ispay` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT SUM(payprice) AS tp_sum FROM `yk_shop_order` WHERE `vipid` IN ('-10000000000') AND `ispay` = 1 AND `payprice` > 0 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `pid` IN ('-10000000000')  [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_shop_order` WHERE `vipid` IN ('-10000000000') AND `ispay` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT SUM(payprice) AS tp_sum FROM `yk_shop_order` WHERE `vipid` IN ('-10000000000') AND `ispay` = 1 AND `payprice` > 0 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `pid` IN ('-10000000000')  [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_shop_order` WHERE `vipid` IN ('-10000000000') AND `ispay` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT SUM(payprice) AS tp_sum FROM `yk_shop_order` WHERE `vipid` IN ('-10000000000') AND `ispay` = 1 AND `payprice` > 0 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_vip` WHERE `pid` = 3802 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_vip` WHERE `pid` = 3802 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `pid` = 3802  [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_vip` WHERE `pid` IN ('3803') LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `pid` = 3802  [ RunTime:0.0001s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `pid` IN ('3803')  [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_vip` WHERE `pid` IN ('-10000000000') LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_shop_order` WHERE `vipid` = 3802 AND `ispay` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT SUM(payprice) AS tp_sum FROM `yk_shop_order` WHERE `vipid` = 3802 AND `ispay` = 1 AND `payprice` > 0 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `pid` = 3802  [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_shop_order` WHERE `vipid` IN ('3803') AND `ispay` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT SUM(payprice) AS tp_sum FROM `yk_shop_order` WHERE `vipid` IN ('3803') AND `ispay` = 1 AND `payprice` > 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `pid` IN ('3803')  [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_shop_order` WHERE `vipid` IN ('-10000000000') AND `ispay` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT SUM(payprice) AS tp_sum FROM `yk_shop_order` WHERE `vipid` IN ('-10000000000') AND `ispay` = 1 AND `payprice` > 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `pid` IN ('-10000000000')  [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_shop_order` WHERE `vipid` IN ('-10000000000') AND `ispay` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT SUM(payprice) AS tp_sum FROM `yk_shop_order` WHERE `vipid` IN ('-10000000000') AND `ispay` = 1 AND `payprice` > 0 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_vip` WHERE `pid` = 3830 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_shop_order` WHERE `vipid` = 3830 AND `ispay` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT SUM(payprice) AS tp_sum FROM `yk_shop_order` WHERE `vipid` = 3830 AND `ispay` = 1 AND `payprice` > 0 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `pid` = 3830  [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_shop_order` WHERE `vipid` IN ('-10000000000') AND `ispay` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT SUM(payprice) AS tp_sum FROM `yk_shop_order` WHERE `vipid` IN ('-10000000000') AND `ispay` = 1 AND `payprice` > 0 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `pid` IN ('-10000000000')  [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_shop_order` WHERE `vipid` IN ('-10000000000') AND `ispay` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT SUM(payprice) AS tp_sum FROM `yk_shop_order` WHERE `vipid` IN ('-10000000000') AND `ispay` = 1 AND `payprice` > 0 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `pid` IN ('-10000000000')  [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_shop_order` WHERE `vipid` IN ('-10000000000') AND `ispay` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT SUM(payprice) AS tp_sum FROM `yk_shop_order` WHERE `vipid` IN ('-10000000000') AND `ispay` = 1 AND `payprice` > 0 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_vip` WHERE `pid` = 3833 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_shop_order` WHERE `vipid` = 3833 AND `ispay` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT SUM(payprice) AS tp_sum FROM `yk_shop_order` WHERE `vipid` = 3833 AND `ispay` = 1 AND `payprice` > 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `pid` = 3833  [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_shop_order` WHERE `vipid` IN ('-10000000000') AND `ispay` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT SUM(payprice) AS tp_sum FROM `yk_shop_order` WHERE `vipid` IN ('-10000000000') AND `ispay` = 1 AND `payprice` > 0 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `pid` IN ('-10000000000')  [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_shop_order` WHERE `vipid` IN ('-10000000000') AND `ispay` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT SUM(payprice) AS tp_sum FROM `yk_shop_order` WHERE `vipid` IN ('-10000000000') AND `ispay` = 1 AND `payprice` > 0 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `pid` IN ('-10000000000')  [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_shop_order` WHERE `vipid` IN ('-10000000000') AND `ispay` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT SUM(payprice) AS tp_sum FROM `yk_shop_order` WHERE `vipid` IN ('-10000000000') AND `ispay` = 1 AND `payprice` > 0 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_vip` WHERE `pid` = 3834 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_shop_order` WHERE `vipid` = 3834 AND `ispay` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT SUM(payprice) AS tp_sum FROM `yk_shop_order` WHERE `vipid` = 3834 AND `ispay` = 1 AND `payprice` > 0 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `pid` = 3834  [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_shop_order` WHERE `vipid` IN ('-10000000000') AND `ispay` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT SUM(payprice) AS tp_sum FROM `yk_shop_order` WHERE `vipid` IN ('-10000000000') AND `ispay` = 1 AND `payprice` > 0 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `pid` IN ('-10000000000')  [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_shop_order` WHERE `vipid` IN ('-10000000000') AND `ispay` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT SUM(payprice) AS tp_sum FROM `yk_shop_order` WHERE `vipid` IN ('-10000000000') AND `ispay` = 1 AND `payprice` > 0 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `pid` IN ('-10000000000')  [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_shop_order` WHERE `vipid` IN ('-10000000000') AND `ispay` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT SUM(payprice) AS tp_sum FROM `yk_shop_order` WHERE `vipid` IN ('-10000000000') AND `ispay` = 1 AND `payprice` > 0 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_vip` WHERE `pid` = 3856 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_shop_order` WHERE `vipid` = 3856 AND `ispay` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT SUM(payprice) AS tp_sum FROM `yk_shop_order` WHERE `vipid` = 3856 AND `ispay` = 1 AND `payprice` > 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `pid` = 3856  [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_shop_order` WHERE `vipid` IN ('-10000000000') AND `ispay` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT SUM(payprice) AS tp_sum FROM `yk_shop_order` WHERE `vipid` IN ('-10000000000') AND `ispay` = 1 AND `payprice` > 0 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `pid` IN ('-10000000000')  [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_shop_order` WHERE `vipid` IN ('-10000000000') AND `ispay` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT SUM(payprice) AS tp_sum FROM `yk_shop_order` WHERE `vipid` IN ('-10000000000') AND `ispay` = 1 AND `payprice` > 0 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `pid` IN ('-10000000000')  [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_shop_order` WHERE `vipid` IN ('-10000000000') AND `ispay` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT SUM(payprice) AS tp_sum FROM `yk_shop_order` WHERE `vipid` IN ('-10000000000') AND `ispay` = 1 AND `payprice` > 0 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_vip` WHERE `pid` = 3865 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_shop_order` WHERE `vipid` = 3865 AND `ispay` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT SUM(payprice) AS tp_sum FROM `yk_shop_order` WHERE `vipid` = 3865 AND `ispay` = 1 AND `payprice` > 0 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `pid` = 3865  [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_shop_order` WHERE `vipid` IN ('-10000000000') AND `ispay` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT SUM(payprice) AS tp_sum FROM `yk_shop_order` WHERE `vipid` IN ('-10000000000') AND `ispay` = 1 AND `payprice` > 0 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `pid` IN ('-10000000000')  [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_shop_order` WHERE `vipid` IN ('-10000000000') AND `ispay` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT SUM(payprice) AS tp_sum FROM `yk_shop_order` WHERE `vipid` IN ('-10000000000') AND `ispay` = 1 AND `payprice` > 0 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `pid` IN ('-10000000000')  [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_shop_order` WHERE `vipid` IN ('-10000000000') AND `ispay` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT SUM(payprice) AS tp_sum FROM `yk_shop_order` WHERE `vipid` IN ('-10000000000') AND `ispay` = 1 AND `payprice` > 0 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_vip` WHERE `pid` = 3868 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_shop_order` WHERE `vipid` = 3868 AND `ispay` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT SUM(payprice) AS tp_sum FROM `yk_shop_order` WHERE `vipid` = 3868 AND `ispay` = 1 AND `payprice` > 0 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `pid` = 3868  [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_shop_order` WHERE `vipid` IN ('-10000000000') AND `ispay` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT SUM(payprice) AS tp_sum FROM `yk_shop_order` WHERE `vipid` IN ('-10000000000') AND `ispay` = 1 AND `payprice` > 0 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `pid` IN ('-10000000000')  [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_shop_order` WHERE `vipid` IN ('-10000000000') AND `ispay` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT SUM(payprice) AS tp_sum FROM `yk_shop_order` WHERE `vipid` IN ('-10000000000') AND `ispay` = 1 AND `payprice` > 0 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `pid` IN ('-10000000000')  [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_shop_order` WHERE `vipid` IN ('-10000000000') AND `ispay` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT SUM(payprice) AS tp_sum FROM `yk_shop_order` WHERE `vipid` IN ('-10000000000') AND `ispay` = 1 AND `payprice` > 0 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_vip` WHERE `pid` = 3869 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_vip` WHERE `pid` = 3869 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `pid` = 3869  [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_vip` WHERE `pid` IN ('3870','3873') LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `pid` = 3869  [ RunTime:0.0001s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `pid` IN ('3870','3873')  [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_vip` WHERE `pid` IN ('-10000000000') LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_shop_order` WHERE `vipid` = 3869 AND `ispay` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT SUM(payprice) AS tp_sum FROM `yk_shop_order` WHERE `vipid` = 3869 AND `ispay` = 1 AND `payprice` > 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `pid` = 3869  [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_shop_order` WHERE `vipid` IN ('3870','3873') AND `ispay` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT SUM(payprice) AS tp_sum FROM `yk_shop_order` WHERE `vipid` IN ('3870','3873') AND `ispay` = 1 AND `payprice` > 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `pid` IN ('3870','3873')  [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_shop_order` WHERE `vipid` IN ('-10000000000') AND `ispay` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT SUM(payprice) AS tp_sum FROM `yk_shop_order` WHERE `vipid` IN ('-10000000000') AND `ispay` = 1 AND `payprice` > 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `pid` IN ('-10000000000')  [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_shop_order` WHERE `vipid` IN ('-10000000000') AND `ispay` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT SUM(payprice) AS tp_sum FROM `yk_shop_order` WHERE `vipid` IN ('-10000000000') AND `ispay` = 1 AND `payprice` > 0 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_vip` WHERE `pid` = 3872 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_shop_order` WHERE `vipid` = 3872 AND `ispay` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT SUM(payprice) AS tp_sum FROM `yk_shop_order` WHERE `vipid` = 3872 AND `ispay` = 1 AND `payprice` > 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `pid` = 3872  [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_shop_order` WHERE `vipid` IN ('-10000000000') AND `ispay` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT SUM(payprice) AS tp_sum FROM `yk_shop_order` WHERE `vipid` IN ('-10000000000') AND `ispay` = 1 AND `payprice` > 0 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `pid` IN ('-10000000000')  [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_shop_order` WHERE `vipid` IN ('-10000000000') AND `ispay` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT SUM(payprice) AS tp_sum FROM `yk_shop_order` WHERE `vipid` IN ('-10000000000') AND `ispay` = 1 AND `payprice` > 0 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `pid` IN ('-10000000000')  [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_shop_order` WHERE `vipid` IN ('-10000000000') AND `ispay` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT SUM(payprice) AS tp_sum FROM `yk_shop_order` WHERE `vipid` IN ('-10000000000') AND `ispay` = 1 AND `payprice` > 0 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_vip` WHERE `pid` = 3881 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_shop_order` WHERE `vipid` = 3881 AND `ispay` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT SUM(payprice) AS tp_sum FROM `yk_shop_order` WHERE `vipid` = 3881 AND `ispay` = 1 AND `payprice` > 0 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `pid` = 3881  [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_shop_order` WHERE `vipid` IN ('-10000000000') AND `ispay` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT SUM(payprice) AS tp_sum FROM `yk_shop_order` WHERE `vipid` IN ('-10000000000') AND `ispay` = 1 AND `payprice` > 0 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `pid` IN ('-10000000000')  [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_shop_order` WHERE `vipid` IN ('-10000000000') AND `ispay` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT SUM(payprice) AS tp_sum FROM `yk_shop_order` WHERE `vipid` IN ('-10000000000') AND `ispay` = 1 AND `payprice` > 0 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `pid` IN ('-10000000000')  [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_shop_order` WHERE `vipid` IN ('-10000000000') AND `ispay` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT SUM(payprice) AS tp_sum FROM `yk_shop_order` WHERE `vipid` IN ('-10000000000') AND `ispay` = 1 AND `payprice` > 0 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_vip` WHERE `pid` = 3915 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_shop_order` WHERE `vipid` = 3915 AND `ispay` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT SUM(payprice) AS tp_sum FROM `yk_shop_order` WHERE `vipid` = 3915 AND `ispay` = 1 AND `payprice` > 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `pid` = 3915  [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_shop_order` WHERE `vipid` IN ('-10000000000') AND `ispay` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT SUM(payprice) AS tp_sum FROM `yk_shop_order` WHERE `vipid` IN ('-10000000000') AND `ispay` = 1 AND `payprice` > 0 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `pid` IN ('-10000000000')  [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_shop_order` WHERE `vipid` IN ('-10000000000') AND `ispay` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT SUM(payprice) AS tp_sum FROM `yk_shop_order` WHERE `vipid` IN ('-10000000000') AND `ispay` = 1 AND `payprice` > 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `pid` IN ('-10000000000')  [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_shop_order` WHERE `vipid` IN ('-10000000000') AND `ispay` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT SUM(payprice) AS tp_sum FROM `yk_shop_order` WHERE `vipid` IN ('-10000000000') AND `ispay` = 1 AND `payprice` > 0 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_vip` WHERE `pid` = 3932 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_shop_order` WHERE `vipid` = 3932 AND `ispay` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT SUM(payprice) AS tp_sum FROM `yk_shop_order` WHERE `vipid` = 3932 AND `ispay` = 1 AND `payprice` > 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `pid` = 3932  [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_shop_order` WHERE `vipid` IN ('-10000000000') AND `ispay` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT SUM(payprice) AS tp_sum FROM `yk_shop_order` WHERE `vipid` IN ('-10000000000') AND `ispay` = 1 AND `payprice` > 0 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `pid` IN ('-10000000000')  [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_shop_order` WHERE `vipid` IN ('-10000000000') AND `ispay` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT SUM(payprice) AS tp_sum FROM `yk_shop_order` WHERE `vipid` IN ('-10000000000') AND `ispay` = 1 AND `payprice` > 0 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `pid` IN ('-10000000000')  [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_shop_order` WHERE `vipid` IN ('-10000000000') AND `ispay` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT SUM(payprice) AS tp_sum FROM `yk_shop_order` WHERE `vipid` IN ('-10000000000') AND `ispay` = 1 AND `payprice` > 0 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_vip` WHERE `pid` = 3936 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_shop_order` WHERE `vipid` = 3936 AND `ispay` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT SUM(payprice) AS tp_sum FROM `yk_shop_order` WHERE `vipid` = 3936 AND `ispay` = 1 AND `payprice` > 0 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `pid` = 3936  [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_shop_order` WHERE `vipid` IN ('-10000000000') AND `ispay` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT SUM(payprice) AS tp_sum FROM `yk_shop_order` WHERE `vipid` IN ('-10000000000') AND `ispay` = 1 AND `payprice` > 0 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `pid` IN ('-10000000000')  [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_shop_order` WHERE `vipid` IN ('-10000000000') AND `ispay` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT SUM(payprice) AS tp_sum FROM `yk_shop_order` WHERE `vipid` IN ('-10000000000') AND `ispay` = 1 AND `payprice` > 0 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `pid` IN ('-10000000000')  [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_shop_order` WHERE `vipid` IN ('-10000000000') AND `ispay` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT SUM(payprice) AS tp_sum FROM `yk_shop_order` WHERE `vipid` IN ('-10000000000') AND `ispay` = 1 AND `payprice` > 0 LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2017-05-23T11:09:06+08:00 ] 223.73.197.191 /Admin/Vip/vipInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000255s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000320s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000355s ]
+SQL: SHOW COLUMNS FROM `yk_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yk_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_cms_set` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yk_cms_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_shop_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yk_shop_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_vip` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `yk_vip` WHERE `id` = 3802 LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2017-05-23T11:10:29+08:00 ] 223.73.197.191 /Admin/Shop/order/status/2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000261s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000321s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000356s ]
+SQL: SHOW COLUMNS FROM `yk_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yk_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_cms_set` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yk_cms_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_shop_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yk_shop_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yk_shop_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_vip_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yk_vip_set` LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000029s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000066s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004533s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004566s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000118s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000148s ]
+SQL: SHOW COLUMNS FROM `yk_shop_order` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `yk_shop_order` WHERE `status` = 2 ORDER BY ctime desc LIMIT 0,20   [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_shop_order` WHERE `status` = 2 LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000052s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.012201s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011340s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.003394s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000008s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.014625s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000348s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000386s ]
+
+[ 2017-05-23T11:34:30+08:00 ] 123.151.138.58 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000327s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000362s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000401s ]
+SQL: SHOW COLUMNS FROM `yk_set` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `yk_set` LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `yk_cms_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yk_cms_set` LIMIT 1   [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `yk_shop_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yk_shop_set` LIMIT 1   [ RunTime:0.0017s ]
+
+[ 2017-05-23T11:34:32+08:00 ] 111.30.132.190 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000337s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000359s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000396s ]
+SQL: SHOW COLUMNS FROM `yk_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yk_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yk_cms_set` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yk_cms_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_shop_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yk_shop_set` LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2017-05-23T11:37:32+08:00 ] 223.73.197.191 /Admin/Shop/order/status/2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000270s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000377s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000416s ]
+SQL: SHOW COLUMNS FROM `yk_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yk_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_cms_set` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yk_cms_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_shop_set` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `yk_shop_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yk_shop_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_vip_set` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `yk_vip_set` LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000030s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000070s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004775s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004809s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000140s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000171s ]
+SQL: SHOW COLUMNS FROM `yk_shop_order` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `yk_shop_order` WHERE `status` = 2 ORDER BY ctime desc LIMIT 0,20   [ RunTime:0.0009s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_shop_order` WHERE `status` = 2 LIMIT 1   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000059s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.013941s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011904s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.004718s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000009s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.016494s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000405s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000444s ]
+
+[ 2017-05-23T11:56:29+08:00 ] 140.207.54.199 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000254s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004367s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004406s ]
+SQL: SHOW COLUMNS FROM `yk_set` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `yk_set` LIMIT 1   [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `yk_cms_set` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yk_cms_set` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `yk_shop_set` [ RunTime:0.0017s ]
+SQL: SELECT * FROM `yk_shop_set` LIMIT 1   [ RunTime:0.0012s ]
+
+[ 2017-05-23T11:56:29+08:00 ] 101.226.125.108 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000258s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000332s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000373s ]
+SQL: SHOW COLUMNS FROM `yk_set` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `yk_set` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `yk_cms_set` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `yk_cms_set` LIMIT 1   [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `yk_shop_set` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `yk_shop_set` LIMIT 1   [ RunTime:0.0039s ]
+
+[ 2017-05-23T11:56:35+08:00 ] 223.85.132.23 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000385s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004377s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004423s ]
+SQL: SHOW COLUMNS FROM `yk_set` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `yk_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_cms_set` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yk_cms_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_shop_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yk_shop_set` LIMIT 1   [ RunTime:0.0033s ]
+
+[ 2017-05-23T11:56:35+08:00 ] 124.161.23.60 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000265s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000336s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000374s ]
+SQL: SHOW COLUMNS FROM `yk_set` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `yk_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_cms_set` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yk_cms_set` LIMIT 1   [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `yk_shop_set` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `yk_shop_set` LIMIT 1   [ RunTime:0.0012s ]
+
+[ 2017-05-23T11:59:51+08:00 ] 163.177.93.241 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000258s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000347s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000385s ]
+SQL: SHOW COLUMNS FROM `yk_set` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `yk_set` LIMIT 1   [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `yk_cms_set` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yk_cms_set` LIMIT 1   [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `yk_shop_set` [ RunTime:0.0045s ]
+SQL: SELECT * FROM `yk_shop_set` LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2017-05-23T11:59:51+08:00 ] 183.232.118.13 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000272s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000357s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000396s ]
+SQL: SHOW COLUMNS FROM `yk_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yk_set` LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `yk_cms_set` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yk_cms_set` LIMIT 1   [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `yk_shop_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yk_shop_set` LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2017-05-23T12:01:14+08:00 ] 223.73.197.191 /Admin/Shop/order/status/2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000274s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000367s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000403s ]
+SQL: SHOW COLUMNS FROM `yk_set` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `yk_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_cms_set` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yk_cms_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_shop_set` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `yk_shop_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `yk_shop_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_vip_set` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `yk_vip_set` LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000051s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000098s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004833s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004870s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000121s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000152s ]
+SQL: SHOW COLUMNS FROM `yk_shop_order` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `yk_shop_order` WHERE `status` = 2 ORDER BY ctime desc LIMIT 0,20   [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_shop_order` WHERE `status` = 2 LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000053s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.012666s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011442s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.003777s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000008s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.015106s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000361s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000400s ]
+
+[ 2017-05-23T13:21:39+08:00 ] 101.4.137.12 /Admin/Index/inde
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000306s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000339s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000376s ]
+SQL: SHOW COLUMNS FROM `yk_set` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `yk_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yk_cms_set` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yk_cms_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_shop_set` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `yk_shop_set` LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2017-05-23T13:21:40+08:00 ] 101.4.137.12 /Admin/Public/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000263s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000361s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000400s ]
+SQL: SHOW COLUMNS FROM `yk_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yk_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_cms_set` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yk_cms_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_shop_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yk_shop_set` LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000072s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000132s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020454s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020496s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000123s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000156s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000394s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000430s ]
+
+[ 2017-05-23T13:21:40+08:00 ] 101.4.137.12 /Admin/Public/verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000278s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000336s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000375s ]
+SQL: SHOW COLUMNS FROM `yk_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yk_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yk_cms_set` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yk_cms_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_shop_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yk_shop_set` LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000436s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000496s ]
+
+[ 2017-05-23T13:22:08+08:00 ] 101.4.137.12 /Admin/Public/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000302s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000339s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000379s ]
+SQL: SHOW COLUMNS FROM `yk_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yk_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_cms_set` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yk_cms_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_shop_set` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `yk_shop_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yk_user` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `yk_user` WHERE `username` = '15920177868' AND `userpass` = '21218cca77804d2ba1922c33e0151105' LIMIT 1   [ RunTime:0.0160s ]
+SQL: SHOW COLUMNS FROM `yk_employee` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yk_employee` WHERE `username` = '15920177868' AND `userpass` = '21218cca77804d2ba1922c33e0151105' LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2017-05-23T13:22:08+08:00 ] 101.4.137.12 /Admin/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000270s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000354s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000392s ]
+SQL: SHOW COLUMNS FROM `yk_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yk_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_cms_set` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yk_cms_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_shop_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yk_shop_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_user_oath` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `yk_user_oath`  [ RunTime:0.0094s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000138s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000201s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.046247s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.046312s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000131s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000166s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000359s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000399s ]
+
+[ 2017-05-23T13:22:09+08:00 ] 101.4.137.12 /Admin/Employee/main
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000256s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000372s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000407s ]
+SQL: SHOW COLUMNS FROM `yk_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yk_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yk_cms_set` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yk_cms_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_shop_set` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `yk_shop_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yk_employee` [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000032s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000067s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007976s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008011s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000145s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000175s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000354s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000388s ]
+
+[ 2017-05-23T13:22:22+08:00 ] 101.4.137.12 /Admin/Employee/orderCenter/status/2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000281s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000319s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000354s ]
+SQL: SHOW COLUMNS FROM `yk_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yk_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yk_cms_set` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yk_cms_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_shop_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yk_shop_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yk_employee` [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000028s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000068s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004626s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004658s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000140s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000171s ]
+SQL: SHOW COLUMNS FROM `yk_vip` [ RunTime:0.0010s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `employee` = 14  [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `yk_shop_order` [ RunTime:0.0008s ]
+SQL: SELECT O.*,V.pid,V.name as pname FROM yk_shop_order as O LEFT JOIN `yk_vip` AS V ON V.id = O.vipid  WHERE O.status = '2' AND `vipid` IN ('677','678','679','680','681','683','684','689','701','702','2967','2972','3006','3034','3128','3146','3147','3159','3779') ORDER BY O.ctime desc LIMIT 0,20   [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM yk_shop_order as O LEFT JOIN `yk_vip` AS V ON V.id = O.vipid  WHERE O.status = '2' AND `vipid` IN ('677','678','679','680','681','683','684','689','701','702','2967','2972','3006','3034','3128','3146','3147','3159','3779') LIMIT 1   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000061s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.032348s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026011s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.007870s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000009s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.033748s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000421s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000460s ]
+
+[ 2017-05-23T14:01:43+08:00 ] 223.73.197.191 /Admin/Shop/order/status/2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000272s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000325s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000360s ]
+SQL: SHOW COLUMNS FROM `yk_set` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `yk_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_cms_set` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yk_cms_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_shop_set` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `yk_shop_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `yk_shop_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_vip_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yk_vip_set` LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000031s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000069s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004601s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004633s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000139s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000169s ]
+SQL: SHOW COLUMNS FROM `yk_shop_order` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `yk_shop_order` WHERE `status` = 2 ORDER BY ctime desc LIMIT 0,20   [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_shop_order` WHERE `status` = 2 LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000052s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.012422s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011692s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.003547s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000009s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.015109s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000351s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000388s ]
+
+[ 2017-05-23T14:07:22+08:00 ] 183.232.118.13 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000266s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000353s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000392s ]
+SQL: SHOW COLUMNS FROM `yk_set` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `yk_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_cms_set` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `yk_cms_set` LIMIT 1   [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `yk_shop_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yk_shop_set` LIMIT 1   [ RunTime:0.0008s ]
+
+[ 2017-05-23T14:07:22+08:00 ] 163.177.93.224 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001469s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000426s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000480s ]
+SQL: SHOW COLUMNS FROM `yk_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yk_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_cms_set` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yk_cms_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_shop_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yk_shop_set` LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2017-05-23T14:14:18+08:00 ] 223.73.197.191 /Admin/Shop/order/status/2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000279s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000323s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000358s ]
+SQL: SHOW COLUMNS FROM `yk_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yk_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_cms_set` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yk_cms_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_shop_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yk_shop_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yk_shop_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_vip_set` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `yk_vip_set` LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000034s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000074s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004749s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004783s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000124s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000154s ]
+SQL: SHOW COLUMNS FROM `yk_shop_order` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `yk_shop_order` WHERE `status` = 2 ORDER BY ctime desc LIMIT 0,20   [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_shop_order` WHERE `status` = 2 LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000053s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.012888s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011571s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.003688s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000009s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.015142s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000380s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000418s ]
+
+[ 2017-05-23T14:48:01+08:00 ] 223.73.197.191 /Admin/Shop/order/status/2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000386s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000347s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000384s ]
+SQL: SHOW COLUMNS FROM `yk_set` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `yk_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yk_cms_set` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yk_cms_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_shop_set` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `yk_shop_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yk_shop_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_vip_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yk_vip_set` LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000037s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000096s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005156s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005190s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000146s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000178s ]
+SQL: SHOW COLUMNS FROM `yk_shop_order` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `yk_shop_order` WHERE `status` = 2 ORDER BY ctime desc LIMIT 0,20   [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_shop_order` WHERE `status` = 2 LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000063s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.013965s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012681s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.004035s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000010s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.016579s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000401s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000439s ]
+
+[ 2017-05-23T14:57:09+08:00 ] 223.73.197.191 /Admin/Index/main
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000279s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000360s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000396s ]
+SQL: SHOW COLUMNS FROM `yk_set` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `yk_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_cms_set` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yk_cms_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_shop_set` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `yk_shop_set` LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000034s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000070s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004593s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004632s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000125s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000155s ]
+SQL: SHOW COLUMNS FROM `yk_vip` [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_vip` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_vip` WHERE ( subscribe=1 ) LIMIT 1   [ RunTime:0.0029s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_vip` WHERE `ctime` BETWEEN 1495468800 AND 1495555199 LIMIT 1   [ RunTime:0.0028s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_vip` WHERE `ctime` BETWEEN 1495382400 AND 1495468799 LIMIT 1   [ RunTime:0.0028s ]
+SQL: SHOW COLUMNS FROM `yk_shop_order` [ RunTime:0.0009s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_shop_order` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_shop_order` WHERE ( status=0 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_shop_order` WHERE ( status=1 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_shop_order` WHERE ( status=2 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_shop_order` WHERE ( status=3 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_shop_order` WHERE ( status=4 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_shop_order` WHERE ( status=5 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_shop_order` WHERE ( status=6 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_shop_order` WHERE `ctime` BETWEEN 1495468800 AND 1495555199 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_shop_order` WHERE `ctime` BETWEEN 1495382400 AND 1495468799 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `yk_fx_syslog` [ RunTime:0.0005s ]
+SQL: SELECT SUM(fxyj) AS tp_sum FROM `yk_fx_syslog` LIMIT 1   [ RunTime:0.0166s ]
+SQL: SELECT SUM(fxyj) AS tp_sum FROM `yk_fx_syslog` WHERE `ctime` BETWEEN 1495468800 AND 1495555199 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT SUM(fxyj) AS tp_sum FROM `yk_fx_syslog` WHERE `ctime` BETWEEN 1495382400 AND 1495468799 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_vip` WHERE `isfx` = 0 AND `isfxgd` = 0 LIMIT 1   [ RunTime:0.0031s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_vip` WHERE `isfx` = 1 AND `isfxgd` = 0 LIMIT 1   [ RunTime:0.0032s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_vip` WHERE ( isfxgd=1 ) LIMIT 1   [ RunTime:0.0028s ]
+SQL: SHOW COLUMNS FROM `yk_vip_log_sub` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `yk_vip_log_sub` ORDER BY ctime desc LIMIT 5   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yk_vip` WHERE ( id=3950 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yk_vip` WHERE ( id=3949 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yk_vip` WHERE ( id=3948 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yk_vip` WHERE ( id=3103 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yk_vip` WHERE ( id=3941 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yk_fx_syslog` ORDER BY ctime desc LIMIT 5   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `yk_vip` WHERE ( id=2538 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yk_vip` WHERE ( id=38 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yk_fx_log_tj` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yk_fx_log_tj` ORDER BY ctime desc LIMIT 5   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `yk_shop_order` WHERE `ispay` = 1 AND `status` = 2 ORDER BY ctime desc LIMIT 5   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `yk_vip` WHERE ( id=3950 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yk_vip` WHERE ( id=3103 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yk_vip` WHERE ( id=49 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yk_vip` WHERE ( id=49 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yk_vip` WHERE ( id=149 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT SUM(totalprice) AS tp_sum FROM `yk_shop_order` WHERE `ispay` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT SUM(totalprice) AS tp_sum FROM `yk_shop_order` WHERE `status` = 5 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT SUM(totalnum) AS tp_sum FROM `yk_shop_order` WHERE `ispay` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `yk_vip_tx` [ RunTime:0.0005s ]
+SQL: SELECT SUM(txprice) AS tp_sum FROM `yk_vip_tx` WHERE `status` = 2 LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000092s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.116619s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.052538s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.066775s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000011s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.119210s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000416s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000455s ]
+
+[ 2017-05-23T15:18:25+08:00 ] 163.177.69.106 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000333s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000325s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000364s ]
+SQL: SHOW COLUMNS FROM `yk_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yk_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yk_cms_set` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yk_cms_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_shop_set` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `yk_shop_set` LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2017-05-23T15:18:26+08:00 ] 183.232.90.79 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000284s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000323s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000362s ]
+SQL: SHOW COLUMNS FROM `yk_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yk_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_cms_set` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yk_cms_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_shop_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yk_shop_set` LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2017-05-23T15:24:10+08:00 ] 223.73.197.191 /Admin/Public/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000276s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000461s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000530s ]
+SQL: SHOW COLUMNS FROM `yk_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yk_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_cms_set` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yk_cms_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yk_shop_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yk_shop_set` LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2017-05-23T15:24:10+08:00 ] 223.73.197.191 /Admin/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000272s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000326s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000364s ]
+SQL: SHOW COLUMNS FROM `yk_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yk_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_cms_set` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yk_cms_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_shop_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yk_shop_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yk_user_oath` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yk_user_oath`  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000131s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000174s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023213s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023274s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000126s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000157s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000362s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000403s ]
+
+[ 2017-05-23T15:24:11+08:00 ] 223.73.197.191 /Admin/Index/main
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000266s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000348s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000407s ]
+SQL: SHOW COLUMNS FROM `yk_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yk_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yk_cms_set` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yk_cms_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_shop_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yk_shop_set` LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000032s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000068s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004600s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004636s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000150s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000182s ]
+SQL: SHOW COLUMNS FROM `yk_vip` [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_vip` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_vip` WHERE ( subscribe=1 ) LIMIT 1   [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_vip` WHERE `ctime` BETWEEN 1495468800 AND 1495555199 LIMIT 1   [ RunTime:0.0028s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_vip` WHERE `ctime` BETWEEN 1495382400 AND 1495468799 LIMIT 1   [ RunTime:0.0028s ]
+SQL: SHOW COLUMNS FROM `yk_shop_order` [ RunTime:0.0011s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_shop_order` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_shop_order` WHERE ( status=0 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_shop_order` WHERE ( status=1 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_shop_order` WHERE ( status=2 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_shop_order` WHERE ( status=3 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_shop_order` WHERE ( status=4 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_shop_order` WHERE ( status=5 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_shop_order` WHERE ( status=6 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_shop_order` WHERE `ctime` BETWEEN 1495468800 AND 1495555199 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_shop_order` WHERE `ctime` BETWEEN 1495382400 AND 1495468799 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `yk_fx_syslog` [ RunTime:0.0005s ]
+SQL: SELECT SUM(fxyj) AS tp_sum FROM `yk_fx_syslog` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT SUM(fxyj) AS tp_sum FROM `yk_fx_syslog` WHERE `ctime` BETWEEN 1495468800 AND 1495555199 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT SUM(fxyj) AS tp_sum FROM `yk_fx_syslog` WHERE `ctime` BETWEEN 1495382400 AND 1495468799 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_vip` WHERE `isfx` = 0 AND `isfxgd` = 0 LIMIT 1   [ RunTime:0.0031s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_vip` WHERE `isfx` = 1 AND `isfxgd` = 0 LIMIT 1   [ RunTime:0.0034s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_vip` WHERE ( isfxgd=1 ) LIMIT 1   [ RunTime:0.0028s ]
+SQL: SHOW COLUMNS FROM `yk_vip_log_sub` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yk_vip_log_sub` ORDER BY ctime desc LIMIT 5   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yk_vip` WHERE ( id=3950 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yk_vip` WHERE ( id=3949 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yk_vip` WHERE ( id=3948 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yk_vip` WHERE ( id=3103 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yk_vip` WHERE ( id=3941 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yk_fx_syslog` ORDER BY ctime desc LIMIT 5   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `yk_vip` WHERE ( id=2538 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yk_vip` WHERE ( id=38 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_fx_log_tj` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yk_fx_log_tj` ORDER BY ctime desc LIMIT 5   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `yk_shop_order` WHERE `ispay` = 1 AND `status` = 2 ORDER BY ctime desc LIMIT 5   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `yk_vip` WHERE ( id=3950 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yk_vip` WHERE ( id=3103 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yk_vip` WHERE ( id=49 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yk_vip` WHERE ( id=49 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yk_vip` WHERE ( id=149 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT SUM(totalprice) AS tp_sum FROM `yk_shop_order` WHERE `ispay` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT SUM(totalprice) AS tp_sum FROM `yk_shop_order` WHERE `status` = 5 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT SUM(totalnum) AS tp_sum FROM `yk_shop_order` WHERE `ispay` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `yk_vip_tx` [ RunTime:0.0005s ]
+SQL: SELECT SUM(txprice) AS tp_sum FROM `yk_vip_tx` WHERE `status` = 2 LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000089s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.052218s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018385s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.036390s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000010s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.054639s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000412s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000451s ]
+
+[ 2017-05-23T15:24:14+08:00 ] 223.73.197.191 /Admin/Shop/order/status/2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000272s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000328s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000363s ]
+SQL: SHOW COLUMNS FROM `yk_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yk_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_cms_set` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yk_cms_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_shop_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yk_shop_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `yk_shop_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_vip_set` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `yk_vip_set` LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000029s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000067s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004535s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004568s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000119s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000149s ]
+SQL: SHOW COLUMNS FROM `yk_shop_order` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `yk_shop_order` WHERE `status` = 2 ORDER BY ctime desc LIMIT 0,20   [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_shop_order` WHERE `status` = 2 LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000053s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.012290s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011407s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.003425s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000009s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.014721s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000395s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000433s ]
+
+[ 2017-05-23T15:31:07+08:00 ] 223.73.197.191 /Admin/Shop/order/status/2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000264s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000325s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000362s ]
+SQL: SHOW COLUMNS FROM `yk_set` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `yk_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_cms_set` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yk_cms_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_shop_set` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `yk_shop_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `yk_shop_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_vip_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yk_vip_set` LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000035s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000075s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004762s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004797s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000142s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000173s ]
+SQL: SHOW COLUMNS FROM `yk_shop_order` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `yk_shop_order` WHERE `status` = 2 ORDER BY ctime desc LIMIT 0,20   [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_shop_order` WHERE `status` = 2 LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000060s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.012911s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012132s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.003572s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000009s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.015573s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000437s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000475s ]
+
+[ 2017-05-23T15:39:47+08:00 ] 183.232.120.37 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000257s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000319s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000357s ]
+SQL: SHOW COLUMNS FROM `yk_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yk_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_cms_set` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `yk_cms_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_shop_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yk_shop_set` LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2017-05-23T15:39:47+08:00 ] 163.177.93.241 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000271s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000322s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000359s ]
+SQL: SHOW COLUMNS FROM `yk_set` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `yk_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_cms_set` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yk_cms_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_shop_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yk_shop_set` LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2017-05-23T15:45:58+08:00 ] 223.73.197.191 /Admin/Shop/order/status/2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000260s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000323s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000359s ]
+SQL: SHOW COLUMNS FROM `yk_set` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `yk_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_cms_set` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yk_cms_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_shop_set` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `yk_shop_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yk_shop_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_vip_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yk_vip_set` LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000034s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000074s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004631s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004665s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000121s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000151s ]
+SQL: SHOW COLUMNS FROM `yk_shop_order` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `yk_shop_order` WHERE `status` = 2 ORDER BY ctime desc LIMIT 0,20   [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_shop_order` WHERE `status` = 2 LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000054s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.012898s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011688s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.003721s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000009s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.015296s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000360s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000399s ]
+
+[ 2017-05-23T15:49:51+08:00 ] 223.73.197.191 /Admin/Shop/order/status/2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000262s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000356s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000392s ]
+SQL: SHOW COLUMNS FROM `yk_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yk_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_cms_set` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yk_cms_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_shop_set` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `yk_shop_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yk_shop_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_vip_set` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `yk_vip_set` LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000031s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000071s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004596s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004630s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000121s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000151s ]
+SQL: SHOW COLUMNS FROM `yk_shop_order` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `yk_shop_order` WHERE `status` = 2 ORDER BY ctime desc LIMIT 0,20   [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_shop_order` WHERE `status` = 2 LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000053s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.012321s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011370s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.003444s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000009s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.014700s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000357s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000394s ]
+
+[ 2017-05-23T15:51:36+08:00 ] 124.161.23.11 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000264s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000359s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000397s ]
+SQL: SHOW COLUMNS FROM `yk_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yk_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yk_cms_set` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yk_cms_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_shop_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yk_shop_set` LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2017-05-23T15:51:37+08:00 ] 223.85.132.24 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000290s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000331s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000370s ]
+SQL: SHOW COLUMNS FROM `yk_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yk_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_cms_set` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yk_cms_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_shop_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yk_shop_set` LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2017-05-23T15:55:43+08:00 ] 223.73.197.191 /Admin/Shop/order/status/2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000284s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000365s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000402s ]
+SQL: SHOW COLUMNS FROM `yk_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yk_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yk_cms_set` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yk_cms_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_shop_set` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `yk_shop_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yk_shop_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_vip_set` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `yk_vip_set` LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000033s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000073s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004917s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004951s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000149s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000186s ]
+SQL: SHOW COLUMNS FROM `yk_shop_order` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `yk_shop_order` WHERE `status` = 2 ORDER BY ctime desc LIMIT 0,20   [ RunTime:0.0009s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_shop_order` WHERE `status` = 2 LIMIT 1   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000057s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.014092s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012232s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.004576s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000016s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.016717s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000532s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000573s ]
+
+[ 2017-05-23T16:00:07+08:00 ] 223.73.197.191 /Admin/Shop/order/status/2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000358s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000424s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000463s ]
+SQL: SHOW COLUMNS FROM `yk_set` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `yk_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yk_cms_set` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yk_cms_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_shop_set` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `yk_shop_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yk_shop_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yk_vip_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yk_vip_set` LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000034s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000077s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004894s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004929s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000124s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000154s ]
+SQL: SHOW COLUMNS FROM `yk_shop_order` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `yk_shop_order` WHERE `status` = 2 ORDER BY ctime desc LIMIT 0,20   [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_shop_order` WHERE `status` = 2 LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000054s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.013400s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012093s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.003951s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000009s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.015929s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000386s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000424s ]
+
+[ 2017-05-23T16:00:39+08:00 ] 223.73.197.191 /Admin/Shop/order/status/2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000259s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000345s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000380s ]
+SQL: SHOW COLUMNS FROM `yk_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yk_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yk_cms_set` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yk_cms_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_shop_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yk_shop_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yk_shop_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_vip_set` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `yk_vip_set` LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000030s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000069s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004634s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004667s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000121s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000151s ]
+SQL: SHOW COLUMNS FROM `yk_shop_order` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `yk_shop_order` WHERE `status` = 2 ORDER BY ctime desc LIMIT 0,20   [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_shop_order` WHERE `status` = 2 LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000053s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.012676s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011630s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.003512s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000009s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.015028s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000403s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000442s ]
+
+[ 2017-05-23T16:03:31+08:00 ] 223.73.197.191 /Admin/Shop/order/status/2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000297s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000325s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000361s ]
+SQL: SHOW COLUMNS FROM `yk_set` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `yk_set` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `yk_cms_set` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `yk_cms_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_shop_set` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `yk_shop_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yk_shop_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_vip_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yk_vip_set` LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000033s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000074s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004669s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004704s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000123s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000153s ]
+SQL: SHOW COLUMNS FROM `yk_shop_order` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `yk_shop_order` WHERE `status` = 2 ORDER BY ctime desc LIMIT 0,20   [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_shop_order` WHERE `status` = 2 LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000052s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.012665s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011583s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.003698s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000009s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.015168s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000393s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000431s ]
+
+[ 2017-05-23T16:15:13+08:00 ] 223.73.197.191 /Admin/Shop/order/status/2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000266s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000389s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000430s ]
+SQL: SHOW COLUMNS FROM `yk_set` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `yk_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_cms_set` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yk_cms_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_shop_set` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `yk_shop_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yk_shop_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yk_vip_set` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `yk_vip_set` LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000033s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000075s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005173s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005206s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000124s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000154s ]
+SQL: SHOW COLUMNS FROM `yk_shop_order` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `yk_shop_order` WHERE `status` = 2 ORDER BY ctime desc LIMIT 0,20   [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_shop_order` WHERE `status` = 2 LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000056s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.012806s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012034s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.003530s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000012s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.015463s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000379s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000418s ]
+
+[ 2017-05-23T16:20:10+08:00 ] 163.177.93.243 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000266s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000349s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000387s ]
+SQL: SHOW COLUMNS FROM `yk_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yk_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_cms_set` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yk_cms_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_shop_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yk_shop_set` LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2017-05-23T16:20:10+08:00 ] 183.232.90.143 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000270s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000361s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000399s ]
+SQL: SHOW COLUMNS FROM `yk_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yk_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_cms_set` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yk_cms_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_shop_set` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `yk_shop_set` LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2017-05-23T16:35:22+08:00 ] 140.207.54.197 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000247s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.006348s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006388s ]
+SQL: SHOW COLUMNS FROM `yk_set` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `yk_set` LIMIT 1   [ RunTime:0.0022s ]
+SQL: SHOW COLUMNS FROM `yk_cms_set` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yk_cms_set` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `yk_shop_set` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `yk_shop_set` LIMIT 1   [ RunTime:0.0066s ]
+
+[ 2017-05-23T16:35:22+08:00 ] 101.226.125.109 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000247s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002362s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002401s ]
+SQL: SHOW COLUMNS FROM `yk_set` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `yk_set` LIMIT 1   [ RunTime:0.0025s ]
+SQL: SHOW COLUMNS FROM `yk_cms_set` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yk_cms_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_shop_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yk_shop_set` LIMIT 1   [ RunTime:0.0059s ]
+
+[ 2017-05-23T16:35:26+08:00 ] 175.155.112.40 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000268s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000327s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000366s ]
+SQL: SHOW COLUMNS FROM `yk_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yk_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_cms_set` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yk_cms_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_shop_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yk_shop_set` LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2017-05-23T16:35:26+08:00 ] 117.175.88.50 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000296s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000328s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000365s ]
+SQL: SHOW COLUMNS FROM `yk_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yk_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_cms_set` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yk_cms_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_shop_set` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `yk_shop_set` LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2017-05-23T16:48:55+08:00 ] 163.177.69.106 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000265s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000329s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000368s ]
+SQL: SHOW COLUMNS FROM `yk_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yk_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yk_cms_set` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `yk_cms_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_shop_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yk_shop_set` LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2017-05-23T16:48:55+08:00 ] 183.232.118.14 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000262s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000336s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000374s ]
+SQL: SHOW COLUMNS FROM `yk_set` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `yk_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yk_cms_set` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yk_cms_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_shop_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yk_shop_set` LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2017-05-23T16:49:24+08:00 ] 223.73.197.191 /Admin/Shop/order/status/2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000268s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000353s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000389s ]
+SQL: SHOW COLUMNS FROM `yk_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yk_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_cms_set` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yk_cms_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_shop_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yk_shop_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yk_shop_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_vip_set` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `yk_vip_set` LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000034s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000076s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004640s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004675s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000123s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000153s ]
+SQL: SHOW COLUMNS FROM `yk_shop_order` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `yk_shop_order` WHERE `status` = 2 ORDER BY ctime desc LIMIT 0,20   [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_shop_order` WHERE `status` = 2 LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000056s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.012731s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011660s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.003695s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000009s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.015241s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000371s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000409s ]
+
+[ 2017-05-23T17:03:33+08:00 ] 223.73.197.191 /Admin/Shop/order/status/2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000292s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000328s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000363s ]
+SQL: SHOW COLUMNS FROM `yk_set` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `yk_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_cms_set` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yk_cms_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_shop_set` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `yk_shop_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `yk_shop_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_vip_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yk_vip_set` LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000035s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000078s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004698s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004732s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000123s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000154s ]
+SQL: SHOW COLUMNS FROM `yk_shop_order` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `yk_shop_order` WHERE `status` = 2 ORDER BY ctime desc LIMIT 0,20   [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_shop_order` WHERE `status` = 2 LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000058s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.012768s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011728s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.003730s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000009s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.015345s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000390s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000429s ]
+
+[ 2017-05-23T17:18:03+08:00 ] 183.232.120.37 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000258s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004973s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005016s ]
+SQL: SHOW COLUMNS FROM `yk_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yk_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_cms_set` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yk_cms_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_shop_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yk_shop_set` LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2017-05-23T17:18:04+08:00 ] 163.177.69.107 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000298s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000338s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000377s ]
+SQL: SHOW COLUMNS FROM `yk_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yk_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_cms_set` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yk_cms_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yk_shop_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yk_shop_set` LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2017-05-23T17:31:56+08:00 ] 223.73.197.191 /Admin/Shop/order/status/2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000399s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000333s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000368s ]
+SQL: SHOW COLUMNS FROM `yk_set` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `yk_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yk_cms_set` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yk_cms_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_shop_set` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `yk_shop_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yk_shop_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_vip_set` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `yk_vip_set` LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000033s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000074s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004637s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004672s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000122s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000152s ]
+SQL: SHOW COLUMNS FROM `yk_shop_order` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `yk_shop_order` WHERE `status` = 2 ORDER BY ctime desc LIMIT 0,20   [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_shop_order` WHERE `status` = 2 LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000053s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.012394s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011431s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.003509s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000009s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.014826s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000384s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000422s ]
+
+[ 2017-05-23T17:41:16+08:00 ] 123.151.42.47 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000277s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000331s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000369s ]
+SQL: SHOW COLUMNS FROM `yk_set` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `yk_set` LIMIT 1   [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `yk_cms_set` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yk_cms_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_shop_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yk_shop_set` LIMIT 1   [ RunTime:0.0013s ]
+
+[ 2017-05-23T17:41:19+08:00 ] 111.30.132.212 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000258s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000346s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000385s ]
+SQL: SHOW COLUMNS FROM `yk_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yk_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_cms_set` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yk_cms_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_shop_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yk_shop_set` LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2017-05-23T17:48:05+08:00 ] 117.136.79.57 /Admin/Shop/order/status/2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000261s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000325s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000360s ]
+SQL: SHOW COLUMNS FROM `yk_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yk_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_cms_set` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yk_cms_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_shop_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yk_shop_set` LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2017-05-23T17:48:06+08:00 ] 117.136.79.57 /Admin/Public/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000270s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000346s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000382s ]
+SQL: SHOW COLUMNS FROM `yk_set` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `yk_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_cms_set` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yk_cms_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_shop_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yk_shop_set` LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000052s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000108s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024755s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024792s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000123s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000152s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000359s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000392s ]
+
+[ 2017-05-23T17:48:06+08:00 ] 117.136.79.57 /Admin/Public/verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000261s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000356s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000396s ]
+SQL: SHOW COLUMNS FROM `yk_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yk_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yk_cms_set` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yk_cms_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_shop_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yk_shop_set` LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000518s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000575s ]
+
+[ 2017-05-23T17:48:13+08:00 ] 117.136.79.57 /Admin/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000268s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000346s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000385s ]
+SQL: SHOW COLUMNS FROM `yk_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yk_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yk_cms_set` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yk_cms_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_shop_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yk_shop_set` LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2017-05-23T17:48:13+08:00 ] 117.136.79.57 /Admin/Public/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000264s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000347s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000386s ]
+SQL: SHOW COLUMNS FROM `yk_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yk_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_cms_set` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yk_cms_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_shop_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yk_shop_set` LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000044s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000081s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004547s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004583s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000117s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000149s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000389s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000424s ]
+
+[ 2017-05-23T17:48:14+08:00 ] 117.136.79.57 /Admin/Public/verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000262s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000319s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000357s ]
+SQL: SHOW COLUMNS FROM `yk_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yk_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_cms_set` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yk_cms_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_shop_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yk_shop_set` LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000398s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000441s ]
+
+[ 2017-05-23T17:48:38+08:00 ] 117.136.79.57 /Admin/Public/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000258s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000596s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000636s ]
+SQL: SHOW COLUMNS FROM `yk_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yk_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yk_cms_set` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yk_cms_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_shop_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yk_shop_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_user` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `yk_user` WHERE `username` = 'admin' AND `userpass` = 'f379eaf3c831b04de153469d1bec345e' LIMIT 1   [ RunTime:0.0067s ]
+SQL: SHOW COLUMNS FROM `yk_employee` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yk_employee` WHERE `username` = 'admin' AND `userpass` = 'f379eaf3c831b04de153469d1bec345e' LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2017-05-23T17:48:38+08:00 ] 117.136.79.57 /Admin/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000278s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000396s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000435s ]
+SQL: SHOW COLUMNS FROM `yk_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yk_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yk_cms_set` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yk_cms_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_shop_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yk_shop_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_user_oath` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `yk_user_oath`  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000159s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000228s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024213s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024253s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000172s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000206s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000384s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000425s ]
+
+[ 2017-05-23T17:48:39+08:00 ] 117.136.79.57 /Admin/Index/main
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000282s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000325s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000361s ]
+SQL: SHOW COLUMNS FROM `yk_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yk_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_cms_set` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yk_cms_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_shop_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yk_shop_set` LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000031s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000067s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004591s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004627s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000123s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000160s ]
+SQL: SHOW COLUMNS FROM `yk_vip` [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_vip` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_vip` WHERE ( subscribe=1 ) LIMIT 1   [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_vip` WHERE `ctime` BETWEEN 1495468800 AND 1495555199 LIMIT 1   [ RunTime:0.0031s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_vip` WHERE `ctime` BETWEEN 1495382400 AND 1495468799 LIMIT 1   [ RunTime:0.0029s ]
+SQL: SHOW COLUMNS FROM `yk_shop_order` [ RunTime:0.0009s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_shop_order` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_shop_order` WHERE ( status=0 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_shop_order` WHERE ( status=1 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_shop_order` WHERE ( status=2 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_shop_order` WHERE ( status=3 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_shop_order` WHERE ( status=4 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_shop_order` WHERE ( status=5 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_shop_order` WHERE ( status=6 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_shop_order` WHERE `ctime` BETWEEN 1495468800 AND 1495555199 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_shop_order` WHERE `ctime` BETWEEN 1495382400 AND 1495468799 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `yk_fx_syslog` [ RunTime:0.0005s ]
+SQL: SELECT SUM(fxyj) AS tp_sum FROM `yk_fx_syslog` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT SUM(fxyj) AS tp_sum FROM `yk_fx_syslog` WHERE `ctime` BETWEEN 1495468800 AND 1495555199 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT SUM(fxyj) AS tp_sum FROM `yk_fx_syslog` WHERE `ctime` BETWEEN 1495382400 AND 1495468799 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_vip` WHERE `isfx` = 0 AND `isfxgd` = 0 LIMIT 1   [ RunTime:0.0032s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_vip` WHERE `isfx` = 1 AND `isfxgd` = 0 LIMIT 1   [ RunTime:0.0033s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_vip` WHERE ( isfxgd=1 ) LIMIT 1   [ RunTime:0.0029s ]
+SQL: SHOW COLUMNS FROM `yk_vip_log_sub` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `yk_vip_log_sub` ORDER BY ctime desc LIMIT 5   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yk_vip` WHERE ( id=3849 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yk_vip` WHERE ( id=3950 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yk_vip` WHERE ( id=3949 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yk_vip` WHERE ( id=3948 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yk_vip` WHERE ( id=3103 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yk_fx_syslog` ORDER BY ctime desc LIMIT 5   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `yk_vip` WHERE ( id=2538 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yk_vip` WHERE ( id=38 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yk_fx_log_tj` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yk_fx_log_tj` ORDER BY ctime desc LIMIT 5   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `yk_shop_order` WHERE `ispay` = 1 AND `status` = 2 ORDER BY ctime desc LIMIT 5   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `yk_vip` WHERE ( id=3940 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yk_vip` WHERE ( id=3950 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yk_vip` WHERE ( id=3103 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yk_vip` WHERE ( id=49 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yk_vip` WHERE ( id=49 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT SUM(totalprice) AS tp_sum FROM `yk_shop_order` WHERE `ispay` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT SUM(totalprice) AS tp_sum FROM `yk_shop_order` WHERE `status` = 5 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT SUM(totalnum) AS tp_sum FROM `yk_shop_order` WHERE `ispay` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `yk_vip_tx` [ RunTime:0.0005s ]
+SQL: SELECT SUM(txprice) AS tp_sum FROM `yk_vip_tx` WHERE `status` = 2 LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000085s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.052988s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018525s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.036969s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000011s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.055374s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000406s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000447s ]
+
+[ 2017-05-23T17:48:47+08:00 ] 117.136.79.57 /Admin/Shop/order/status/2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000291s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000329s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000364s ]
+SQL: SHOW COLUMNS FROM `yk_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yk_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_cms_set` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yk_cms_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_shop_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yk_shop_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `yk_shop_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_vip_set` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `yk_vip_set` LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000033s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000074s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004607s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004642s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000121s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000152s ]
+SQL: SHOW COLUMNS FROM `yk_shop_order` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `yk_shop_order` WHERE `status` = 2 ORDER BY ctime desc LIMIT 0,20   [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_shop_order` WHERE `status` = 2 LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000055s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.012613s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011749s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.003447s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000009s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.015084s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000631s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000670s ]
+
+[ 2017-05-23T17:50:47+08:00 ] 117.136.79.57 /Shop/order/status/2/p/2?keyword=&name=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000273s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000332s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000389s ]
+SQL: SHOW COLUMNS FROM `yk_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yk_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_cms_set` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yk_cms_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_shop_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yk_shop_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `yk_shop_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_vip_set` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `yk_vip_set` LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000031s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000071s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004576s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004609s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000122s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000152s ]
+SQL: SHOW COLUMNS FROM `yk_shop_order` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `yk_shop_order` WHERE `status` = 2 ORDER BY ctime desc LIMIT 20,20   [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_shop_order` WHERE `status` = 2 LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000054s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.012594s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011511s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.003615s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000009s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.015013s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000388s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000427s ]
+
+[ 2017-05-23T18:19:43+08:00 ] 223.73.197.191 /Admin/Shop/order/status/2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000286s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000334s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000369s ]
+SQL: SHOW COLUMNS FROM `yk_set` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `yk_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_cms_set` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yk_cms_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_shop_set` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `yk_shop_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yk_shop_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yk_vip_set` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `yk_vip_set` LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000032s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000072s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004767s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004800s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000121s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000154s ]
+SQL: SHOW COLUMNS FROM `yk_shop_order` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `yk_shop_order` WHERE `status` = 2 ORDER BY ctime desc LIMIT 0,20   [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_shop_order` WHERE `status` = 2 LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000051s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.012588s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011510s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.003561s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000009s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.014955s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000366s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000403s ]
+
+[ 2017-05-23T19:35:34+08:00 ] 163.177.69.13 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000292s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000349s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000387s ]
+SQL: SHOW COLUMNS FROM `yk_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yk_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_cms_set` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yk_cms_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_shop_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yk_shop_set` LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2017-05-23T19:35:35+08:00 ] 183.232.90.36 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000260s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000350s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000389s ]
+SQL: SHOW COLUMNS FROM `yk_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yk_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_cms_set` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yk_cms_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_shop_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yk_shop_set` LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2017-05-23T20:20:25+08:00 ] 123.151.38.94 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000301s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000396s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000446s ]
+SQL: SHOW COLUMNS FROM `yk_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yk_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_cms_set` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yk_cms_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_shop_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yk_shop_set` LIMIT 1   [ RunTime:0.0030s ]
+
+[ 2017-05-23T20:20:25+08:00 ] 111.30.141.47 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000280s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000343s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000380s ]
+SQL: SHOW COLUMNS FROM `yk_set` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `yk_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_cms_set` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yk_cms_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_shop_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yk_shop_set` LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2017-05-23T23:35:13+08:00 ] 59.41.162.99 /Admin/Public/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000265s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000368s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000407s ]
+SQL: SHOW COLUMNS FROM `yk_set` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `yk_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_cms_set` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yk_cms_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_shop_set` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `yk_shop_set` LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000041s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000078s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004565s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004601s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000122s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000153s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000349s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000386s ]
+
+[ 2017-05-23T23:35:13+08:00 ] 59.41.162.99 /Admin/Public/verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000260s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000354s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000393s ]
+SQL: SHOW COLUMNS FROM `yk_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yk_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_cms_set` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yk_cms_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yk_shop_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yk_shop_set` LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000400s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000443s ]
+
+[ 2017-05-23T23:35:26+08:00 ] 59.41.162.99 /Admin/Public/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000261s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000321s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000360s ]
+SQL: SHOW COLUMNS FROM `yk_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yk_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_cms_set` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yk_cms_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_shop_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yk_shop_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_user` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `yk_user` WHERE `username` = 'admin' AND `userpass` = 'f379eaf3c831b04de153469d1bec345e' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yk_employee` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `yk_employee` WHERE `username` = 'admin' AND `userpass` = 'f379eaf3c831b04de153469d1bec345e' LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2017-05-23T23:35:26+08:00 ] 59.41.162.99 /Admin/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000260s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000345s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000386s ]
+SQL: SHOW COLUMNS FROM `yk_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yk_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_cms_set` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yk_cms_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_shop_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yk_shop_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_user_oath` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yk_user_oath`  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000141s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000202s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023865s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023906s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000150s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000181s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000375s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000414s ]
+
+[ 2017-05-23T23:35:31+08:00 ] 59.41.162.99 /Admin/Index/main
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000267s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000399s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000436s ]
+SQL: SHOW COLUMNS FROM `yk_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yk_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yk_cms_set` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yk_cms_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_shop_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yk_shop_set` LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000033s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000072s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004703s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004741s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000153s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000185s ]
+SQL: SHOW COLUMNS FROM `yk_vip` [ RunTime:0.0012s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_vip` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_vip` WHERE ( subscribe=1 ) LIMIT 1   [ RunTime:0.0031s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_vip` WHERE `ctime` BETWEEN 1495468800 AND 1495555199 LIMIT 1   [ RunTime:0.0029s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_vip` WHERE `ctime` BETWEEN 1495382400 AND 1495468799 LIMIT 1   [ RunTime:0.0028s ]
+SQL: SHOW COLUMNS FROM `yk_shop_order` [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_shop_order` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_shop_order` WHERE ( status=0 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_shop_order` WHERE ( status=1 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_shop_order` WHERE ( status=2 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_shop_order` WHERE ( status=3 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_shop_order` WHERE ( status=4 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_shop_order` WHERE ( status=5 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_shop_order` WHERE ( status=6 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_shop_order` WHERE `ctime` BETWEEN 1495468800 AND 1495555199 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_shop_order` WHERE `ctime` BETWEEN 1495382400 AND 1495468799 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `yk_fx_syslog` [ RunTime:0.0005s ]
+SQL: SELECT SUM(fxyj) AS tp_sum FROM `yk_fx_syslog` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT SUM(fxyj) AS tp_sum FROM `yk_fx_syslog` WHERE `ctime` BETWEEN 1495468800 AND 1495555199 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT SUM(fxyj) AS tp_sum FROM `yk_fx_syslog` WHERE `ctime` BETWEEN 1495382400 AND 1495468799 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_vip` WHERE `isfx` = 0 AND `isfxgd` = 0 LIMIT 1   [ RunTime:0.0031s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_vip` WHERE `isfx` = 1 AND `isfxgd` = 0 LIMIT 1   [ RunTime:0.0032s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_vip` WHERE ( isfxgd=1 ) LIMIT 1   [ RunTime:0.0028s ]
+SQL: SHOW COLUMNS FROM `yk_vip_log_sub` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `yk_vip_log_sub` ORDER BY ctime desc LIMIT 5   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yk_vip` WHERE ( id=3957 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yk_vip` WHERE ( id=3849 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yk_vip` WHERE ( id=3950 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yk_vip` WHERE ( id=3949 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yk_vip` WHERE ( id=3948 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yk_fx_syslog` ORDER BY ctime desc LIMIT 5   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `yk_vip` WHERE ( id=2538 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yk_vip` WHERE ( id=38 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yk_fx_log_tj` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yk_fx_log_tj` ORDER BY ctime desc LIMIT 5   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `yk_shop_order` WHERE `ispay` = 1 AND `status` = 2 ORDER BY ctime desc LIMIT 5   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `yk_vip` WHERE ( id=3940 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yk_vip` WHERE ( id=3950 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yk_vip` WHERE ( id=3103 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yk_vip` WHERE ( id=49 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yk_vip` WHERE ( id=49 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT SUM(totalprice) AS tp_sum FROM `yk_shop_order` WHERE `ispay` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT SUM(totalprice) AS tp_sum FROM `yk_shop_order` WHERE `status` = 5 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT SUM(totalnum) AS tp_sum FROM `yk_shop_order` WHERE `ispay` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `yk_vip_tx` [ RunTime:0.0005s ]
+SQL: SELECT SUM(txprice) AS tp_sum FROM `yk_vip_tx` WHERE `status` = 2 LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000088s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.052838s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018770s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.036821s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000011s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.055447s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000427s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000467s ]
+
+[ 2017-05-23T23:35:41+08:00 ] 117.185.27.113 /Admin/Index/main
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000262s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000326s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000365s ]
+SQL: SHOW COLUMNS FROM `yk_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yk_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_cms_set` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yk_cms_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_shop_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yk_shop_set` LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2017-05-23T23:35:41+08:00 ] 117.185.27.113 /Admin/Public/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000286s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000356s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000397s ]
+SQL: SHOW COLUMNS FROM `yk_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yk_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_cms_set` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yk_cms_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_shop_set` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `yk_shop_set` LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000046s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000086s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004664s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000119s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000151s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000377s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000412s ]
+
+[ 2017-05-23T23:35:44+08:00 ] 59.41.162.99 /Admin/Shop/order/status/2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000281s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000359s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000405s ]
+SQL: SHOW COLUMNS FROM `yk_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yk_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yk_cms_set` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yk_cms_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_shop_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yk_shop_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yk_shop_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_vip_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yk_vip_set` LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000037s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000085s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005084s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005119s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000147s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000179s ]
+SQL: SHOW COLUMNS FROM `yk_shop_order` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `yk_shop_order` WHERE `status` = 2 ORDER BY ctime desc LIMIT 0,20   [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_shop_order` WHERE `status` = 2 LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000061s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.014234s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013139s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.003946s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000011s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.016949s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000399s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000438s ]
+
+[ 2017-05-23T23:35:54+08:00 ] 101.226.89.120 /Admin/Shop/order/status/2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000282s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000326s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000365s ]
+SQL: SHOW COLUMNS FROM `yk_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yk_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_cms_set` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yk_cms_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_shop_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yk_shop_set` LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2017-05-23T23:35:54+08:00 ] 101.226.89.120 /Admin/Public/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000259s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000357s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000395s ]
+SQL: SHOW COLUMNS FROM `yk_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yk_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_cms_set` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yk_cms_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_shop_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yk_shop_set` LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000043s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000082s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004597s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004640s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000119s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000150s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000370s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000410s ]
+

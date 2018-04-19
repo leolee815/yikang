@@ -1,0 +1,338 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>{$_SESSION['WAP']['shopset']['name']}</title>
+    <meta charset="utf-8" />
+    <!--页面优化-->
+    <meta name="MobileOptimized" content="320">
+    <!--默认宽度320-->
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+    <!--viewport 等比 不缩放-->
+    <meta http-equiv="cleartype" content="on">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <!--删除苹果菜单-->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <!--默认颜色-->
+    <meta name="apple-mobile-web-app-title" content="yes">
+    <meta name="apple-touch-fullscreen" content="yes">
+    <!--加载全部后 显示-->
+    <meta content="telephone=no" name="format-detection" />
+    <!--不识别电话-->
+    <meta content="email=no" name="format-detection" />
+    <link rel="stylesheet" href="__PUBLIC__/App/css/style.css?v=20170503" />
+    <!--组件依赖js begin-->
+    <script src="__PUBLIC__/App/js/zepto.min.js"></script>
+    <script src="__PUBLIC__/App/js/fx.js"></script>
+    <script src="__PUBLIC__/App/js/fx_methods.js"></script>
+	
+    <script type="text/javascript" src="__PUBLIC__/App/gmu/iscroll.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/App/gmu/gmu.min.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/App/gmu/widget.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/App/gmu/navigator.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/App/gmu/scrollable.js"></script>
+    <!--组件依赖js end-->
+    <!--轮播js begin-->
+    <script src="__PUBLIC__/App/js/tool.js"></script>
+    <script src="__PUBLIC__/App/js/swipe.js"></script>
+	
+    <style>
+    <style> .pp-follow {
+        padding: 0.2em 0px;
+        width: 100%;
+        background: #e4dcd1;
+        display: block;
+    }
+    
+    .p-fopic {
+        margin-left: 1%;
+        float: left;
+        width: 12.5%;
+        border-radius: 3px;
+        margin-top: 2%;
+    }
+    
+    .p-focon {
+        float: left;
+        margin-left: 2%;
+        width: 60%;
+        color: #000000;
+        font-size: 0.9em;
+        line-height: 3.2em;
+    }
+    
+    .p-fofo {
+        margin-top: 1.5%;
+        margin-left: 1%;
+        float: left;
+        width: 22.5%;
+        color: #fff;
+        font-size: 0.9em;
+        text-align: center;
+        line-height: 2.5em;
+        background: #df0e11;
+        border-radius: 0.3em;
+    }
+    
+    .p-fofo a,
+    .p-fofo a:visited {
+        color: #fff;
+        font-size: 0.9em;
+        text-align: center;
+        line-height: 2.5em;
+    }
+    
+    .clear {
+        clear: both;
+    }
+    
+    .showImg-div {
+        height: 160px;
+    }
+    
+    .showImg {
+        width: 100%;
+        overflow: hidden;
+    }
+    
+    #wrap {
+        width: 100%
+    }
+    .secondNav{width: 100%;display: none;background: #99CCCC;}
+    .secondNav ul{overflow: hidden;padding-top: 10px;}
+    .secondNav ul li{float: left;margin-bottom: 10px;margin-left: 20px;text-align: center}
+    .secondNav ul li p{margin-top: 5px}
+    .secondNav ul li a:link{color: #fff}
+    .secondNav ul li a:visited{color: #fff}
+    </style>
+</head>
+
+<body class="index">
+    <div id="tmpshare" style="display: none;">
+        <img src="{$_SESSION['WAP']['shopset']['sharepic']}">
+    </div>
+    <div class="zbb_index">
+        <header class="ui-banner">
+            <div id="slider" class="swipe">
+                <ul class="swipe-wrap">
+                    <foreach name="indexalbum" item="vo">
+                        <li>
+                            <a href="{$vo.url}"><img src="{$vo.imgurl}"></a>
+                        </li>
+                    </foreach>
+                </ul>
+                <div id="slider_on">
+                    <ul>
+                        <foreach name="indexalbum" item="vo">
+                            <li></li>
+                        </foreach>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <div class="index-lst">
+            <div class="lst-tt"><span class="color11 lst-mr">扫描二维码</span>&nbsp;<span class="color2 fonts2"></span></div>
+            <ul class="lst-ul">
+            	<li><img src="/Upload/img/2016-08-18/57b51845130de.jpg" width="100%"></li>
+            </ul>          
+       	</div>
+        <!-- 每日 -->
+        <div class="index-lst">
+        	<div class="lst-tt"><span class="color11 lst-mr">视频介绍</span></div>
+           	<div class="video">
+					<iframe frameborder="0" width="100%" height="200" src="http://v.qq.com/iframe/player.html?vid=p0012xllcv7&tiny=0&auto=0" allowfullscreen></iframe>
+            </div>
+         </div>
+         <div class="index-lst">
+        	<div class="lst-tt"><span class="color11 lst-mr">操作介绍</span></div>
+           	<div class="video">
+					<iframe frameborder="0" width="100%" height="200" src="http://v.qq.com/iframe/player.html?vid=a0322qzz7zj&tiny=0&auto=0" allowfullscreen></iframe>
+            </div>
+         </div>
+         <foreach name="group" item="vo">
+         <div class="index-lst">
+            <div class="lst-tt"><span class="color11 lst-mr">{$vo.name}</span>&nbsp;<span class="color2 fonts2">{$vo.summary}</span></div>
+            <ul class="lst-ul">
+            	<li><img src="{$vo.indexpic}" width="100%"></li>
+            	<!-- 
+                <volist name="mrtj" id="vo">
+                    <li>
+                        <a href="{:U('App/Shop/goods',array('sid'=>0,'id'=>$vo['id'],'ppid'=>$_SESSION['WAP']['vipid']))}"><img src="{$vo.imgurl}">
+                            <p><span>{$vo.name}</span><span class="fr color3 "><em class="fonts2">￥</em><em class="fonts1">{$vo.price}</em>&nbsp;<span class="plist-xp fonts3">￥{$vo.oprice}</span></span>
+                            </p>
+                        </a>
+                    </li>
+                </volist>
+                 -->
+            </ul>          
+       	</div>
+       	</foreach>
+          <!-- 最新文章-->
+	   <div class="topic-list">
+	        <div class="lst-tt"><span class="color11 lst-mr">最新文章</span></div>
+	        	<volist name="artical" id="vo">
+				<div class="imgtext-h clearfix">
+		              <a href="{:U('App/Artical/index',array('id'=>$vo['id']))}" class="img-left"><img alt="{$vo.title}" src="{$vo.listpic.imgurl}"></a>
+		              <div class="text-right">
+		                  <h3><a target="_blank" href="{:U('App/Artical/index',array('id'=>$vo['id']))}">{$vo.title}</a></h3>
+		                  <p class="date">{$vo.time}</p>
+		                  <p class="intro">{$vo.sub|msubstr=0,18,'utf-8',true}<a href="{:U('App/Artical/index',array('id'=>$vo['id']))}">阅读全文</a></p>
+		              </div>
+		         </div>
+		         </volist>
+	       </div>
+        <!-- 底部导航 -->
+        <include file="./Tpl/App/Shop_footer.html" />
+    </div>
+    <!-- 导航栏滚动时锁定在屏幕上方-->
+    <script type="text/javascript" src="__PUBLIC__/App/js/menuFixed.js"></script>
+    <script type="text/javascript">
+    $('.ui-navul').children().eq(0).find('a').css('color', '#19a5f3');
+    //轮播
+    $(function() {
+        $('#slider').mBanner('slider');
+    });
+    //导航栏滚动
+    $('#nav').navigator();
+    //导航栏滚动时锁定在屏幕上方
+    window.onload = function() {
+        menuFixed('wrap');
+    }
+    </script>
+	<script type="text/javascript">
+    $("#nav ul li").tap(function(){
+      var t = $(this).index();
+      for(var i=0;i<$("#nav ul li").length;++i){
+        if(i == t){
+          $(".secondNav").eq(i).fadeToggle(900);
+        }
+        else{
+          $(".secondNav").eq(i).hide();
+        }
+      }
+    })
+    </script>
+
+    <!--新版分享特效-->
+    <script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+    <script>
+    //var share_url = "{$_SESSION['WAP']['shopset']['url']}/App/Shop/index/ppid/{$_SESSION['WAP']['vipid']}/";
+    var share_url = "http://{$_SERVER['HTTP_HOST']}__ROOT__/App/Shop/index/ppid/{$_SESSION['WAP']['vipid']}/";
+    var share_title = "{$_SESSION['WAP']['shopset']['name']}";
+    var share_content = "{$_SESSION['SET']['wxsummary']}";
+    var share_img = "{$_SESSION['WAP']['shopset']['url']}{$_SESSION['WAP']['shopset']['sharepic']}";
+
+    wx.config({
+        debug: false,
+        appId: "{$jsapi['appId']}",
+        timestamp: "{$jsapi['timestamp']}",
+        nonceStr: "{$jsapi['nonceStr']}",
+        signature: "{$jsapi['signature']}",
+        jsApiList: [
+            'checkJsApi',
+            'onMenuShareTimeline',
+            'onMenuShareAppMessage',
+            'onMenuShareQQ',
+            'onMenuShareWeibo',
+            'hideMenuItems',
+            'showMenuItems',
+            'hideAllNonBaseMenuItem',
+            'showAllNonBaseMenuItem',
+            //      'translateVoice',
+            //      'startRecord',
+            //      'stopRecord',
+            //      'onRecordEnd',
+            //      'playVoice',
+            //      'pauseVoice',
+            //      'stopVoice',
+            //      'uploadVoice',
+            //      'downloadVoice',
+            //      'chooseImage',
+            //      'previewImage',
+            //      'uploadImage',
+            //      'downloadImage',
+            //      'getNetworkType',
+            //      'openLocation',
+            //      'getLocation',
+            //      'hideOptionMenu',
+            //      'showOptionMenu',
+            //      'closeWindow',
+            //      'scanQRCode',
+            //      'chooseWXPay',
+            //      'openProductSpecificView',
+            //      'addCard',
+            //      'chooseCard',
+            //      'openCard'
+        ]
+    });
+
+    wx.ready(function() {
+        //开启菜单
+        wx.showOptionMenu();
+        //隐藏菜单
+        //wx.hideOptionMenu();
+        //分享给朋友
+        wx.onMenuShareAppMessage({
+            title: share_title,
+            desc: share_content,
+            link: share_url,
+            imgUrl: share_img,
+            trigger: function(res) {
+                //alert('用户点击发送给朋友');
+            },
+            success: function(res) {
+                //alert('已分享');
+            },
+            cancel: function(res) {
+                //alert('已取消');
+            },
+            fail: function(res) {
+                //alert(JSON.stringify(res));
+            }
+        });
+        //分享到朋友圈
+        wx.onMenuShareTimeline({
+            title: share_title,
+            link: share_url,
+            imgUrl: share_img,
+            trigger: function(res) {
+                //alert('用户点击分享到朋友圈');
+            },
+            success: function(res) {
+                //alert('已分享');
+            },
+            cancel: function(res) {
+                //alert('已取消');
+            },
+            fail: function(res) {
+                //alert(JSON.stringify(res));
+            }
+        });
+        //分享到QQ
+        wx.onMenuShareQQ({
+            title: share_title,
+            desc: share_content,
+            link: share_url,
+            imgUrl: share_img,
+            trigger: function(res) {
+                //alert('用户点击分享到QQ');
+            },
+            complete: function(res) {
+                //alert(JSON.stringify(res));
+            },
+            success: function(res) {
+                //alert('已分享');
+            },
+            cancel: function(res) {
+                //alert('已取消');
+            },
+            fail: function(res) {
+                //alert(JSON.stringify(res));
+            }
+        });
+    });
+    </script>
+	
+</body>
+
+</html>

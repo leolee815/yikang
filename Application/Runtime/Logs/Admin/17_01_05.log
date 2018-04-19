@@ -1,0 +1,2272 @@
+[ 2017-01-05T20:45:33+08:00 ] 119.130.170.238 /Admin/Employee/employeeList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000281s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000337s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000373s ]
+SQL: SHOW COLUMNS FROM `yk_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yk_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yk_cms_set` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yk_cms_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_shop_set` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `yk_shop_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yk_employee` [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000033s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000068s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004756s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004790s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000120s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000150s ]
+SQL: SHOW COLUMNS FROM `yk_employee` [ RunTime:0.0005s ]
+NOTIC: [8] Undefined index: p /mnt/wwwroot/yikang.mubantang.com/Application/Admin/Controller/EmployeeController.class.php 第 42 行.
+NOTIC: [8] Undefined variable: map /mnt/wwwroot/yikang.mubantang.com/Application/Admin/Controller/EmployeeController.class.php 第 49 行.
+SQL: SELECT * FROM `yk_employee` LIMIT 0,20   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: map /mnt/wwwroot/yikang.mubantang.com/Application/Admin/Controller/EmployeeController.class.php 第 50 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_employee` LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [2] Missing argument 6 for Admin\Controller\BaseController::getPage(), called in /mnt/wwwroot/yikang.mubantang.com/Application/Admin/Controller/EmployeeController.class.php on line 51 and defined /mnt/wwwroot/yikang.mubantang.com/Application/Admin/Controller/BaseController.class.php 第 91 行.
+NOTIC: [8] Undefined variable: map /mnt/wwwroot/yikang.mubantang.com/Application/Admin/Controller/BaseController.class.php 第 103 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000034s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.006173s ]
+NOTIC: [8] Undefined variable: name /mnt/wwwroot/yikang.mubantang.com/Application/Runtime/Cache/Admin/abf38069b0d28112fb748f4aa788ce7a.php 第 27 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005009s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.001900s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000008s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.006792s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000352s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000389s ]
+
+[ 2017-01-05T20:45:40+08:00 ] 119.130.170.238 /Admin/Employee/achievement
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000280s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000323s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000357s ]
+SQL: SHOW COLUMNS FROM `yk_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yk_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yk_cms_set` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yk_cms_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_shop_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yk_shop_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yk_employee` [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000030s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000063s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004698s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004731s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000122s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000152s ]
+SQL: SHOW COLUMNS FROM `yk_employee` [ RunTime:0.0005s ]
+NOTIC: [8] Undefined index: p /mnt/wwwroot/yikang.mubantang.com/Application/Admin/Controller/EmployeeController.class.php 第 72 行.
+NOTIC: [8] Undefined variable: map /mnt/wwwroot/yikang.mubantang.com/Application/Admin/Controller/EmployeeController.class.php 第 79 行.
+SQL: SELECT * FROM `yk_employee` LIMIT 0,20   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_shop_order` [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `yk_vip` [ RunTime:0.0009s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `employee` = 2 AND `is_system` = 1  [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_vip` WHERE `id` IN ('-10000000000') AND `is_system` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM yk_shop_order O LEFT JOIN yk_vip as V on O.vipid=V.id  WHERE V.pid IN ('-10000000000') LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM yk_shop_order O LEFT JOIN yk_vip as V on O.vipid=V.id  WHERE V.pid IN ('-10000000000') AND O.status IN ('4','7','6','0') LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM yk_shop_order O LEFT JOIN yk_vip as V on O.vipid=V.id  WHERE V.pid IN ('-10000000000') AND O.status IN ('2','3','5') LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT SUM(payprice) AS tp_sum FROM yk_shop_order O LEFT JOIN yk_vip as V on O.vipid=V.id  WHERE V.pid IN ('-10000000000') AND O.status IN ('2','3','5') LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM yk_shop_order O LEFT JOIN yk_vip as V on O.vipid=V.id  WHERE V.pid IN ('-10000000000') AND O.status IN ('2','3','5') AND O.ctime >= 1483200000 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT SUM(payprice) AS tp_sum FROM yk_shop_order O LEFT JOIN yk_vip as V on O.vipid=V.id  WHERE V.pid IN ('-10000000000') AND O.status IN ('2','3','5') AND O.ctime >= 1483200000 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM yk_shop_order O LEFT JOIN yk_vip as V on O.vipid=V.id  WHERE V.pid IN ('-10000000000') AND O.status IN ('2','3','5') AND O.ctime >= 1483545600 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT SUM(payprice) AS tp_sum FROM yk_shop_order O LEFT JOIN yk_vip as V on O.vipid=V.id  WHERE V.pid IN ('-10000000000') AND O.status IN ('2','3','5') AND O.ctime >= 1483545600 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `employee` = 4 AND `is_system` = 1  [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_vip` WHERE `id` IN ('544','545','546','547','548','549','550','551','552','553','554','555','556','557','558','559','560','561','562','563') AND `is_system` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM yk_shop_order O LEFT JOIN yk_vip as V on O.vipid=V.id  WHERE V.pid IN ('544','545','546','547','548','549','550','551','552','553','554','555','556','557','558','559','560','561','562','563') LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM yk_shop_order O LEFT JOIN yk_vip as V on O.vipid=V.id  WHERE V.pid IN ('544','545','546','547','548','549','550','551','552','553','554','555','556','557','558','559','560','561','562','563') AND O.status IN ('4','7','6','0') LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM yk_shop_order O LEFT JOIN yk_vip as V on O.vipid=V.id  WHERE V.pid IN ('544','545','546','547','548','549','550','551','552','553','554','555','556','557','558','559','560','561','562','563') AND O.status IN ('2','3','5') LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT SUM(payprice) AS tp_sum FROM yk_shop_order O LEFT JOIN yk_vip as V on O.vipid=V.id  WHERE V.pid IN ('544','545','546','547','548','549','550','551','552','553','554','555','556','557','558','559','560','561','562','563') AND O.status IN ('2','3','5') LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM yk_shop_order O LEFT JOIN yk_vip as V on O.vipid=V.id  WHERE V.pid IN ('544','545','546','547','548','549','550','551','552','553','554','555','556','557','558','559','560','561','562','563') AND O.status IN ('2','3','5') AND O.ctime >= 1483200000 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT SUM(payprice) AS tp_sum FROM yk_shop_order O LEFT JOIN yk_vip as V on O.vipid=V.id  WHERE V.pid IN ('544','545','546','547','548','549','550','551','552','553','554','555','556','557','558','559','560','561','562','563') AND O.status IN ('2','3','5') AND O.ctime >= 1483200000 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM yk_shop_order O LEFT JOIN yk_vip as V on O.vipid=V.id  WHERE V.pid IN ('544','545','546','547','548','549','550','551','552','553','554','555','556','557','558','559','560','561','562','563') AND O.status IN ('2','3','5') AND O.ctime >= 1483545600 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT SUM(payprice) AS tp_sum FROM yk_shop_order O LEFT JOIN yk_vip as V on O.vipid=V.id  WHERE V.pid IN ('544','545','546','547','548','549','550','551','552','553','554','555','556','557','558','559','560','561','562','563') AND O.status IN ('2','3','5') AND O.ctime >= 1483545600 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `employee` = 5 AND `is_system` = 1  [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_vip` WHERE `id` IN ('58','67','78') AND `is_system` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM yk_shop_order O LEFT JOIN yk_vip as V on O.vipid=V.id  WHERE V.pid IN ('58','67','78') LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM yk_shop_order O LEFT JOIN yk_vip as V on O.vipid=V.id  WHERE V.pid IN ('58','67','78') AND O.status IN ('4','7','6','0') LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM yk_shop_order O LEFT JOIN yk_vip as V on O.vipid=V.id  WHERE V.pid IN ('58','67','78') AND O.status IN ('2','3','5') LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT SUM(payprice) AS tp_sum FROM yk_shop_order O LEFT JOIN yk_vip as V on O.vipid=V.id  WHERE V.pid IN ('58','67','78') AND O.status IN ('2','3','5') LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM yk_shop_order O LEFT JOIN yk_vip as V on O.vipid=V.id  WHERE V.pid IN ('58','67','78') AND O.status IN ('2','3','5') AND O.ctime >= 1483200000 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT SUM(payprice) AS tp_sum FROM yk_shop_order O LEFT JOIN yk_vip as V on O.vipid=V.id  WHERE V.pid IN ('58','67','78') AND O.status IN ('2','3','5') AND O.ctime >= 1483200000 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM yk_shop_order O LEFT JOIN yk_vip as V on O.vipid=V.id  WHERE V.pid IN ('58','67','78') AND O.status IN ('2','3','5') AND O.ctime >= 1483545600 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT SUM(payprice) AS tp_sum FROM yk_shop_order O LEFT JOIN yk_vip as V on O.vipid=V.id  WHERE V.pid IN ('58','67','78') AND O.status IN ('2','3','5') AND O.ctime >= 1483545600 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `employee` = 6 AND `is_system` = 1  [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_vip` WHERE `id` IN ('82','83','84','85','86','87') AND `is_system` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM yk_shop_order O LEFT JOIN yk_vip as V on O.vipid=V.id  WHERE V.pid IN ('82','83','84','85','86','87') LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM yk_shop_order O LEFT JOIN yk_vip as V on O.vipid=V.id  WHERE V.pid IN ('82','83','84','85','86','87') AND O.status IN ('4','7','6','0') LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM yk_shop_order O LEFT JOIN yk_vip as V on O.vipid=V.id  WHERE V.pid IN ('82','83','84','85','86','87') AND O.status IN ('2','3','5') LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT SUM(payprice) AS tp_sum FROM yk_shop_order O LEFT JOIN yk_vip as V on O.vipid=V.id  WHERE V.pid IN ('82','83','84','85','86','87') AND O.status IN ('2','3','5') LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM yk_shop_order O LEFT JOIN yk_vip as V on O.vipid=V.id  WHERE V.pid IN ('82','83','84','85','86','87') AND O.status IN ('2','3','5') AND O.ctime >= 1483200000 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT SUM(payprice) AS tp_sum FROM yk_shop_order O LEFT JOIN yk_vip as V on O.vipid=V.id  WHERE V.pid IN ('82','83','84','85','86','87') AND O.status IN ('2','3','5') AND O.ctime >= 1483200000 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM yk_shop_order O LEFT JOIN yk_vip as V on O.vipid=V.id  WHERE V.pid IN ('82','83','84','85','86','87') AND O.status IN ('2','3','5') AND O.ctime >= 1483545600 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT SUM(payprice) AS tp_sum FROM yk_shop_order O LEFT JOIN yk_vip as V on O.vipid=V.id  WHERE V.pid IN ('82','83','84','85','86','87') AND O.status IN ('2','3','5') AND O.ctime >= 1483545600 LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined variable: map /mnt/wwwroot/yikang.mubantang.com/Application/Admin/Controller/EmployeeController.class.php 第 81 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_employee` LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2] Missing argument 6 for Admin\Controller\BaseController::getPage(), called in /mnt/wwwroot/yikang.mubantang.com/Application/Admin/Controller/EmployeeController.class.php on line 82 and defined /mnt/wwwroot/yikang.mubantang.com/Application/Admin/Controller/BaseController.class.php 第 91 行.
+NOTIC: [8] Undefined variable: map /mnt/wwwroot/yikang.mubantang.com/Application/Admin/Controller/BaseController.class.php 第 103 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000040s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.038924s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005278s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.034265s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000010s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.039435s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000368s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000406s ]
+
+[ 2017-01-05T20:45:45+08:00 ] 117.136.79.35 /Admin/Employee/vipCenter
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000281s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000320s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000354s ]
+SQL: SHOW COLUMNS FROM `yk_set` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `yk_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yk_cms_set` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yk_cms_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_shop_set` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `yk_shop_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yk_employee` [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000035s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000073s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004929s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004965s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000121s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000151s ]
+SQL: SHOW COLUMNS FROM `yk_vip` [ RunTime:0.0011s ]
+NOTIC: [8] Undefined index: p /mnt/wwwroot/yikang.mubantang.com/Application/Admin/Controller/EmployeeController.class.php 第 301 行.
+SQL: SELECT * FROM `yk_vip` WHERE `employee` = 4 AND `is_system` = 1 ORDER BY total_xxbuy DESC LIMIT 0,20   [ RunTime:0.0022s ]
+SQL: SHOW COLUMNS FROM `yk_vip_level` [ RunTime:0.0004s ]
+SQL: SELECT `name` FROM `yk_vip_level` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined offset: 4 /mnt/wwwroot/yikang.mubantang.com/Application/Admin/Controller/EmployeeController.class.php 第 324 行.
+SQL: SHOW COLUMNS FROM `yk_shop_order` [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM yk_shop_order O LEFT JOIN yk_vip as V on O.vipid=V.id  WHERE V.pid = '550' AND O.status IN ('2','3','5') LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT SUM(payprice) AS tp_sum FROM yk_shop_order O LEFT JOIN yk_vip as V on O.vipid=V.id  WHERE V.pid = '550' AND O.status IN ('2','3','5') LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `name` FROM `yk_vip_level` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined offset: 4 /mnt/wwwroot/yikang.mubantang.com/Application/Admin/Controller/EmployeeController.class.php 第 324 行.
+SQL: SELECT COUNT(*) AS tp_count FROM yk_shop_order O LEFT JOIN yk_vip as V on O.vipid=V.id  WHERE V.pid = '544' AND O.status IN ('2','3','5') LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT SUM(payprice) AS tp_sum FROM yk_shop_order O LEFT JOIN yk_vip as V on O.vipid=V.id  WHERE V.pid = '544' AND O.status IN ('2','3','5') LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `name` FROM `yk_vip_level` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined offset: 4 /mnt/wwwroot/yikang.mubantang.com/Application/Admin/Controller/EmployeeController.class.php 第 324 行.
+SQL: SELECT COUNT(*) AS tp_count FROM yk_shop_order O LEFT JOIN yk_vip as V on O.vipid=V.id  WHERE V.pid = '545' AND O.status IN ('2','3','5') LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT SUM(payprice) AS tp_sum FROM yk_shop_order O LEFT JOIN yk_vip as V on O.vipid=V.id  WHERE V.pid = '545' AND O.status IN ('2','3','5') LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `name` FROM `yk_vip_level` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined offset: 4 /mnt/wwwroot/yikang.mubantang.com/Application/Admin/Controller/EmployeeController.class.php 第 324 行.
+SQL: SELECT COUNT(*) AS tp_count FROM yk_shop_order O LEFT JOIN yk_vip as V on O.vipid=V.id  WHERE V.pid = '546' AND O.status IN ('2','3','5') LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT SUM(payprice) AS tp_sum FROM yk_shop_order O LEFT JOIN yk_vip as V on O.vipid=V.id  WHERE V.pid = '546' AND O.status IN ('2','3','5') LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `name` FROM `yk_vip_level` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined offset: 4 /mnt/wwwroot/yikang.mubantang.com/Application/Admin/Controller/EmployeeController.class.php 第 324 行.
+SQL: SELECT COUNT(*) AS tp_count FROM yk_shop_order O LEFT JOIN yk_vip as V on O.vipid=V.id  WHERE V.pid = '547' AND O.status IN ('2','3','5') LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT SUM(payprice) AS tp_sum FROM yk_shop_order O LEFT JOIN yk_vip as V on O.vipid=V.id  WHERE V.pid = '547' AND O.status IN ('2','3','5') LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `name` FROM `yk_vip_level` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined offset: 4 /mnt/wwwroot/yikang.mubantang.com/Application/Admin/Controller/EmployeeController.class.php 第 324 行.
+SQL: SELECT COUNT(*) AS tp_count FROM yk_shop_order O LEFT JOIN yk_vip as V on O.vipid=V.id  WHERE V.pid = '548' AND O.status IN ('2','3','5') LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT SUM(payprice) AS tp_sum FROM yk_shop_order O LEFT JOIN yk_vip as V on O.vipid=V.id  WHERE V.pid = '548' AND O.status IN ('2','3','5') LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `name` FROM `yk_vip_level` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined offset: 4 /mnt/wwwroot/yikang.mubantang.com/Application/Admin/Controller/EmployeeController.class.php 第 324 行.
+SQL: SELECT COUNT(*) AS tp_count FROM yk_shop_order O LEFT JOIN yk_vip as V on O.vipid=V.id  WHERE V.pid = '549' AND O.status IN ('2','3','5') LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT SUM(payprice) AS tp_sum FROM yk_shop_order O LEFT JOIN yk_vip as V on O.vipid=V.id  WHERE V.pid = '549' AND O.status IN ('2','3','5') LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `name` FROM `yk_vip_level` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined offset: 4 /mnt/wwwroot/yikang.mubantang.com/Application/Admin/Controller/EmployeeController.class.php 第 324 行.
+SQL: SELECT COUNT(*) AS tp_count FROM yk_shop_order O LEFT JOIN yk_vip as V on O.vipid=V.id  WHERE V.pid = '551' AND O.status IN ('2','3','5') LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT SUM(payprice) AS tp_sum FROM yk_shop_order O LEFT JOIN yk_vip as V on O.vipid=V.id  WHERE V.pid = '551' AND O.status IN ('2','3','5') LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `name` FROM `yk_vip_level` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined offset: 4 /mnt/wwwroot/yikang.mubantang.com/Application/Admin/Controller/EmployeeController.class.php 第 324 行.
+SQL: SELECT COUNT(*) AS tp_count FROM yk_shop_order O LEFT JOIN yk_vip as V on O.vipid=V.id  WHERE V.pid = '552' AND O.status IN ('2','3','5') LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT SUM(payprice) AS tp_sum FROM yk_shop_order O LEFT JOIN yk_vip as V on O.vipid=V.id  WHERE V.pid = '552' AND O.status IN ('2','3','5') LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `name` FROM `yk_vip_level` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined offset: 4 /mnt/wwwroot/yikang.mubantang.com/Application/Admin/Controller/EmployeeController.class.php 第 324 行.
+SQL: SELECT COUNT(*) AS tp_count FROM yk_shop_order O LEFT JOIN yk_vip as V on O.vipid=V.id  WHERE V.pid = '553' AND O.status IN ('2','3','5') LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT SUM(payprice) AS tp_sum FROM yk_shop_order O LEFT JOIN yk_vip as V on O.vipid=V.id  WHERE V.pid = '553' AND O.status IN ('2','3','5') LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `name` FROM `yk_vip_level` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 4 /mnt/wwwroot/yikang.mubantang.com/Application/Admin/Controller/EmployeeController.class.php 第 324 行.
+SQL: SELECT COUNT(*) AS tp_count FROM yk_shop_order O LEFT JOIN yk_vip as V on O.vipid=V.id  WHERE V.pid = '554' AND O.status IN ('2','3','5') LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT SUM(payprice) AS tp_sum FROM yk_shop_order O LEFT JOIN yk_vip as V on O.vipid=V.id  WHERE V.pid = '554' AND O.status IN ('2','3','5') LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `name` FROM `yk_vip_level` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined offset: 4 /mnt/wwwroot/yikang.mubantang.com/Application/Admin/Controller/EmployeeController.class.php 第 324 行.
+SQL: SELECT COUNT(*) AS tp_count FROM yk_shop_order O LEFT JOIN yk_vip as V on O.vipid=V.id  WHERE V.pid = '555' AND O.status IN ('2','3','5') LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT SUM(payprice) AS tp_sum FROM yk_shop_order O LEFT JOIN yk_vip as V on O.vipid=V.id  WHERE V.pid = '555' AND O.status IN ('2','3','5') LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `name` FROM `yk_vip_level` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined offset: 4 /mnt/wwwroot/yikang.mubantang.com/Application/Admin/Controller/EmployeeController.class.php 第 324 行.
+SQL: SELECT COUNT(*) AS tp_count FROM yk_shop_order O LEFT JOIN yk_vip as V on O.vipid=V.id  WHERE V.pid = '556' AND O.status IN ('2','3','5') LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT SUM(payprice) AS tp_sum FROM yk_shop_order O LEFT JOIN yk_vip as V on O.vipid=V.id  WHERE V.pid = '556' AND O.status IN ('2','3','5') LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `name` FROM `yk_vip_level` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined offset: 4 /mnt/wwwroot/yikang.mubantang.com/Application/Admin/Controller/EmployeeController.class.php 第 324 行.
+SQL: SELECT COUNT(*) AS tp_count FROM yk_shop_order O LEFT JOIN yk_vip as V on O.vipid=V.id  WHERE V.pid = '557' AND O.status IN ('2','3','5') LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT SUM(payprice) AS tp_sum FROM yk_shop_order O LEFT JOIN yk_vip as V on O.vipid=V.id  WHERE V.pid = '557' AND O.status IN ('2','3','5') LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `name` FROM `yk_vip_level` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined offset: 4 /mnt/wwwroot/yikang.mubantang.com/Application/Admin/Controller/EmployeeController.class.php 第 324 行.
+SQL: SELECT COUNT(*) AS tp_count FROM yk_shop_order O LEFT JOIN yk_vip as V on O.vipid=V.id  WHERE V.pid = '558' AND O.status IN ('2','3','5') LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT SUM(payprice) AS tp_sum FROM yk_shop_order O LEFT JOIN yk_vip as V on O.vipid=V.id  WHERE V.pid = '558' AND O.status IN ('2','3','5') LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `name` FROM `yk_vip_level` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined offset: 4 /mnt/wwwroot/yikang.mubantang.com/Application/Admin/Controller/EmployeeController.class.php 第 324 行.
+SQL: SELECT COUNT(*) AS tp_count FROM yk_shop_order O LEFT JOIN yk_vip as V on O.vipid=V.id  WHERE V.pid = '559' AND O.status IN ('2','3','5') LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT SUM(payprice) AS tp_sum FROM yk_shop_order O LEFT JOIN yk_vip as V on O.vipid=V.id  WHERE V.pid = '559' AND O.status IN ('2','3','5') LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `name` FROM `yk_vip_level` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined offset: 4 /mnt/wwwroot/yikang.mubantang.com/Application/Admin/Controller/EmployeeController.class.php 第 324 行.
+SQL: SELECT COUNT(*) AS tp_count FROM yk_shop_order O LEFT JOIN yk_vip as V on O.vipid=V.id  WHERE V.pid = '560' AND O.status IN ('2','3','5') LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT SUM(payprice) AS tp_sum FROM yk_shop_order O LEFT JOIN yk_vip as V on O.vipid=V.id  WHERE V.pid = '560' AND O.status IN ('2','3','5') LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `name` FROM `yk_vip_level` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined offset: 4 /mnt/wwwroot/yikang.mubantang.com/Application/Admin/Controller/EmployeeController.class.php 第 324 行.
+SQL: SELECT COUNT(*) AS tp_count FROM yk_shop_order O LEFT JOIN yk_vip as V on O.vipid=V.id  WHERE V.pid = '561' AND O.status IN ('2','3','5') LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT SUM(payprice) AS tp_sum FROM yk_shop_order O LEFT JOIN yk_vip as V on O.vipid=V.id  WHERE V.pid = '561' AND O.status IN ('2','3','5') LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `name` FROM `yk_vip_level` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined offset: 4 /mnt/wwwroot/yikang.mubantang.com/Application/Admin/Controller/EmployeeController.class.php 第 324 行.
+SQL: SELECT COUNT(*) AS tp_count FROM yk_shop_order O LEFT JOIN yk_vip as V on O.vipid=V.id  WHERE V.pid = '562' AND O.status IN ('2','3','5') LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT SUM(payprice) AS tp_sum FROM yk_shop_order O LEFT JOIN yk_vip as V on O.vipid=V.id  WHERE V.pid = '562' AND O.status IN ('2','3','5') LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `name` FROM `yk_vip_level` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined offset: 4 /mnt/wwwroot/yikang.mubantang.com/Application/Admin/Controller/EmployeeController.class.php 第 324 行.
+SQL: SELECT COUNT(*) AS tp_count FROM yk_shop_order O LEFT JOIN yk_vip as V on O.vipid=V.id  WHERE V.pid = '563' AND O.status IN ('2','3','5') LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT SUM(payprice) AS tp_sum FROM yk_shop_order O LEFT JOIN yk_vip as V on O.vipid=V.id  WHERE V.pid = '563' AND O.status IN ('2','3','5') LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_vip` WHERE `employee` = 4 AND `is_system` = 1 LIMIT 1   [ RunTime:0.0020s ]
+NOTIC: [2] Missing argument 6 for Admin\Controller\BaseController::getPage(), called in /mnt/wwwroot/yikang.mubantang.com/Application/Admin/Controller/EmployeeController.class.php on line 347 and defined /mnt/wwwroot/yikang.mubantang.com/Application/Admin/Controller/BaseController.class.php 第 91 行.
+NOTIC: [8] Undefined variable: map /mnt/wwwroot/yikang.mubantang.com/Application/Admin/Controller/BaseController.class.php 第 103 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000034s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.031365s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004856s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.028205s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000009s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.032948s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000370s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000408s ]
+
+[ 2017-01-05T20:45:45+08:00 ] 119.130.170.238 /Admin/Employee/vipAchievement/eid/4
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000254s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000348s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000383s ]
+SQL: SHOW COLUMNS FROM `yk_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yk_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yk_cms_set` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yk_cms_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_shop_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yk_shop_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yk_employee` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `yk_employee` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yk_employee` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: name /mnt/wwwroot/yikang.mubantang.com/Application/Admin/Controller/EmployeeController.class.php 第 109 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000029s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000063s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004749s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004781s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000120s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000149s ]
+SQL: SHOW COLUMNS FROM `yk_vip` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `yk_shop_order` [ RunTime:0.0008s ]
+NOTIC: [8] Undefined index: p /mnt/wwwroot/yikang.mubantang.com/Application/Admin/Controller/EmployeeController.class.php 第 121 行.
+SQL: SELECT * FROM `yk_vip` WHERE `employee` = 4 AND `is_system` = 1 LIMIT 0,20   [ RunTime:0.0007s ]
+SQL: SELECT SUM(payprice) AS tp_sum FROM yk_shop_order O LEFT JOIN yk_vip as V on O.vipid=V.id  WHERE O.status IN ('2','3','5') AND V.pid = '544' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT SUM(payprice) AS tp_sum FROM yk_shop_order O LEFT JOIN yk_vip as V on O.vipid=V.id  WHERE O.status IN ('2','3','5') AND V.pid = '545' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT SUM(payprice) AS tp_sum FROM yk_shop_order O LEFT JOIN yk_vip as V on O.vipid=V.id  WHERE O.status IN ('2','3','5') AND V.pid = '546' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT SUM(payprice) AS tp_sum FROM yk_shop_order O LEFT JOIN yk_vip as V on O.vipid=V.id  WHERE O.status IN ('2','3','5') AND V.pid = '547' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT SUM(payprice) AS tp_sum FROM yk_shop_order O LEFT JOIN yk_vip as V on O.vipid=V.id  WHERE O.status IN ('2','3','5') AND V.pid = '548' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT SUM(payprice) AS tp_sum FROM yk_shop_order O LEFT JOIN yk_vip as V on O.vipid=V.id  WHERE O.status IN ('2','3','5') AND V.pid = '549' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT SUM(payprice) AS tp_sum FROM yk_shop_order O LEFT JOIN yk_vip as V on O.vipid=V.id  WHERE O.status IN ('2','3','5') AND V.pid = '550' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT SUM(payprice) AS tp_sum FROM yk_shop_order O LEFT JOIN yk_vip as V on O.vipid=V.id  WHERE O.status IN ('2','3','5') AND V.pid = '551' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT SUM(payprice) AS tp_sum FROM yk_shop_order O LEFT JOIN yk_vip as V on O.vipid=V.id  WHERE O.status IN ('2','3','5') AND V.pid = '552' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT SUM(payprice) AS tp_sum FROM yk_shop_order O LEFT JOIN yk_vip as V on O.vipid=V.id  WHERE O.status IN ('2','3','5') AND V.pid = '553' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT SUM(payprice) AS tp_sum FROM yk_shop_order O LEFT JOIN yk_vip as V on O.vipid=V.id  WHERE O.status IN ('2','3','5') AND V.pid = '554' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT SUM(payprice) AS tp_sum FROM yk_shop_order O LEFT JOIN yk_vip as V on O.vipid=V.id  WHERE O.status IN ('2','3','5') AND V.pid = '555' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT SUM(payprice) AS tp_sum FROM yk_shop_order O LEFT JOIN yk_vip as V on O.vipid=V.id  WHERE O.status IN ('2','3','5') AND V.pid = '556' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT SUM(payprice) AS tp_sum FROM yk_shop_order O LEFT JOIN yk_vip as V on O.vipid=V.id  WHERE O.status IN ('2','3','5') AND V.pid = '557' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT SUM(payprice) AS tp_sum FROM yk_shop_order O LEFT JOIN yk_vip as V on O.vipid=V.id  WHERE O.status IN ('2','3','5') AND V.pid = '558' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT SUM(payprice) AS tp_sum FROM yk_shop_order O LEFT JOIN yk_vip as V on O.vipid=V.id  WHERE O.status IN ('2','3','5') AND V.pid = '559' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT SUM(payprice) AS tp_sum FROM yk_shop_order O LEFT JOIN yk_vip as V on O.vipid=V.id  WHERE O.status IN ('2','3','5') AND V.pid = '560' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT SUM(payprice) AS tp_sum FROM yk_shop_order O LEFT JOIN yk_vip as V on O.vipid=V.id  WHERE O.status IN ('2','3','5') AND V.pid = '561' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT SUM(payprice) AS tp_sum FROM yk_shop_order O LEFT JOIN yk_vip as V on O.vipid=V.id  WHERE O.status IN ('2','3','5') AND V.pid = '562' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT SUM(payprice) AS tp_sum FROM yk_shop_order O LEFT JOIN yk_vip as V on O.vipid=V.id  WHERE O.status IN ('2','3','5') AND V.pid = '563' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_vip` WHERE `employee` = 4 AND `is_system` = 1 LIMIT 1   [ RunTime:0.0019s ]
+NOTIC: [2] Missing argument 6 for Admin\Controller\BaseController::getPage(), called in /mnt/wwwroot/yikang.mubantang.com/Application/Admin/Controller/EmployeeController.class.php on line 133 and defined /mnt/wwwroot/yikang.mubantang.com/Application/Admin/Controller/BaseController.class.php 第 91 行.
+NOTIC: [8] Undefined variable: map /mnt/wwwroot/yikang.mubantang.com/Application/Admin/Controller/BaseController.class.php 第 103 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000034s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.017101s ]
+NOTIC: [8] Undefined variable: search /mnt/wwwroot/yikang.mubantang.com/Application/Runtime/Cache/Admin/ed9283150ec42ddd722a51b164513bd7.php 第 27 行.
+NOTIC: [8] Undefined variable: eid /mnt/wwwroot/yikang.mubantang.com/Application/Runtime/Cache/Admin/ed9283150ec42ddd722a51b164513bd7.php 第 27 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003185s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.014240s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000009s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.017307s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000363s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000405s ]
+
+[ 2017-01-05T20:45:57+08:00 ] 119.130.170.238 /Admin/Employee/achievement
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000282s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000326s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000361s ]
+SQL: SHOW COLUMNS FROM `yk_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yk_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yk_cms_set` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `yk_cms_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yk_shop_set` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `yk_shop_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yk_employee` [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000031s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000065s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004627s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004660s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000119s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000149s ]
+SQL: SHOW COLUMNS FROM `yk_employee` [ RunTime:0.0005s ]
+NOTIC: [8] Undefined index: p /mnt/wwwroot/yikang.mubantang.com/Application/Admin/Controller/EmployeeController.class.php 第 72 行.
+NOTIC: [8] Undefined variable: map /mnt/wwwroot/yikang.mubantang.com/Application/Admin/Controller/EmployeeController.class.php 第 79 行.
+SQL: SELECT * FROM `yk_employee` LIMIT 0,20   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `yk_shop_order` [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `yk_vip` [ RunTime:0.0009s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `employee` = 2 AND `is_system` = 1  [ RunTime:0.0023s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_vip` WHERE `id` IN ('-10000000000') AND `is_system` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM yk_shop_order O LEFT JOIN yk_vip as V on O.vipid=V.id  WHERE V.pid IN ('-10000000000') LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM yk_shop_order O LEFT JOIN yk_vip as V on O.vipid=V.id  WHERE V.pid IN ('-10000000000') AND O.status IN ('4','7','6','0') LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM yk_shop_order O LEFT JOIN yk_vip as V on O.vipid=V.id  WHERE V.pid IN ('-10000000000') AND O.status IN ('2','3','5') LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT SUM(payprice) AS tp_sum FROM yk_shop_order O LEFT JOIN yk_vip as V on O.vipid=V.id  WHERE V.pid IN ('-10000000000') AND O.status IN ('2','3','5') LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM yk_shop_order O LEFT JOIN yk_vip as V on O.vipid=V.id  WHERE V.pid IN ('-10000000000') AND O.status IN ('2','3','5') AND O.ctime >= 1483200000 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT SUM(payprice) AS tp_sum FROM yk_shop_order O LEFT JOIN yk_vip as V on O.vipid=V.id  WHERE V.pid IN ('-10000000000') AND O.status IN ('2','3','5') AND O.ctime >= 1483200000 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM yk_shop_order O LEFT JOIN yk_vip as V on O.vipid=V.id  WHERE V.pid IN ('-10000000000') AND O.status IN ('2','3','5') AND O.ctime >= 1483545600 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT SUM(payprice) AS tp_sum FROM yk_shop_order O LEFT JOIN yk_vip as V on O.vipid=V.id  WHERE V.pid IN ('-10000000000') AND O.status IN ('2','3','5') AND O.ctime >= 1483545600 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `employee` = 4 AND `is_system` = 1  [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_vip` WHERE `id` IN ('544','545','546','547','548','549','550','551','552','553','554','555','556','557','558','559','560','561','562','563') AND `is_system` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM yk_shop_order O LEFT JOIN yk_vip as V on O.vipid=V.id  WHERE V.pid IN ('544','545','546','547','548','549','550','551','552','553','554','555','556','557','558','559','560','561','562','563') LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM yk_shop_order O LEFT JOIN yk_vip as V on O.vipid=V.id  WHERE V.pid IN ('544','545','546','547','548','549','550','551','552','553','554','555','556','557','558','559','560','561','562','563') AND O.status IN ('4','7','6','0') LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM yk_shop_order O LEFT JOIN yk_vip as V on O.vipid=V.id  WHERE V.pid IN ('544','545','546','547','548','549','550','551','552','553','554','555','556','557','558','559','560','561','562','563') AND O.status IN ('2','3','5') LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT SUM(payprice) AS tp_sum FROM yk_shop_order O LEFT JOIN yk_vip as V on O.vipid=V.id  WHERE V.pid IN ('544','545','546','547','548','549','550','551','552','553','554','555','556','557','558','559','560','561','562','563') AND O.status IN ('2','3','5') LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM yk_shop_order O LEFT JOIN yk_vip as V on O.vipid=V.id  WHERE V.pid IN ('544','545','546','547','548','549','550','551','552','553','554','555','556','557','558','559','560','561','562','563') AND O.status IN ('2','3','5') AND O.ctime >= 1483200000 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT SUM(payprice) AS tp_sum FROM yk_shop_order O LEFT JOIN yk_vip as V on O.vipid=V.id  WHERE V.pid IN ('544','545','546','547','548','549','550','551','552','553','554','555','556','557','558','559','560','561','562','563') AND O.status IN ('2','3','5') AND O.ctime >= 1483200000 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM yk_shop_order O LEFT JOIN yk_vip as V on O.vipid=V.id  WHERE V.pid IN ('544','545','546','547','548','549','550','551','552','553','554','555','556','557','558','559','560','561','562','563') AND O.status IN ('2','3','5') AND O.ctime >= 1483545600 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT SUM(payprice) AS tp_sum FROM yk_shop_order O LEFT JOIN yk_vip as V on O.vipid=V.id  WHERE V.pid IN ('544','545','546','547','548','549','550','551','552','553','554','555','556','557','558','559','560','561','562','563') AND O.status IN ('2','3','5') AND O.ctime >= 1483545600 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `employee` = 5 AND `is_system` = 1  [ RunTime:0.0029s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_vip` WHERE `id` IN ('58','67','78') AND `is_system` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM yk_shop_order O LEFT JOIN yk_vip as V on O.vipid=V.id  WHERE V.pid IN ('58','67','78') LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM yk_shop_order O LEFT JOIN yk_vip as V on O.vipid=V.id  WHERE V.pid IN ('58','67','78') AND O.status IN ('4','7','6','0') LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM yk_shop_order O LEFT JOIN yk_vip as V on O.vipid=V.id  WHERE V.pid IN ('58','67','78') AND O.status IN ('2','3','5') LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT SUM(payprice) AS tp_sum FROM yk_shop_order O LEFT JOIN yk_vip as V on O.vipid=V.id  WHERE V.pid IN ('58','67','78') AND O.status IN ('2','3','5') LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM yk_shop_order O LEFT JOIN yk_vip as V on O.vipid=V.id  WHERE V.pid IN ('58','67','78') AND O.status IN ('2','3','5') AND O.ctime >= 1483200000 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT SUM(payprice) AS tp_sum FROM yk_shop_order O LEFT JOIN yk_vip as V on O.vipid=V.id  WHERE V.pid IN ('58','67','78') AND O.status IN ('2','3','5') AND O.ctime >= 1483200000 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM yk_shop_order O LEFT JOIN yk_vip as V on O.vipid=V.id  WHERE V.pid IN ('58','67','78') AND O.status IN ('2','3','5') AND O.ctime >= 1483545600 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT SUM(payprice) AS tp_sum FROM yk_shop_order O LEFT JOIN yk_vip as V on O.vipid=V.id  WHERE V.pid IN ('58','67','78') AND O.status IN ('2','3','5') AND O.ctime >= 1483545600 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `employee` = 6 AND `is_system` = 1  [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_vip` WHERE `id` IN ('82','83','84','85','86','87') AND `is_system` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM yk_shop_order O LEFT JOIN yk_vip as V on O.vipid=V.id  WHERE V.pid IN ('82','83','84','85','86','87') LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM yk_shop_order O LEFT JOIN yk_vip as V on O.vipid=V.id  WHERE V.pid IN ('82','83','84','85','86','87') AND O.status IN ('4','7','6','0') LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM yk_shop_order O LEFT JOIN yk_vip as V on O.vipid=V.id  WHERE V.pid IN ('82','83','84','85','86','87') AND O.status IN ('2','3','5') LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT SUM(payprice) AS tp_sum FROM yk_shop_order O LEFT JOIN yk_vip as V on O.vipid=V.id  WHERE V.pid IN ('82','83','84','85','86','87') AND O.status IN ('2','3','5') LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM yk_shop_order O LEFT JOIN yk_vip as V on O.vipid=V.id  WHERE V.pid IN ('82','83','84','85','86','87') AND O.status IN ('2','3','5') AND O.ctime >= 1483200000 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT SUM(payprice) AS tp_sum FROM yk_shop_order O LEFT JOIN yk_vip as V on O.vipid=V.id  WHERE V.pid IN ('82','83','84','85','86','87') AND O.status IN ('2','3','5') AND O.ctime >= 1483200000 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM yk_shop_order O LEFT JOIN yk_vip as V on O.vipid=V.id  WHERE V.pid IN ('82','83','84','85','86','87') AND O.status IN ('2','3','5') AND O.ctime >= 1483545600 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT SUM(payprice) AS tp_sum FROM yk_shop_order O LEFT JOIN yk_vip as V on O.vipid=V.id  WHERE V.pid IN ('82','83','84','85','86','87') AND O.status IN ('2','3','5') AND O.ctime >= 1483545600 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: map /mnt/wwwroot/yikang.mubantang.com/Application/Admin/Controller/EmployeeController.class.php 第 81 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_employee` LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [2] Missing argument 6 for Admin\Controller\BaseController::getPage(), called in /mnt/wwwroot/yikang.mubantang.com/Application/Admin/Controller/EmployeeController.class.php on line 82 and defined /mnt/wwwroot/yikang.mubantang.com/Application/Admin/Controller/BaseController.class.php 第 91 行.
+NOTIC: [8] Undefined variable: map /mnt/wwwroot/yikang.mubantang.com/Application/Admin/Controller/BaseController.class.php 第 103 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000040s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.037807s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004123s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.034141s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000009s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.038149s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000397s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000435s ]
+
+[ 2017-01-05T20:46:01+08:00 ] 119.130.170.238 /Admin/Employee/vipAchievement/eid/4
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000280s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000322s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000356s ]
+SQL: SHOW COLUMNS FROM `yk_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yk_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yk_cms_set` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yk_cms_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_shop_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yk_shop_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yk_employee` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `yk_employee` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yk_employee` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: name /mnt/wwwroot/yikang.mubantang.com/Application/Admin/Controller/EmployeeController.class.php 第 109 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000034s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000071s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004669s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004702s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000123s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000152s ]
+SQL: SHOW COLUMNS FROM `yk_vip` [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `yk_shop_order` [ RunTime:0.0008s ]
+NOTIC: [8] Undefined index: p /mnt/wwwroot/yikang.mubantang.com/Application/Admin/Controller/EmployeeController.class.php 第 121 行.
+SQL: SELECT * FROM `yk_vip` WHERE `employee` = 4 AND `is_system` = 1 LIMIT 0,20   [ RunTime:0.0008s ]
+SQL: SELECT SUM(payprice) AS tp_sum FROM yk_shop_order O LEFT JOIN yk_vip as V on O.vipid=V.id  WHERE O.status IN ('2','3','5') AND V.pid = '544' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT SUM(payprice) AS tp_sum FROM yk_shop_order O LEFT JOIN yk_vip as V on O.vipid=V.id  WHERE O.status IN ('2','3','5') AND V.pid = '545' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT SUM(payprice) AS tp_sum FROM yk_shop_order O LEFT JOIN yk_vip as V on O.vipid=V.id  WHERE O.status IN ('2','3','5') AND V.pid = '546' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT SUM(payprice) AS tp_sum FROM yk_shop_order O LEFT JOIN yk_vip as V on O.vipid=V.id  WHERE O.status IN ('2','3','5') AND V.pid = '547' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT SUM(payprice) AS tp_sum FROM yk_shop_order O LEFT JOIN yk_vip as V on O.vipid=V.id  WHERE O.status IN ('2','3','5') AND V.pid = '548' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT SUM(payprice) AS tp_sum FROM yk_shop_order O LEFT JOIN yk_vip as V on O.vipid=V.id  WHERE O.status IN ('2','3','5') AND V.pid = '549' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT SUM(payprice) AS tp_sum FROM yk_shop_order O LEFT JOIN yk_vip as V on O.vipid=V.id  WHERE O.status IN ('2','3','5') AND V.pid = '550' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT SUM(payprice) AS tp_sum FROM yk_shop_order O LEFT JOIN yk_vip as V on O.vipid=V.id  WHERE O.status IN ('2','3','5') AND V.pid = '551' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT SUM(payprice) AS tp_sum FROM yk_shop_order O LEFT JOIN yk_vip as V on O.vipid=V.id  WHERE O.status IN ('2','3','5') AND V.pid = '552' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT SUM(payprice) AS tp_sum FROM yk_shop_order O LEFT JOIN yk_vip as V on O.vipid=V.id  WHERE O.status IN ('2','3','5') AND V.pid = '553' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT SUM(payprice) AS tp_sum FROM yk_shop_order O LEFT JOIN yk_vip as V on O.vipid=V.id  WHERE O.status IN ('2','3','5') AND V.pid = '554' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT SUM(payprice) AS tp_sum FROM yk_shop_order O LEFT JOIN yk_vip as V on O.vipid=V.id  WHERE O.status IN ('2','3','5') AND V.pid = '555' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT SUM(payprice) AS tp_sum FROM yk_shop_order O LEFT JOIN yk_vip as V on O.vipid=V.id  WHERE O.status IN ('2','3','5') AND V.pid = '556' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT SUM(payprice) AS tp_sum FROM yk_shop_order O LEFT JOIN yk_vip as V on O.vipid=V.id  WHERE O.status IN ('2','3','5') AND V.pid = '557' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT SUM(payprice) AS tp_sum FROM yk_shop_order O LEFT JOIN yk_vip as V on O.vipid=V.id  WHERE O.status IN ('2','3','5') AND V.pid = '558' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT SUM(payprice) AS tp_sum FROM yk_shop_order O LEFT JOIN yk_vip as V on O.vipid=V.id  WHERE O.status IN ('2','3','5') AND V.pid = '559' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT SUM(payprice) AS tp_sum FROM yk_shop_order O LEFT JOIN yk_vip as V on O.vipid=V.id  WHERE O.status IN ('2','3','5') AND V.pid = '560' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT SUM(payprice) AS tp_sum FROM yk_shop_order O LEFT JOIN yk_vip as V on O.vipid=V.id  WHERE O.status IN ('2','3','5') AND V.pid = '561' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT SUM(payprice) AS tp_sum FROM yk_shop_order O LEFT JOIN yk_vip as V on O.vipid=V.id  WHERE O.status IN ('2','3','5') AND V.pid = '562' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT SUM(payprice) AS tp_sum FROM yk_shop_order O LEFT JOIN yk_vip as V on O.vipid=V.id  WHERE O.status IN ('2','3','5') AND V.pid = '563' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_vip` WHERE `employee` = 4 AND `is_system` = 1 LIMIT 1   [ RunTime:0.0020s ]
+NOTIC: [2] Missing argument 6 for Admin\Controller\BaseController::getPage(), called in /mnt/wwwroot/yikang.mubantang.com/Application/Admin/Controller/EmployeeController.class.php on line 133 and defined /mnt/wwwroot/yikang.mubantang.com/Application/Admin/Controller/BaseController.class.php 第 91 行.
+NOTIC: [8] Undefined variable: map /mnt/wwwroot/yikang.mubantang.com/Application/Admin/Controller/BaseController.class.php 第 103 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000036s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.019483s ]
+NOTIC: [8] Undefined variable: search /mnt/wwwroot/yikang.mubantang.com/Application/Runtime/Cache/Admin/ed9283150ec42ddd722a51b164513bd7.php 第 27 行.
+NOTIC: [8] Undefined variable: eid /mnt/wwwroot/yikang.mubantang.com/Application/Runtime/Cache/Admin/ed9283150ec42ddd722a51b164513bd7.php 第 27 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003582s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.016404s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000010s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.019866s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000401s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000442s ]
+
+[ 2017-01-05T20:46:07+08:00 ] 117.136.79.35 /Admin/Public/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000267s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000384s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000480s ]
+SQL: SHOW COLUMNS FROM `yk_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yk_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yk_cms_set` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yk_cms_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_shop_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yk_shop_set` LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2017-01-05T20:46:08+08:00 ] 117.136.79.35 /Admin/Employee/main
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000281s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000320s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000354s ]
+SQL: SHOW COLUMNS FROM `yk_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yk_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yk_cms_set` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yk_cms_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_shop_set` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `yk_shop_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yk_employee` [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000033s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000069s ]
+NOTIC: [8] Undefined variable: breadhtml /mnt/wwwroot/yikang.mubantang.com/Application/Runtime/Cache/Admin/f259bce1158f32a7248b68a6490c7c06.php 第 2 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003909s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003941s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000125s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000154s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000378s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000409s ]
+
+[ 2017-01-05T20:46:15+08:00 ] 119.130.170.238 /Admin/Public/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000260s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000401s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000445s ]
+SQL: SHOW COLUMNS FROM `yk_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yk_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yk_cms_set` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yk_cms_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_shop_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yk_shop_set` LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2017-01-05T20:46:15+08:00 ] 119.130.170.238 /Admin/Index/main
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000278s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000323s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000358s ]
+SQL: SHOW COLUMNS FROM `yk_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yk_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yk_cms_set` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yk_cms_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_shop_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yk_shop_set` LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000036s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000089s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005214s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005249s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000135s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000165s ]
+SQL: SHOW COLUMNS FROM `yk_vip` [ RunTime:0.0013s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_vip` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_vip` WHERE ( subscribe=1 ) LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_vip` WHERE `ctime` BETWEEN 1483545600 AND 1483631999 LIMIT 1   [ RunTime:0.0019s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_vip` WHERE `ctime` BETWEEN 1483459200 AND 1483545599 LIMIT 1   [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `yk_shop_order` [ RunTime:0.0009s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_shop_order` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_shop_order` WHERE ( status=0 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_shop_order` WHERE ( status=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_shop_order` WHERE ( status=2 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_shop_order` WHERE ( status=3 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_shop_order` WHERE ( status=4 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_shop_order` WHERE ( status=5 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_shop_order` WHERE ( status=6 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_shop_order` WHERE `ctime` BETWEEN 1483545600 AND 1483631999 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_shop_order` WHERE `ctime` BETWEEN 1483459200 AND 1483545599 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `yk_fx_syslog` [ RunTime:0.0004s ]
+SQL: SELECT SUM(fxyj) AS tp_sum FROM `yk_fx_syslog` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT SUM(fxyj) AS tp_sum FROM `yk_fx_syslog` WHERE `ctime` BETWEEN 1483545600 AND 1483631999 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT SUM(fxyj) AS tp_sum FROM `yk_fx_syslog` WHERE `ctime` BETWEEN 1483459200 AND 1483545599 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [2] Division by zero /mnt/wwwroot/yikang.mubantang.com/Application/Admin/Controller/IndexController.class.php 第 144 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_vip` WHERE `isfx` = 0 AND `isfxgd` = 0 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_vip` WHERE `isfx` = 1 AND `isfxgd` = 0 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_vip` WHERE ( isfxgd=1 ) LIMIT 1   [ RunTime:0.0023s ]
+SQL: SHOW COLUMNS FROM `yk_vip_log_sub` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yk_vip_log_sub` ORDER BY ctime desc LIMIT 5   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yk_vip` WHERE ( id=2498 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yk_vip` WHERE ( id=2648 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yk_vip` WHERE ( id=2646 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yk_vip` WHERE ( id=2643 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yk_vip` WHERE ( id=2642 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yk_fx_syslog` ORDER BY ctime desc LIMIT 5   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `yk_vip` WHERE ( id=2538 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yk_vip` WHERE ( id=38 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yk_fx_log_tj` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yk_fx_log_tj` ORDER BY ctime desc LIMIT 5   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `yk_shop_order` WHERE `ispay` = 1 AND `status` = 2 ORDER BY ctime desc LIMIT 5   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yk_vip` WHERE ( id=2646 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yk_vip` WHERE ( id=2629 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yk_vip` WHERE ( id=2628 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yk_vip` WHERE ( id=2623 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yk_vip` WHERE ( id=2612 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT SUM(totalprice) AS tp_sum FROM `yk_shop_order` WHERE `ispay` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT SUM(totalprice) AS tp_sum FROM `yk_shop_order` WHERE `status` = 5 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT SUM(totalnum) AS tp_sum FROM `yk_shop_order` WHERE `ispay` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yk_vip_tx` [ RunTime:0.0005s ]
+SQL: SELECT SUM(txprice) AS tp_sum FROM `yk_vip_tx` WHERE `status` = 2 LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000093s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.047420s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020124s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.029734s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000011s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.049761s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000432s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000471s ]
+
+[ 2017-01-05T20:46:21+08:00 ] 119.130.170.238 /Admin/Employee/achievement
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000259s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000349s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000383s ]
+SQL: SHOW COLUMNS FROM `yk_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yk_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yk_cms_set` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yk_cms_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_shop_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yk_shop_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yk_employee` [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000043s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000090s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004621s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004654s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000120s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000168s ]
+SQL: SHOW COLUMNS FROM `yk_employee` [ RunTime:0.0005s ]
+NOTIC: [8] Undefined index: p /mnt/wwwroot/yikang.mubantang.com/Application/Admin/Controller/EmployeeController.class.php 第 72 行.
+NOTIC: [8] Undefined variable: map /mnt/wwwroot/yikang.mubantang.com/Application/Admin/Controller/EmployeeController.class.php 第 79 行.
+SQL: SELECT * FROM `yk_employee` LIMIT 0,20   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_shop_order` [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `yk_vip` [ RunTime:0.0009s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `employee` = 2 AND `is_system` = 1  [ RunTime:0.0024s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_vip` WHERE `id` IN ('-10000000000') AND `is_system` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM yk_shop_order O LEFT JOIN yk_vip as V on O.vipid=V.id  WHERE V.pid IN ('-10000000000') LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM yk_shop_order O LEFT JOIN yk_vip as V on O.vipid=V.id  WHERE V.pid IN ('-10000000000') AND O.status IN ('4','7','6','0') LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM yk_shop_order O LEFT JOIN yk_vip as V on O.vipid=V.id  WHERE V.pid IN ('-10000000000') AND O.status IN ('2','3','5') LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT SUM(payprice) AS tp_sum FROM yk_shop_order O LEFT JOIN yk_vip as V on O.vipid=V.id  WHERE V.pid IN ('-10000000000') AND O.status IN ('2','3','5') LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM yk_shop_order O LEFT JOIN yk_vip as V on O.vipid=V.id  WHERE V.pid IN ('-10000000000') AND O.status IN ('2','3','5') AND O.ctime >= 1483200000 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT SUM(payprice) AS tp_sum FROM yk_shop_order O LEFT JOIN yk_vip as V on O.vipid=V.id  WHERE V.pid IN ('-10000000000') AND O.status IN ('2','3','5') AND O.ctime >= 1483200000 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM yk_shop_order O LEFT JOIN yk_vip as V on O.vipid=V.id  WHERE V.pid IN ('-10000000000') AND O.status IN ('2','3','5') AND O.ctime >= 1483545600 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT SUM(payprice) AS tp_sum FROM yk_shop_order O LEFT JOIN yk_vip as V on O.vipid=V.id  WHERE V.pid IN ('-10000000000') AND O.status IN ('2','3','5') AND O.ctime >= 1483545600 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `employee` = 4 AND `is_system` = 1  [ RunTime:0.0019s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_vip` WHERE `id` IN ('544','545','546','547','548','549','550','551','552','553','554','555','556','557','558','559','560','561','562','563') AND `is_system` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM yk_shop_order O LEFT JOIN yk_vip as V on O.vipid=V.id  WHERE V.pid IN ('544','545','546','547','548','549','550','551','552','553','554','555','556','557','558','559','560','561','562','563') LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM yk_shop_order O LEFT JOIN yk_vip as V on O.vipid=V.id  WHERE V.pid IN ('544','545','546','547','548','549','550','551','552','553','554','555','556','557','558','559','560','561','562','563') AND O.status IN ('4','7','6','0') LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM yk_shop_order O LEFT JOIN yk_vip as V on O.vipid=V.id  WHERE V.pid IN ('544','545','546','547','548','549','550','551','552','553','554','555','556','557','558','559','560','561','562','563') AND O.status IN ('2','3','5') LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT SUM(payprice) AS tp_sum FROM yk_shop_order O LEFT JOIN yk_vip as V on O.vipid=V.id  WHERE V.pid IN ('544','545','546','547','548','549','550','551','552','553','554','555','556','557','558','559','560','561','562','563') AND O.status IN ('2','3','5') LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM yk_shop_order O LEFT JOIN yk_vip as V on O.vipid=V.id  WHERE V.pid IN ('544','545','546','547','548','549','550','551','552','553','554','555','556','557','558','559','560','561','562','563') AND O.status IN ('2','3','5') AND O.ctime >= 1483200000 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT SUM(payprice) AS tp_sum FROM yk_shop_order O LEFT JOIN yk_vip as V on O.vipid=V.id  WHERE V.pid IN ('544','545','546','547','548','549','550','551','552','553','554','555','556','557','558','559','560','561','562','563') AND O.status IN ('2','3','5') AND O.ctime >= 1483200000 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM yk_shop_order O LEFT JOIN yk_vip as V on O.vipid=V.id  WHERE V.pid IN ('544','545','546','547','548','549','550','551','552','553','554','555','556','557','558','559','560','561','562','563') AND O.status IN ('2','3','5') AND O.ctime >= 1483545600 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT SUM(payprice) AS tp_sum FROM yk_shop_order O LEFT JOIN yk_vip as V on O.vipid=V.id  WHERE V.pid IN ('544','545','546','547','548','549','550','551','552','553','554','555','556','557','558','559','560','561','562','563') AND O.status IN ('2','3','5') AND O.ctime >= 1483545600 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `employee` = 5 AND `is_system` = 1  [ RunTime:0.0019s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_vip` WHERE `id` IN ('58','67','78') AND `is_system` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM yk_shop_order O LEFT JOIN yk_vip as V on O.vipid=V.id  WHERE V.pid IN ('58','67','78') LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM yk_shop_order O LEFT JOIN yk_vip as V on O.vipid=V.id  WHERE V.pid IN ('58','67','78') AND O.status IN ('4','7','6','0') LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM yk_shop_order O LEFT JOIN yk_vip as V on O.vipid=V.id  WHERE V.pid IN ('58','67','78') AND O.status IN ('2','3','5') LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT SUM(payprice) AS tp_sum FROM yk_shop_order O LEFT JOIN yk_vip as V on O.vipid=V.id  WHERE V.pid IN ('58','67','78') AND O.status IN ('2','3','5') LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM yk_shop_order O LEFT JOIN yk_vip as V on O.vipid=V.id  WHERE V.pid IN ('58','67','78') AND O.status IN ('2','3','5') AND O.ctime >= 1483200000 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT SUM(payprice) AS tp_sum FROM yk_shop_order O LEFT JOIN yk_vip as V on O.vipid=V.id  WHERE V.pid IN ('58','67','78') AND O.status IN ('2','3','5') AND O.ctime >= 1483200000 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM yk_shop_order O LEFT JOIN yk_vip as V on O.vipid=V.id  WHERE V.pid IN ('58','67','78') AND O.status IN ('2','3','5') AND O.ctime >= 1483545600 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT SUM(payprice) AS tp_sum FROM yk_shop_order O LEFT JOIN yk_vip as V on O.vipid=V.id  WHERE V.pid IN ('58','67','78') AND O.status IN ('2','3','5') AND O.ctime >= 1483545600 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `id` FROM `yk_vip` WHERE `employee` = 6 AND `is_system` = 1  [ RunTime:0.0021s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_vip` WHERE `id` IN ('82','83','84','85','86','87') AND `is_system` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM yk_shop_order O LEFT JOIN yk_vip as V on O.vipid=V.id  WHERE V.pid IN ('82','83','84','85','86','87') LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM yk_shop_order O LEFT JOIN yk_vip as V on O.vipid=V.id  WHERE V.pid IN ('82','83','84','85','86','87') AND O.status IN ('4','7','6','0') LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM yk_shop_order O LEFT JOIN yk_vip as V on O.vipid=V.id  WHERE V.pid IN ('82','83','84','85','86','87') AND O.status IN ('2','3','5') LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT SUM(payprice) AS tp_sum FROM yk_shop_order O LEFT JOIN yk_vip as V on O.vipid=V.id  WHERE V.pid IN ('82','83','84','85','86','87') AND O.status IN ('2','3','5') LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM yk_shop_order O LEFT JOIN yk_vip as V on O.vipid=V.id  WHERE V.pid IN ('82','83','84','85','86','87') AND O.status IN ('2','3','5') AND O.ctime >= 1483200000 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT SUM(payprice) AS tp_sum FROM yk_shop_order O LEFT JOIN yk_vip as V on O.vipid=V.id  WHERE V.pid IN ('82','83','84','85','86','87') AND O.status IN ('2','3','5') AND O.ctime >= 1483200000 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM yk_shop_order O LEFT JOIN yk_vip as V on O.vipid=V.id  WHERE V.pid IN ('82','83','84','85','86','87') AND O.status IN ('2','3','5') AND O.ctime >= 1483545600 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT SUM(payprice) AS tp_sum FROM yk_shop_order O LEFT JOIN yk_vip as V on O.vipid=V.id  WHERE V.pid IN ('82','83','84','85','86','87') AND O.status IN ('2','3','5') AND O.ctime >= 1483545600 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: map /mnt/wwwroot/yikang.mubantang.com/Application/Admin/Controller/EmployeeController.class.php 第 81 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_employee` LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [2] Missing argument 6 for Admin\Controller\BaseController::getPage(), called in /mnt/wwwroot/yikang.mubantang.com/Application/Admin/Controller/EmployeeController.class.php on line 82 and defined /mnt/wwwroot/yikang.mubantang.com/Application/Admin/Controller/BaseController.class.php 第 91 行.
+NOTIC: [8] Undefined variable: map /mnt/wwwroot/yikang.mubantang.com/Application/Admin/Controller/BaseController.class.php 第 103 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000040s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.036581s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004186s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.032905s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000010s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.036955s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000365s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000402s ]
+
+[ 2017-01-05T20:46:23+08:00 ] 119.130.170.238 /Admin/Employee/vipAchievement/eid/4
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000258s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000343s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000378s ]
+SQL: SHOW COLUMNS FROM `yk_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yk_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yk_cms_set` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yk_cms_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yk_shop_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yk_shop_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yk_employee` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `yk_employee` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `yk_employee` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: name /mnt/wwwroot/yikang.mubantang.com/Application/Admin/Controller/EmployeeController.class.php 第 109 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000034s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000112s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004759s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004791s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000116s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000147s ]
+SQL: SHOW COLUMNS FROM `yk_vip` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `yk_shop_order` [ RunTime:0.0008s ]
+NOTIC: [8] Undefined index: p /mnt/wwwroot/yikang.mubantang.com/Application/Admin/Controller/EmployeeController.class.php 第 121 行.
+SQL: SELECT * FROM `yk_vip` WHERE `employee` = 4 AND `is_system` = 1 LIMIT 0,20   [ RunTime:0.0007s ]
+SQL: SELECT SUM(payprice) AS tp_sum FROM yk_shop_order O LEFT JOIN yk_vip as V on O.vipid=V.id  WHERE O.status IN ('2','3','5') AND V.pid = '544' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT SUM(payprice) AS tp_sum FROM yk_shop_order O LEFT JOIN yk_vip as V on O.vipid=V.id  WHERE O.status IN ('2','3','5') AND V.pid = '545' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT SUM(payprice) AS tp_sum FROM yk_shop_order O LEFT JOIN yk_vip as V on O.vipid=V.id  WHERE O.status IN ('2','3','5') AND V.pid = '546' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT SUM(payprice) AS tp_sum FROM yk_shop_order O LEFT JOIN yk_vip as V on O.vipid=V.id  WHERE O.status IN ('2','3','5') AND V.pid = '547' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT SUM(payprice) AS tp_sum FROM yk_shop_order O LEFT JOIN yk_vip as V on O.vipid=V.id  WHERE O.status IN ('2','3','5') AND V.pid = '548' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT SUM(payprice) AS tp_sum FROM yk_shop_order O LEFT JOIN yk_vip as V on O.vipid=V.id  WHERE O.status IN ('2','3','5') AND V.pid = '549' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT SUM(payprice) AS tp_sum FROM yk_shop_order O LEFT JOIN yk_vip as V on O.vipid=V.id  WHERE O.status IN ('2','3','5') AND V.pid = '550' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT SUM(payprice) AS tp_sum FROM yk_shop_order O LEFT JOIN yk_vip as V on O.vipid=V.id  WHERE O.status IN ('2','3','5') AND V.pid = '551' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT SUM(payprice) AS tp_sum FROM yk_shop_order O LEFT JOIN yk_vip as V on O.vipid=V.id  WHERE O.status IN ('2','3','5') AND V.pid = '552' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT SUM(payprice) AS tp_sum FROM yk_shop_order O LEFT JOIN yk_vip as V on O.vipid=V.id  WHERE O.status IN ('2','3','5') AND V.pid = '553' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT SUM(payprice) AS tp_sum FROM yk_shop_order O LEFT JOIN yk_vip as V on O.vipid=V.id  WHERE O.status IN ('2','3','5') AND V.pid = '554' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT SUM(payprice) AS tp_sum FROM yk_shop_order O LEFT JOIN yk_vip as V on O.vipid=V.id  WHERE O.status IN ('2','3','5') AND V.pid = '555' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT SUM(payprice) AS tp_sum FROM yk_shop_order O LEFT JOIN yk_vip as V on O.vipid=V.id  WHERE O.status IN ('2','3','5') AND V.pid = '556' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT SUM(payprice) AS tp_sum FROM yk_shop_order O LEFT JOIN yk_vip as V on O.vipid=V.id  WHERE O.status IN ('2','3','5') AND V.pid = '557' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT SUM(payprice) AS tp_sum FROM yk_shop_order O LEFT JOIN yk_vip as V on O.vipid=V.id  WHERE O.status IN ('2','3','5') AND V.pid = '558' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT SUM(payprice) AS tp_sum FROM yk_shop_order O LEFT JOIN yk_vip as V on O.vipid=V.id  WHERE O.status IN ('2','3','5') AND V.pid = '559' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT SUM(payprice) AS tp_sum FROM yk_shop_order O LEFT JOIN yk_vip as V on O.vipid=V.id  WHERE O.status IN ('2','3','5') AND V.pid = '560' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT SUM(payprice) AS tp_sum FROM yk_shop_order O LEFT JOIN yk_vip as V on O.vipid=V.id  WHERE O.status IN ('2','3','5') AND V.pid = '561' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT SUM(payprice) AS tp_sum FROM yk_shop_order O LEFT JOIN yk_vip as V on O.vipid=V.id  WHERE O.status IN ('2','3','5') AND V.pid = '562' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT SUM(payprice) AS tp_sum FROM yk_shop_order O LEFT JOIN yk_vip as V on O.vipid=V.id  WHERE O.status IN ('2','3','5') AND V.pid = '563' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_vip` WHERE `employee` = 4 AND `is_system` = 1 LIMIT 1   [ RunTime:0.0020s ]
+NOTIC: [2] Missing argument 6 for Admin\Controller\BaseController::getPage(), called in /mnt/wwwroot/yikang.mubantang.com/Application/Admin/Controller/EmployeeController.class.php on line 133 and defined /mnt/wwwroot/yikang.mubantang.com/Application/Admin/Controller/BaseController.class.php 第 91 行.
+NOTIC: [8] Undefined variable: map /mnt/wwwroot/yikang.mubantang.com/Application/Admin/Controller/BaseController.class.php 第 103 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000031s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.017001s ]
+NOTIC: [8] Undefined variable: search /mnt/wwwroot/yikang.mubantang.com/Application/Runtime/Cache/Admin/ed9283150ec42ddd722a51b164513bd7.php 第 27 行.
+NOTIC: [8] Undefined variable: eid /mnt/wwwroot/yikang.mubantang.com/Application/Runtime/Cache/Admin/ed9283150ec42ddd722a51b164513bd7.php 第 27 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003132s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.014231s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000009s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.017247s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000362s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000401s ]
+
+[ 2017-01-05T20:46:26+08:00 ] 119.130.170.238 /Admin/Employee/employeeList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000259s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000323s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000359s ]
+SQL: SHOW COLUMNS FROM `yk_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yk_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yk_cms_set` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yk_cms_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_shop_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yk_shop_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yk_employee` [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000034s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000070s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005621s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005654s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000121s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000151s ]
+SQL: SHOW COLUMNS FROM `yk_employee` [ RunTime:0.0005s ]
+NOTIC: [8] Undefined index: p /mnt/wwwroot/yikang.mubantang.com/Application/Admin/Controller/EmployeeController.class.php 第 42 行.
+NOTIC: [8] Undefined variable: map /mnt/wwwroot/yikang.mubantang.com/Application/Admin/Controller/EmployeeController.class.php 第 49 行.
+SQL: SELECT * FROM `yk_employee` LIMIT 0,20   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: map /mnt/wwwroot/yikang.mubantang.com/Application/Admin/Controller/EmployeeController.class.php 第 50 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_employee` LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [2] Missing argument 6 for Admin\Controller\BaseController::getPage(), called in /mnt/wwwroot/yikang.mubantang.com/Application/Admin/Controller/EmployeeController.class.php on line 51 and defined /mnt/wwwroot/yikang.mubantang.com/Application/Admin/Controller/BaseController.class.php 第 91 行.
+NOTIC: [8] Undefined variable: map /mnt/wwwroot/yikang.mubantang.com/Application/Admin/Controller/BaseController.class.php 第 103 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000037s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.006189s ]
+NOTIC: [8] Undefined variable: name /mnt/wwwroot/yikang.mubantang.com/Application/Runtime/Cache/Admin/abf38069b0d28112fb748f4aa788ce7a.php 第 27 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005035s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.002013s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000009s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.006936s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000505s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000546s ]
+
+[ 2017-01-05T20:46:31+08:00 ] 119.130.170.238 /Admin/Employee/employeeSet/id/4
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000277s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000350s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000385s ]
+SQL: SHOW COLUMNS FROM `yk_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yk_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yk_cms_set` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yk_cms_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_shop_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yk_shop_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yk_employee` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `yk_employee` [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000034s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000071s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004647s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004680s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000122s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000152s ]
+SQL: SELECT * FROM `yk_employee` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000028s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.002960s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002396s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.000521s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000008s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.002816s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000348s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000380s ]
+
+[ 2017-01-05T20:46:51+08:00 ] 119.130.170.238 /Admin/Employee/employeeSet
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000276s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000490s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000550s ]
+SQL: SHOW COLUMNS FROM `yk_set` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `yk_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yk_cms_set` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yk_cms_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_shop_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yk_shop_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yk_employee` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `yk_employee` [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000032s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000069s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004807s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004839s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000118s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000148s ]
+SQL: SELECT SUM(weight) AS tp_sum FROM `yk_employee` WHERE `id` <> '4' LIMIT 1   [ RunTime:0.0002s ]
+SQL: UPDATE `yk_employee` SET `nickname`='厉玉兴',`username`='13794379900',`mobile`='13794379900',`weight`='0' WHERE `id` = 4 [ RunTime:0.0002s ]
+
+[ 2017-01-05T20:46:52+08:00 ] 119.130.170.238 /Admin/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000258s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000347s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000382s ]
+SQL: SHOW COLUMNS FROM `yk_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yk_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yk_cms_set` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yk_cms_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_shop_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yk_shop_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yk_user_oath` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yk_user_oath`  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000134s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000185s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023753s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023790s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000132s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000163s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000377s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000414s ]
+
+[ 2017-01-05T20:46:54+08:00 ] 119.130.170.238 /Admin/Employee/employeeSet
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000261s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000324s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000360s ]
+SQL: SHOW COLUMNS FROM `yk_set` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `yk_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yk_cms_set` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yk_cms_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_shop_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yk_shop_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yk_employee` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `yk_employee` [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000029s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000064s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004567s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004626s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000119s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000148s ]
+SQL: SELECT SUM(weight) AS tp_sum FROM `yk_employee` WHERE `id` <> '4' LIMIT 1   [ RunTime:0.0002s ]
+SQL: UPDATE `yk_employee` SET `nickname`='厉玉兴',`username`='13794379900',`mobile`='13794379900',`weight`='0' WHERE `id` = 4 [ RunTime:0.0002s ]
+
+[ 2017-01-05T20:46:54+08:00 ] 119.130.170.238 /Admin/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000259s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000322s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000357s ]
+SQL: SHOW COLUMNS FROM `yk_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yk_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yk_cms_set` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yk_cms_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_shop_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yk_shop_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yk_user_oath` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yk_user_oath`  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000132s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000179s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023177s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023233s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000135s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000165s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000363s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000400s ]
+
+[ 2017-01-05T20:46:59+08:00 ] 119.130.170.238 /Admin/Employee/employeeList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000281s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000327s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000363s ]
+SQL: SHOW COLUMNS FROM `yk_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yk_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yk_cms_set` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yk_cms_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_shop_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yk_shop_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yk_employee` [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000028s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000061s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004635s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004667s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000118s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000148s ]
+SQL: SHOW COLUMNS FROM `yk_employee` [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: p /mnt/wwwroot/yikang.mubantang.com/Application/Admin/Controller/EmployeeController.class.php 第 42 行.
+NOTIC: [8] Undefined variable: map /mnt/wwwroot/yikang.mubantang.com/Application/Admin/Controller/EmployeeController.class.php 第 49 行.
+SQL: SELECT * FROM `yk_employee` LIMIT 0,20   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: map /mnt/wwwroot/yikang.mubantang.com/Application/Admin/Controller/EmployeeController.class.php 第 50 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_employee` LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [2] Missing argument 6 for Admin\Controller\BaseController::getPage(), called in /mnt/wwwroot/yikang.mubantang.com/Application/Admin/Controller/EmployeeController.class.php on line 51 and defined /mnt/wwwroot/yikang.mubantang.com/Application/Admin/Controller/BaseController.class.php 第 91 行.
+NOTIC: [8] Undefined variable: map /mnt/wwwroot/yikang.mubantang.com/Application/Admin/Controller/BaseController.class.php 第 103 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000034s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.005786s ]
+NOTIC: [8] Undefined variable: name /mnt/wwwroot/yikang.mubantang.com/Application/Runtime/Cache/Admin/abf38069b0d28112fb748f4aa788ce7a.php 第 27 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004667s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.001838s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000008s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.006390s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000358s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000394s ]
+
+[ 2017-01-05T20:47:09+08:00 ] 119.130.170.238 /Admin/Employee/getqrcode/eid/4
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000337s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000364s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000402s ]
+SQL: SHOW COLUMNS FROM `yk_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yk_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yk_cms_set` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yk_cms_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_shop_set` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `yk_shop_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yk_employee` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `yk_employee` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `yk_employee` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000419s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000469s ]
+
+[ 2017-01-05T20:47:16+08:00 ] 119.130.170.238 /Admin/Employee/getqrcode/eid/4
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000264s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000324s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000362s ]
+SQL: SHOW COLUMNS FROM `yk_set` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `yk_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yk_cms_set` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yk_cms_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_shop_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yk_shop_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yk_employee` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `yk_employee` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yk_employee` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000579s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000647s ]
+
+[ 2017-01-05T20:47:20+08:00 ] 119.130.170.238 /Admin/Employee/employeeSet/id/4
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000303s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000323s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000359s ]
+SQL: SHOW COLUMNS FROM `yk_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yk_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yk_cms_set` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yk_cms_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_shop_set` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `yk_shop_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yk_employee` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `yk_employee` [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000033s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000075s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005248s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005282s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000122s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000152s ]
+SQL: SELECT * FROM `yk_employee` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000027s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.003077s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002481s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.000549s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000007s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.002906s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000363s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000395s ]
+
+[ 2017-01-05T20:47:22+08:00 ] 119.130.170.238 /Admin/Employee/employeeList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000261s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000328s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000363s ]
+SQL: SHOW COLUMNS FROM `yk_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yk_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yk_cms_set` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yk_cms_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_shop_set` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `yk_shop_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yk_employee` [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000028s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000063s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004642s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004674s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000139s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000169s ]
+SQL: SHOW COLUMNS FROM `yk_employee` [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: p /mnt/wwwroot/yikang.mubantang.com/Application/Admin/Controller/EmployeeController.class.php 第 42 行.
+NOTIC: [8] Undefined variable: map /mnt/wwwroot/yikang.mubantang.com/Application/Admin/Controller/EmployeeController.class.php 第 49 行.
+SQL: SELECT * FROM `yk_employee` LIMIT 0,20   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: map /mnt/wwwroot/yikang.mubantang.com/Application/Admin/Controller/EmployeeController.class.php 第 50 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_employee` LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [2] Missing argument 6 for Admin\Controller\BaseController::getPage(), called in /mnt/wwwroot/yikang.mubantang.com/Application/Admin/Controller/EmployeeController.class.php on line 51 and defined /mnt/wwwroot/yikang.mubantang.com/Application/Admin/Controller/BaseController.class.php 第 91 行.
+NOTIC: [8] Undefined variable: map /mnt/wwwroot/yikang.mubantang.com/Application/Admin/Controller/BaseController.class.php 第 103 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000033s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.005847s ]
+NOTIC: [8] Undefined variable: name /mnt/wwwroot/yikang.mubantang.com/Application/Runtime/Cache/Admin/abf38069b0d28112fb748f4aa788ce7a.php 第 27 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004700s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.001855s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000008s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.006416s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000335s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000391s ]
+
+[ 2017-01-05T20:48:38+08:00 ] 119.130.170.238 /Admin/Shop/order/status/2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000265s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000331s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000384s ]
+SQL: SHOW COLUMNS FROM `yk_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yk_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yk_cms_set` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yk_cms_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_shop_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yk_shop_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yk_shop_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_vip_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yk_vip_set` LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000030s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000091s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004728s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004760s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000118s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000147s ]
+SQL: SHOW COLUMNS FROM `yk_shop_order` [ RunTime:0.0009s ]
+NOTIC: [8] Undefined index: p /mnt/wwwroot/yikang.mubantang.com/Application/Admin/Controller/ShopController.class.php 第 1101 行.
+SQL: SELECT O.*,V.pid,V.name as pname FROM yk_shop_order as O LEFT JOIN `yk_vip` AS V ON V.id = O.vipid  WHERE O.status = '2' ORDER BY O.ctime desc LIMIT 0,20   [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM yk_shop_order as O LEFT JOIN `yk_vip` AS V ON V.id = O.vipid  WHERE O.status = '2' LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [2] Missing argument 6 for Admin\Controller\BaseController::getPage(), called in /mnt/wwwroot/yikang.mubantang.com/Application/Admin/Controller/ShopController.class.php on line 1128 and defined /mnt/wwwroot/yikang.mubantang.com/Application/Admin/Controller/BaseController.class.php 第 91 行.
+NOTIC: [8] Undefined variable: map /mnt/wwwroot/yikang.mubantang.com/Application/Admin/Controller/BaseController.class.php 第 103 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000052s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.012334s ]
+NOTIC: [8] Undefined variable: keyword /mnt/wwwroot/yikang.mubantang.com/Application/Runtime/Cache/Admin/1de6446ae7d2b2aec8b988d31334127b.php 第 31 行.
+NOTIC: [8] Undefined variable: name /mnt/wwwroot/yikang.mubantang.com/Application/Runtime/Cache/Admin/1de6446ae7d2b2aec8b988d31334127b.php 第 34 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011252s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.003480s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000008s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.014622s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000345s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000382s ]
+
+[ 2017-01-05T20:50:13+08:00 ] 119.130.170.238 /Shop/order/status/2/p/2?keyword=&name=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000327s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000322s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000357s ]
+SQL: SHOW COLUMNS FROM `yk_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yk_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yk_cms_set` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yk_cms_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_shop_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yk_shop_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yk_shop_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_vip_set` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `yk_vip_set` LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000031s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000066s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004907s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004938s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000140s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000169s ]
+SQL: SHOW COLUMNS FROM `yk_shop_order` [ RunTime:0.0009s ]
+SQL: SELECT O.*,V.pid,V.name as pname FROM yk_shop_order as O LEFT JOIN `yk_vip` AS V ON V.id = O.vipid  WHERE O.status = '2' ORDER BY O.ctime desc LIMIT 20,20   [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM yk_shop_order as O LEFT JOIN `yk_vip` AS V ON V.id = O.vipid  WHERE O.status = '2' LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [2] Missing argument 6 for Admin\Controller\BaseController::getPage(), called in /mnt/wwwroot/yikang.mubantang.com/Application/Admin/Controller/ShopController.class.php on line 1128 and defined /mnt/wwwroot/yikang.mubantang.com/Application/Admin/Controller/BaseController.class.php 第 91 行.
+NOTIC: [8] Undefined variable: map /mnt/wwwroot/yikang.mubantang.com/Application/Admin/Controller/BaseController.class.php 第 103 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000070s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.012720s ]
+NOTIC: [8] Undefined variable: keyword /mnt/wwwroot/yikang.mubantang.com/Application/Runtime/Cache/Admin/1de6446ae7d2b2aec8b988d31334127b.php 第 31 行.
+NOTIC: [8] Undefined variable: name /mnt/wwwroot/yikang.mubantang.com/Application/Runtime/Cache/Admin/1de6446ae7d2b2aec8b988d31334127b.php 第 34 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013760s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.003432s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000012s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.017078s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000449s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000495s ]
+
+[ 2017-01-05T20:51:44+08:00 ] 119.130.170.238 /Shop/order/status/2/p/1?keyword=&name=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000286s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000331s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000367s ]
+SQL: SHOW COLUMNS FROM `yk_set` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `yk_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yk_cms_set` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yk_cms_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_shop_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yk_shop_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yk_shop_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_vip_set` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `yk_vip_set` LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000036s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000078s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004818s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004853s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000146s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000176s ]
+SQL: SHOW COLUMNS FROM `yk_shop_order` [ RunTime:0.0009s ]
+SQL: SELECT O.*,V.pid,V.name as pname FROM yk_shop_order as O LEFT JOIN `yk_vip` AS V ON V.id = O.vipid  WHERE O.status = '2' ORDER BY O.ctime desc LIMIT 0,20   [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM yk_shop_order as O LEFT JOIN `yk_vip` AS V ON V.id = O.vipid  WHERE O.status = '2' LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [2] Missing argument 6 for Admin\Controller\BaseController::getPage(), called in /mnt/wwwroot/yikang.mubantang.com/Application/Admin/Controller/ShopController.class.php on line 1128 and defined /mnt/wwwroot/yikang.mubantang.com/Application/Admin/Controller/BaseController.class.php 第 91 行.
+NOTIC: [8] Undefined variable: map /mnt/wwwroot/yikang.mubantang.com/Application/Admin/Controller/BaseController.class.php 第 103 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000053s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.012361s ]
+NOTIC: [8] Undefined variable: keyword /mnt/wwwroot/yikang.mubantang.com/Application/Runtime/Cache/Admin/1de6446ae7d2b2aec8b988d31334127b.php 第 31 行.
+NOTIC: [8] Undefined variable: name /mnt/wwwroot/yikang.mubantang.com/Application/Runtime/Cache/Admin/1de6446ae7d2b2aec8b988d31334127b.php 第 34 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011444s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.003422s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000009s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.014726s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000361s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000399s ]
+
+[ 2017-01-05T20:52:02+08:00 ] 119.130.170.238 /Shop/order/status/2/p/2?keyword=&name=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000265s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000332s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000372s ]
+SQL: SHOW COLUMNS FROM `yk_set` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `yk_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yk_cms_set` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yk_cms_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_shop_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yk_shop_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yk_shop_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_vip_set` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `yk_vip_set` LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000045s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000113s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005156s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005192s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000143s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000174s ]
+SQL: SHOW COLUMNS FROM `yk_shop_order` [ RunTime:0.0012s ]
+SQL: SELECT O.*,V.pid,V.name as pname FROM yk_shop_order as O LEFT JOIN `yk_vip` AS V ON V.id = O.vipid  WHERE O.status = '2' ORDER BY O.ctime desc LIMIT 20,20   [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM yk_shop_order as O LEFT JOIN `yk_vip` AS V ON V.id = O.vipid  WHERE O.status = '2' LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [2] Missing argument 6 for Admin\Controller\BaseController::getPage(), called in /mnt/wwwroot/yikang.mubantang.com/Application/Admin/Controller/ShopController.class.php on line 1128 and defined /mnt/wwwroot/yikang.mubantang.com/Application/Admin/Controller/BaseController.class.php 第 91 行.
+NOTIC: [8] Undefined variable: map /mnt/wwwroot/yikang.mubantang.com/Application/Admin/Controller/BaseController.class.php 第 103 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000073s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.013711s ]
+NOTIC: [8] Undefined variable: keyword /mnt/wwwroot/yikang.mubantang.com/Application/Runtime/Cache/Admin/1de6446ae7d2b2aec8b988d31334127b.php 第 31 行.
+NOTIC: [8] Undefined variable: name /mnt/wwwroot/yikang.mubantang.com/Application/Runtime/Cache/Admin/1de6446ae7d2b2aec8b988d31334127b.php 第 34 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012261s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.003986s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000010s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.016123s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000413s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000450s ]
+
+[ 2017-01-05T20:52:27+08:00 ] 119.130.170.238 /Shop/order/status/2/p/1?keyword=&name=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000270s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000327s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000362s ]
+SQL: SHOW COLUMNS FROM `yk_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yk_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yk_cms_set` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yk_cms_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_shop_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yk_shop_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yk_shop_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_vip_set` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `yk_vip_set` LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000033s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000070s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004647s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004681s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000121s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000151s ]
+SQL: SHOW COLUMNS FROM `yk_shop_order` [ RunTime:0.0009s ]
+SQL: SELECT O.*,V.pid,V.name as pname FROM yk_shop_order as O LEFT JOIN `yk_vip` AS V ON V.id = O.vipid  WHERE O.status = '2' ORDER BY O.ctime desc LIMIT 0,20   [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM yk_shop_order as O LEFT JOIN `yk_vip` AS V ON V.id = O.vipid  WHERE O.status = '2' LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [2] Missing argument 6 for Admin\Controller\BaseController::getPage(), called in /mnt/wwwroot/yikang.mubantang.com/Application/Admin/Controller/ShopController.class.php on line 1128 and defined /mnt/wwwroot/yikang.mubantang.com/Application/Admin/Controller/BaseController.class.php 第 91 行.
+NOTIC: [8] Undefined variable: map /mnt/wwwroot/yikang.mubantang.com/Application/Admin/Controller/BaseController.class.php 第 103 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000065s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.013437s ]
+NOTIC: [8] Undefined variable: keyword /mnt/wwwroot/yikang.mubantang.com/Application/Runtime/Cache/Admin/1de6446ae7d2b2aec8b988d31334127b.php 第 31 行.
+NOTIC: [8] Undefined variable: name /mnt/wwwroot/yikang.mubantang.com/Application/Runtime/Cache/Admin/1de6446ae7d2b2aec8b988d31334127b.php 第 34 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012594s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.003599s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000008s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.016080s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000387s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000426s ]
+
+[ 2017-01-05T20:52:32+08:00 ] 119.130.170.238 /Admin/Shop/order/status/4
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000265s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000327s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000362s ]
+SQL: SHOW COLUMNS FROM `yk_set` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `yk_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yk_cms_set` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yk_cms_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_shop_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yk_shop_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yk_shop_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_vip_set` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `yk_vip_set` LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000035s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000072s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004648s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004681s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000119s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000148s ]
+SQL: SHOW COLUMNS FROM `yk_shop_order` [ RunTime:0.0009s ]
+NOTIC: [8] Undefined index: p /mnt/wwwroot/yikang.mubantang.com/Application/Admin/Controller/ShopController.class.php 第 1101 行.
+SQL: SELECT O.*,V.pid,V.name as pname FROM yk_shop_order as O LEFT JOIN `yk_vip` AS V ON V.id = O.vipid  WHERE O.status = '4' ORDER BY O.ctime desc LIMIT 0,20   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM yk_shop_order as O LEFT JOIN `yk_vip` AS V ON V.id = O.vipid  WHERE O.status = '4' LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2] Missing argument 6 for Admin\Controller\BaseController::getPage(), called in /mnt/wwwroot/yikang.mubantang.com/Application/Admin/Controller/ShopController.class.php on line 1128 and defined /mnt/wwwroot/yikang.mubantang.com/Application/Admin/Controller/BaseController.class.php 第 91 行.
+NOTIC: [8] Undefined variable: map /mnt/wwwroot/yikang.mubantang.com/Application/Admin/Controller/BaseController.class.php 第 103 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000052s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.011702s ]
+NOTIC: [8] Undefined variable: keyword /mnt/wwwroot/yikang.mubantang.com/Application/Runtime/Cache/Admin/1de6446ae7d2b2aec8b988d31334127b.php 第 31 行.
+NOTIC: [8] Undefined variable: name /mnt/wwwroot/yikang.mubantang.com/Application/Runtime/Cache/Admin/1de6446ae7d2b2aec8b988d31334127b.php 第 34 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010550s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.002846s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000008s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.013278s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000351s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000387s ]
+
+[ 2017-01-05T20:52:35+08:00 ] 119.130.170.238 /Admin/Shop/order/status/7
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000312s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000355s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000390s ]
+SQL: SHOW COLUMNS FROM `yk_set` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `yk_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yk_cms_set` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yk_cms_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_shop_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yk_shop_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yk_shop_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_vip_set` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `yk_vip_set` LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000033s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000068s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004551s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004583s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000141s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000170s ]
+SQL: SHOW COLUMNS FROM `yk_shop_order` [ RunTime:0.0009s ]
+NOTIC: [8] Undefined index: p /mnt/wwwroot/yikang.mubantang.com/Application/Admin/Controller/ShopController.class.php 第 1101 行.
+SQL: SELECT O.*,V.pid,V.name as pname FROM yk_shop_order as O LEFT JOIN `yk_vip` AS V ON V.id = O.vipid  WHERE O.status = '7' ORDER BY O.ctime desc LIMIT 0,20   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM yk_shop_order as O LEFT JOIN `yk_vip` AS V ON V.id = O.vipid  WHERE O.status = '7' LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2] Missing argument 6 for Admin\Controller\BaseController::getPage(), called in /mnt/wwwroot/yikang.mubantang.com/Application/Admin/Controller/ShopController.class.php on line 1128 and defined /mnt/wwwroot/yikang.mubantang.com/Application/Admin/Controller/BaseController.class.php 第 91 行.
+NOTIC: [8] Undefined variable: map /mnt/wwwroot/yikang.mubantang.com/Application/Admin/Controller/BaseController.class.php 第 103 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000053s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.011740s ]
+NOTIC: [8] Undefined variable: keyword /mnt/wwwroot/yikang.mubantang.com/Application/Runtime/Cache/Admin/1de6446ae7d2b2aec8b988d31334127b.php 第 31 行.
+NOTIC: [8] Undefined variable: name /mnt/wwwroot/yikang.mubantang.com/Application/Runtime/Cache/Admin/1de6446ae7d2b2aec8b988d31334127b.php 第 34 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010703s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.002718s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000008s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.013281s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000348s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000404s ]
+
+[ 2017-01-05T20:52:37+08:00 ] 119.130.170.238 /Admin/Shop/order/status/4
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000274s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000319s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000353s ]
+SQL: SHOW COLUMNS FROM `yk_set` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `yk_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yk_cms_set` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yk_cms_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_shop_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yk_shop_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yk_shop_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_vip_set` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `yk_vip_set` LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000031s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000066s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004613s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004645s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000118s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000148s ]
+SQL: SHOW COLUMNS FROM `yk_shop_order` [ RunTime:0.0009s ]
+NOTIC: [8] Undefined index: p /mnt/wwwroot/yikang.mubantang.com/Application/Admin/Controller/ShopController.class.php 第 1101 行.
+SQL: SELECT O.*,V.pid,V.name as pname FROM yk_shop_order as O LEFT JOIN `yk_vip` AS V ON V.id = O.vipid  WHERE O.status = '4' ORDER BY O.ctime desc LIMIT 0,20   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM yk_shop_order as O LEFT JOIN `yk_vip` AS V ON V.id = O.vipid  WHERE O.status = '4' LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2] Missing argument 6 for Admin\Controller\BaseController::getPage(), called in /mnt/wwwroot/yikang.mubantang.com/Application/Admin/Controller/ShopController.class.php on line 1128 and defined /mnt/wwwroot/yikang.mubantang.com/Application/Admin/Controller/BaseController.class.php 第 91 行.
+NOTIC: [8] Undefined variable: map /mnt/wwwroot/yikang.mubantang.com/Application/Admin/Controller/BaseController.class.php 第 103 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000053s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.011903s ]
+NOTIC: [8] Undefined variable: keyword /mnt/wwwroot/yikang.mubantang.com/Application/Runtime/Cache/Admin/1de6446ae7d2b2aec8b988d31334127b.php 第 31 行.
+NOTIC: [8] Undefined variable: name /mnt/wwwroot/yikang.mubantang.com/Application/Runtime/Cache/Admin/1de6446ae7d2b2aec8b988d31334127b.php 第 34 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010829s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.002899s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000011s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.013613s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000365s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000408s ]
+
+[ 2017-01-05T20:52:40+08:00 ] 119.130.170.238 /Admin/Shop/order/status/8
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000261s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000355s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000391s ]
+SQL: SHOW COLUMNS FROM `yk_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yk_set` LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `yk_cms_set` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yk_cms_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_shop_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yk_shop_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yk_shop_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_vip_set` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `yk_vip_set` LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000029s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000065s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008672s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008704s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000118s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000148s ]
+SQL: SHOW COLUMNS FROM `yk_shop_order` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: p /mnt/wwwroot/yikang.mubantang.com/Application/Admin/Controller/ShopController.class.php 第 1101 行.
+SQL: SELECT O.*,V.pid,V.name as pname FROM yk_shop_order as O LEFT JOIN `yk_vip` AS V ON V.id = O.vipid  WHERE O.status = 3 AND O.ctime <= 1483015960 ORDER BY O.ctime desc LIMIT 0,20   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM yk_shop_order as O LEFT JOIN `yk_vip` AS V ON V.id = O.vipid  WHERE O.status = 3 AND O.ctime <= 1483015960 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [2] Missing argument 6 for Admin\Controller\BaseController::getPage(), called in /mnt/wwwroot/yikang.mubantang.com/Application/Admin/Controller/ShopController.class.php on line 1128 and defined /mnt/wwwroot/yikang.mubantang.com/Application/Admin/Controller/BaseController.class.php 第 91 行.
+NOTIC: [8] Undefined variable: map /mnt/wwwroot/yikang.mubantang.com/Application/Admin/Controller/BaseController.class.php 第 103 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000053s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.016092s ]
+NOTIC: [8] Undefined variable: keyword /mnt/wwwroot/yikang.mubantang.com/Application/Runtime/Cache/Admin/1de6446ae7d2b2aec8b988d31334127b.php 第 31 行.
+NOTIC: [8] Undefined variable: name /mnt/wwwroot/yikang.mubantang.com/Application/Runtime/Cache/Admin/1de6446ae7d2b2aec8b988d31334127b.php 第 34 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010830s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.003028s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000011s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.013759s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000416s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000455s ]
+
+[ 2017-01-05T20:53:07+08:00 ] 119.130.170.238 /Admin/Shop/order/status/2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000260s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000326s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000360s ]
+SQL: SHOW COLUMNS FROM `yk_set` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `yk_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yk_cms_set` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yk_cms_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_shop_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yk_shop_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yk_shop_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_vip_set` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `yk_vip_set` LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000034s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000072s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004846s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004881s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000124s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000161s ]
+SQL: SHOW COLUMNS FROM `yk_shop_order` [ RunTime:0.0009s ]
+NOTIC: [8] Undefined index: p /mnt/wwwroot/yikang.mubantang.com/Application/Admin/Controller/ShopController.class.php 第 1101 行.
+SQL: SELECT O.*,V.pid,V.name as pname FROM yk_shop_order as O LEFT JOIN `yk_vip` AS V ON V.id = O.vipid  WHERE O.status = '2' ORDER BY O.ctime desc LIMIT 0,20   [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM yk_shop_order as O LEFT JOIN `yk_vip` AS V ON V.id = O.vipid  WHERE O.status = '2' LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [2] Missing argument 6 for Admin\Controller\BaseController::getPage(), called in /mnt/wwwroot/yikang.mubantang.com/Application/Admin/Controller/ShopController.class.php on line 1128 and defined /mnt/wwwroot/yikang.mubantang.com/Application/Admin/Controller/BaseController.class.php 第 91 行.
+NOTIC: [8] Undefined variable: map /mnt/wwwroot/yikang.mubantang.com/Application/Admin/Controller/BaseController.class.php 第 103 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000072s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.012452s ]
+NOTIC: [8] Undefined variable: keyword /mnt/wwwroot/yikang.mubantang.com/Application/Runtime/Cache/Admin/1de6446ae7d2b2aec8b988d31334127b.php 第 31 行.
+NOTIC: [8] Undefined variable: name /mnt/wwwroot/yikang.mubantang.com/Application/Runtime/Cache/Admin/1de6446ae7d2b2aec8b988d31334127b.php 第 34 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011515s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.003483s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000010s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.014871s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000380s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000417s ]
+
+[ 2017-01-05T20:53:34+08:00 ] 119.130.170.238 /Admin/Shop/order/status/3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000439s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000380s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000562s ]
+SQL: SHOW COLUMNS FROM `yk_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yk_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yk_cms_set` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yk_cms_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_shop_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yk_shop_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yk_shop_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yk_vip_set` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `yk_vip_set` LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000032s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000066s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004558s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004590s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000117s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000146s ]
+SQL: SHOW COLUMNS FROM `yk_shop_order` [ RunTime:0.0009s ]
+NOTIC: [8] Undefined index: p /mnt/wwwroot/yikang.mubantang.com/Application/Admin/Controller/ShopController.class.php 第 1101 行.
+SQL: SELECT O.*,V.pid,V.name as pname FROM yk_shop_order as O LEFT JOIN `yk_vip` AS V ON V.id = O.vipid  WHERE O.status = '3' ORDER BY O.ctime desc LIMIT 0,20   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM yk_shop_order as O LEFT JOIN `yk_vip` AS V ON V.id = O.vipid  WHERE O.status = '3' LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2] Missing argument 6 for Admin\Controller\BaseController::getPage(), called in /mnt/wwwroot/yikang.mubantang.com/Application/Admin/Controller/ShopController.class.php on line 1128 and defined /mnt/wwwroot/yikang.mubantang.com/Application/Admin/Controller/BaseController.class.php 第 91 行.
+NOTIC: [8] Undefined variable: map /mnt/wwwroot/yikang.mubantang.com/Application/Admin/Controller/BaseController.class.php 第 103 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000056s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.011709s ]
+NOTIC: [8] Undefined variable: keyword /mnt/wwwroot/yikang.mubantang.com/Application/Runtime/Cache/Admin/1de6446ae7d2b2aec8b988d31334127b.php 第 31 行.
+NOTIC: [8] Undefined variable: name /mnt/wwwroot/yikang.mubantang.com/Application/Runtime/Cache/Admin/1de6446ae7d2b2aec8b988d31334127b.php 第 34 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010672s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.002873s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000009s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.013431s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000407s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000446s ]
+
+[ 2017-01-05T20:53:49+08:00 ] 119.130.170.238 /Admin/Shop/order/status/9
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000256s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000350s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000385s ]
+SQL: SHOW COLUMNS FROM `yk_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yk_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yk_cms_set` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yk_cms_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_shop_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yk_shop_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yk_shop_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yk_vip_set` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `yk_vip_set` LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000034s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000073s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004611s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004642s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000120s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000150s ]
+SQL: SHOW COLUMNS FROM `yk_shop_order` [ RunTime:0.0011s ]
+NOTIC: [8] Undefined index: p /mnt/wwwroot/yikang.mubantang.com/Application/Admin/Controller/ShopController.class.php 第 1101 行.
+SQL: SELECT O.*,V.pid,V.name as pname FROM yk_shop_order as O LEFT JOIN `yk_vip` AS V ON V.id = O.vipid  WHERE O.ctime >= 1483545600 ORDER BY O.ctime desc LIMIT 0,20   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM yk_shop_order as O LEFT JOIN `yk_vip` AS V ON V.id = O.vipid  WHERE O.ctime >= 1483545600 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2] Missing argument 6 for Admin\Controller\BaseController::getPage(), called in /mnt/wwwroot/yikang.mubantang.com/Application/Admin/Controller/ShopController.class.php on line 1128 and defined /mnt/wwwroot/yikang.mubantang.com/Application/Admin/Controller/BaseController.class.php 第 91 行.
+NOTIC: [8] Undefined variable: map /mnt/wwwroot/yikang.mubantang.com/Application/Admin/Controller/BaseController.class.php 第 103 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000062s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.012464s ]
+NOTIC: [8] Undefined variable: keyword /mnt/wwwroot/yikang.mubantang.com/Application/Runtime/Cache/Admin/1de6446ae7d2b2aec8b988d31334127b.php 第 31 行.
+NOTIC: [8] Undefined variable: name /mnt/wwwroot/yikang.mubantang.com/Application/Runtime/Cache/Admin/1de6446ae7d2b2aec8b988d31334127b.php 第 34 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011254s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.003034s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000009s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.014169s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000405s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000442s ]
+
+[ 2017-01-05T20:53:54+08:00 ] 119.130.170.238 /Admin/Shop/orderReport
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000289s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000351s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000387s ]
+SQL: SHOW COLUMNS FROM `yk_set` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `yk_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yk_cms_set` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yk_cms_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yk_shop_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yk_shop_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yk_shop_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_vip_set` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `yk_vip_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_shop_goods` [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `yk_shop_goods_sku` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `yk_shop_order` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `yk_shop_order` WHERE ( ctime>1483545600 )  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: goods /mnt/wwwroot/yikang.mubantang.com/Application/Admin/Model/ShopOrderModel.class.php 第 18 行.
+NOTIC: [2] Invalid argument supplied for foreach() /mnt/wwwroot/yikang.mubantang.com/Application/Admin/Model/ShopOrderModel.class.php 第 18 行.
+SQL: SELECT * FROM `yk_shop_goods`  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yk_shop_goods_sku`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000062s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000123s ]
+NOTIC: [8] Undefined variable: breadhtml /mnt/wwwroot/yikang.mubantang.com/Application/Runtime/Cache/Admin/2a04b1f8de22c7507c715bc1de2ded10.php 第 65 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007992s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008039s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000191s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000237s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000519s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000569s ]
+
+[ 2017-01-05T20:53:56+08:00 ] 119.130.170.238 /Admin/Shop/order
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000280s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000324s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000363s ]
+SQL: SHOW COLUMNS FROM `yk_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yk_set` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `yk_cms_set` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yk_cms_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_shop_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yk_shop_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yk_shop_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_vip_set` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `yk_vip_set` LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000029s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000064s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004731s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004764s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000127s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000158s ]
+SQL: SHOW COLUMNS FROM `yk_shop_order` [ RunTime:0.0009s ]
+NOTIC: [8] Undefined index: p /mnt/wwwroot/yikang.mubantang.com/Application/Admin/Controller/ShopController.class.php 第 1101 行.
+NOTIC: [8] Undefined variable: map /mnt/wwwroot/yikang.mubantang.com/Application/Admin/Controller/ShopController.class.php 第 1121 行.
+SQL: SELECT O.*,V.pid,V.name as pname FROM yk_shop_order as O LEFT JOIN `yk_vip` AS V ON V.id = O.vipid  ORDER BY O.ctime desc LIMIT 0,20   [ RunTime:0.0006s ]
+NOTIC: [8] Undefined variable: map /mnt/wwwroot/yikang.mubantang.com/Application/Admin/Controller/ShopController.class.php 第 1127 行.
+SQL: SELECT COUNT(*) AS tp_count FROM yk_shop_order as O LEFT JOIN `yk_vip` AS V ON V.id = O.vipid  LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [2] Missing argument 6 for Admin\Controller\BaseController::getPage(), called in /mnt/wwwroot/yikang.mubantang.com/Application/Admin/Controller/ShopController.class.php on line 1128 and defined /mnt/wwwroot/yikang.mubantang.com/Application/Admin/Controller/BaseController.class.php 第 91 行.
+NOTIC: [8] Undefined variable: map /mnt/wwwroot/yikang.mubantang.com/Application/Admin/Controller/BaseController.class.php 第 103 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000053s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.012848s ]
+NOTIC: [8] Undefined variable: keyword /mnt/wwwroot/yikang.mubantang.com/Application/Runtime/Cache/Admin/1de6446ae7d2b2aec8b988d31334127b.php 第 31 行.
+NOTIC: [8] Undefined variable: name /mnt/wwwroot/yikang.mubantang.com/Application/Runtime/Cache/Admin/1de6446ae7d2b2aec8b988d31334127b.php 第 34 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012090s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.003256s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000009s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.015228s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000362s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000417s ]
+
+[ 2017-01-05T20:54:09+08:00 ] 119.130.170.238 /Admin/Vip/vipList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000279s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000320s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000357s ]
+SQL: SHOW COLUMNS FROM `yk_set` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `yk_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yk_cms_set` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yk_cms_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_shop_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yk_shop_set` LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000032s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000069s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004576s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004609s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000120s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000150s ]
+SQL: SHOW COLUMNS FROM `yk_employee` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yk_employee`  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_vip` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: p /mnt/wwwroot/yikang.mubantang.com/Application/Admin/Controller/VipController.class.php 第 349 行.
+NOTIC: [8] Undefined variable: map /mnt/wwwroot/yikang.mubantang.com/Application/Admin/Controller/VipController.class.php 第 372 行.
+SQL: SELECT * FROM `yk_vip` LIMIT 0,20   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `yk_vip_level` [ RunTime:0.0003s ]
+SQL: SELECT `name` FROM `yk_vip_level` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `name` FROM `yk_vip_level` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `yk_vip_level` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `yk_vip_level` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `yk_vip_level` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `yk_vip_level` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `yk_vip_level` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `yk_vip_level` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `yk_vip_level` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `yk_vip_level` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `yk_vip_level` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `yk_vip_level` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `yk_vip_level` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `yk_vip_level` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `yk_vip_level` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `yk_vip_level` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `yk_vip_level` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `yk_vip_level` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `yk_vip_level` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `yk_vip_level` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: map /mnt/wwwroot/yikang.mubantang.com/Application/Admin/Controller/VipController.class.php 第 391 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_vip` LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [2] Missing argument 6 for Admin\Controller\BaseController::getPage(), called in /mnt/wwwroot/yikang.mubantang.com/Application/Admin/Controller/VipController.class.php on line 392 and defined /mnt/wwwroot/yikang.mubantang.com/Application/Admin/Controller/BaseController.class.php 第 91 行.
+NOTIC: [8] Undefined variable: map /mnt/wwwroot/yikang.mubantang.com/Application/Admin/Controller/BaseController.class.php 第 103 行.
+NOTIC: [8] Use of undefined constant 尾页 - assumed '尾页' /mnt/wwwroot/yikang.mubantang.com/ThinkPHP/Library/Util/Pagecms.class.php 第 118 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000037s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.014691s ]
+NOTIC: [8] Undefined variable: is_system /mnt/wwwroot/yikang.mubantang.com/Application/Runtime/Cache/Admin/749beb32de2ab4786077c3e0cb80130c.php 第 35 行.
+NOTIC: [8] Undefined variable: is_system /mnt/wwwroot/yikang.mubantang.com/Application/Runtime/Cache/Admin/749beb32de2ab4786077c3e0cb80130c.php 第 36 行.
+NOTIC: [8] Undefined variable: vipid /mnt/wwwroot/yikang.mubantang.com/Application/Runtime/Cache/Admin/749beb32de2ab4786077c3e0cb80130c.php 第 40 行.
+NOTIC: [8] Undefined variable: plv /mnt/wwwroot/yikang.mubantang.com/Application/Runtime/Cache/Admin/749beb32de2ab4786077c3e0cb80130c.php 第 43 行.
+NOTIC: [8] Undefined variable: search /mnt/wwwroot/yikang.mubantang.com/Application/Runtime/Cache/Admin/749beb32de2ab4786077c3e0cb80130c.php 第 46 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008893s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.008900s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000009s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.017682s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000355s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000393s ]
+
+[ 2017-01-05T20:54:15+08:00 ] 119.130.170.238 /Admin/Employee/employeeList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000284s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000353s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000389s ]
+SQL: SHOW COLUMNS FROM `yk_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yk_set` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `yk_cms_set` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yk_cms_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_shop_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yk_shop_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yk_employee` [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000032s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000067s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004567s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004600s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000122s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000156s ]
+SQL: SHOW COLUMNS FROM `yk_employee` [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: p /mnt/wwwroot/yikang.mubantang.com/Application/Admin/Controller/EmployeeController.class.php 第 42 行.
+NOTIC: [8] Undefined variable: map /mnt/wwwroot/yikang.mubantang.com/Application/Admin/Controller/EmployeeController.class.php 第 49 行.
+SQL: SELECT * FROM `yk_employee` LIMIT 0,20   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: map /mnt/wwwroot/yikang.mubantang.com/Application/Admin/Controller/EmployeeController.class.php 第 50 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_employee` LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [2] Missing argument 6 for Admin\Controller\BaseController::getPage(), called in /mnt/wwwroot/yikang.mubantang.com/Application/Admin/Controller/EmployeeController.class.php on line 51 and defined /mnt/wwwroot/yikang.mubantang.com/Application/Admin/Controller/BaseController.class.php 第 91 行.
+NOTIC: [8] Undefined variable: map /mnt/wwwroot/yikang.mubantang.com/Application/Admin/Controller/BaseController.class.php 第 103 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000033s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.005819s ]
+NOTIC: [8] Undefined variable: name /mnt/wwwroot/yikang.mubantang.com/Application/Runtime/Cache/Admin/abf38069b0d28112fb748f4aa788ce7a.php 第 27 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004695s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.001851s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000008s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.006420s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000372s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000409s ]
+
+[ 2017-01-05T20:54:40+08:00 ] 119.130.170.238 /Admin/Wx/qrcodeBgEmpSet
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000267s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000353s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000387s ]
+SQL: SHOW COLUMNS FROM `yk_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yk_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yk_cms_set` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yk_cms_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_shop_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yk_shop_set` LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000033s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000075s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004856s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004890s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000117s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000147s ]
+SQL: SHOW COLUMNS FROM `yk_autoset` [ RunTime:0.0245s ]
+SQL: SELECT * FROM `yk_autoset` LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000033s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.027016s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001729s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.025251s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000009s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.026865s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000392s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000429s ]
+
+[ 2017-01-05T20:54:45+08:00 ] 119.130.170.238 /Admin/Index/main
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000254s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000319s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000354s ]
+SQL: SHOW COLUMNS FROM `yk_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yk_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yk_cms_set` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `yk_cms_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_shop_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yk_shop_set` LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000029s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000082s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004456s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004489s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000117s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000147s ]
+SQL: SHOW COLUMNS FROM `yk_vip` [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_vip` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_vip` WHERE ( subscribe=1 ) LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_vip` WHERE `ctime` BETWEEN 1483545600 AND 1483631999 LIMIT 1   [ RunTime:0.0019s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_vip` WHERE `ctime` BETWEEN 1483459200 AND 1483545599 LIMIT 1   [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `yk_shop_order` [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_shop_order` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_shop_order` WHERE ( status=0 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_shop_order` WHERE ( status=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_shop_order` WHERE ( status=2 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_shop_order` WHERE ( status=3 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_shop_order` WHERE ( status=4 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_shop_order` WHERE ( status=5 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_shop_order` WHERE ( status=6 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_shop_order` WHERE `ctime` BETWEEN 1483545600 AND 1483631999 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_shop_order` WHERE `ctime` BETWEEN 1483459200 AND 1483545599 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yk_fx_syslog` [ RunTime:0.0004s ]
+SQL: SELECT SUM(fxyj) AS tp_sum FROM `yk_fx_syslog` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT SUM(fxyj) AS tp_sum FROM `yk_fx_syslog` WHERE `ctime` BETWEEN 1483545600 AND 1483631999 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT SUM(fxyj) AS tp_sum FROM `yk_fx_syslog` WHERE `ctime` BETWEEN 1483459200 AND 1483545599 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [2] Division by zero /mnt/wwwroot/yikang.mubantang.com/Application/Admin/Controller/IndexController.class.php 第 144 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_vip` WHERE `isfx` = 0 AND `isfxgd` = 0 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_vip` WHERE `isfx` = 1 AND `isfxgd` = 0 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_vip` WHERE ( isfxgd=1 ) LIMIT 1   [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `yk_vip_log_sub` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yk_vip_log_sub` ORDER BY ctime desc LIMIT 5   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yk_vip` WHERE ( id=2498 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yk_vip` WHERE ( id=2648 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yk_vip` WHERE ( id=2646 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yk_vip` WHERE ( id=2643 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yk_vip` WHERE ( id=2642 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yk_fx_syslog` ORDER BY ctime desc LIMIT 5   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `yk_vip` WHERE ( id=2538 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yk_vip` WHERE ( id=38 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yk_fx_log_tj` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yk_fx_log_tj` ORDER BY ctime desc LIMIT 5   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `yk_shop_order` WHERE `ispay` = 1 AND `status` = 2 ORDER BY ctime desc LIMIT 5   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yk_vip` WHERE ( id=2646 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yk_vip` WHERE ( id=2629 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yk_vip` WHERE ( id=2628 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yk_vip` WHERE ( id=2623 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yk_vip` WHERE ( id=2612 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT SUM(totalprice) AS tp_sum FROM `yk_shop_order` WHERE `ispay` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT SUM(totalprice) AS tp_sum FROM `yk_shop_order` WHERE `status` = 5 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT SUM(totalnum) AS tp_sum FROM `yk_shop_order` WHERE `ispay` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yk_vip_tx` [ RunTime:0.0004s ]
+SQL: SELECT SUM(txprice) AS tp_sum FROM `yk_vip_tx` WHERE `status` = 2 LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000079s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.042352s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017560s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.027043s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000009s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.044495s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000353s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000389s ]
+
+[ 2017-01-05T20:58:06+08:00 ] 119.130.170.238 /Admin/Employee/employeeList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000258s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000349s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000383s ]
+SQL: SHOW COLUMNS FROM `yk_set` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `yk_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yk_cms_set` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yk_cms_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_shop_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yk_shop_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yk_employee` [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000032s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000068s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004588s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004620s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000119s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000148s ]
+SQL: SHOW COLUMNS FROM `yk_employee` [ RunTime:0.0005s ]
+NOTIC: [8] Undefined index: p /mnt/wwwroot/yikang.mubantang.com/Application/Admin/Controller/EmployeeController.class.php 第 42 行.
+NOTIC: [8] Undefined variable: map /mnt/wwwroot/yikang.mubantang.com/Application/Admin/Controller/EmployeeController.class.php 第 49 行.
+SQL: SELECT * FROM `yk_employee` LIMIT 0,20   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: map /mnt/wwwroot/yikang.mubantang.com/Application/Admin/Controller/EmployeeController.class.php 第 50 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `yk_employee` LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [2] Missing argument 6 for Admin\Controller\BaseController::getPage(), called in /mnt/wwwroot/yikang.mubantang.com/Application/Admin/Controller/EmployeeController.class.php on line 51 and defined /mnt/wwwroot/yikang.mubantang.com/Application/Admin/Controller/BaseController.class.php 第 91 行.
+NOTIC: [8] Undefined variable: map /mnt/wwwroot/yikang.mubantang.com/Application/Admin/Controller/BaseController.class.php 第 103 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000033s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.005948s ]
+NOTIC: [8] Undefined variable: name /mnt/wwwroot/yikang.mubantang.com/Application/Runtime/Cache/Admin/abf38069b0d28112fb748f4aa788ce7a.php 第 27 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004734s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.001879s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000009s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.006658s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000350s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000389s ]
+
+[ 2017-01-05T20:58:23+08:00 ] 119.130.170.238 /Admin/Shop/order/status/2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000259s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000324s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000359s ]
+SQL: SHOW COLUMNS FROM `yk_set` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `yk_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yk_cms_set` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yk_cms_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_shop_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yk_shop_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yk_shop_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_vip_set` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `yk_vip_set` LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000034s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000071s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004897s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004929s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000122s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000152s ]
+SQL: SHOW COLUMNS FROM `yk_shop_order` [ RunTime:0.0009s ]
+NOTIC: [8] Undefined index: p /mnt/wwwroot/yikang.mubantang.com/Application/Admin/Controller/ShopController.class.php 第 1101 行.
+SQL: SELECT O.*,V.pid,V.name as pname FROM yk_shop_order as O LEFT JOIN `yk_vip` AS V ON V.id = O.vipid  WHERE O.status = '2' ORDER BY O.ctime desc LIMIT 0,20   [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM yk_shop_order as O LEFT JOIN `yk_vip` AS V ON V.id = O.vipid  WHERE O.status = '2' LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [2] Missing argument 6 for Admin\Controller\BaseController::getPage(), called in /mnt/wwwroot/yikang.mubantang.com/Application/Admin/Controller/ShopController.class.php on line 1128 and defined /mnt/wwwroot/yikang.mubantang.com/Application/Admin/Controller/BaseController.class.php 第 91 行.
+NOTIC: [8] Undefined variable: map /mnt/wwwroot/yikang.mubantang.com/Application/Admin/Controller/BaseController.class.php 第 103 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000058s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.013258s ]
+NOTIC: [8] Undefined variable: keyword /mnt/wwwroot/yikang.mubantang.com/Application/Runtime/Cache/Admin/1de6446ae7d2b2aec8b988d31334127b.php 第 31 行.
+NOTIC: [8] Undefined variable: name /mnt/wwwroot/yikang.mubantang.com/Application/Runtime/Cache/Admin/1de6446ae7d2b2aec8b988d31334127b.php 第 34 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012451s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.003406s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000010s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.015742s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000380s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000439s ]
+
+[ 2017-01-05T21:06:15+08:00 ] 119.130.170.238 /Shop/order/status/2/p/2?keyword=&name=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000255s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000347s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000381s ]
+SQL: SHOW COLUMNS FROM `yk_set` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `yk_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yk_cms_set` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yk_cms_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_shop_set` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `yk_shop_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yk_shop_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_vip_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yk_vip_set` LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000035s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000069s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004695s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004728s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000117s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000145s ]
+SQL: SHOW COLUMNS FROM `yk_shop_order` [ RunTime:0.0010s ]
+SQL: SELECT O.*,V.pid,V.name as pname FROM yk_shop_order as O LEFT JOIN `yk_vip` AS V ON V.id = O.vipid  WHERE O.status = '2' ORDER BY O.ctime desc LIMIT 20,20   [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM yk_shop_order as O LEFT JOIN `yk_vip` AS V ON V.id = O.vipid  WHERE O.status = '2' LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [2] Missing argument 6 for Admin\Controller\BaseController::getPage(), called in /mnt/wwwroot/yikang.mubantang.com/Application/Admin/Controller/ShopController.class.php on line 1128 and defined /mnt/wwwroot/yikang.mubantang.com/Application/Admin/Controller/BaseController.class.php 第 91 行.
+NOTIC: [8] Undefined variable: map /mnt/wwwroot/yikang.mubantang.com/Application/Admin/Controller/BaseController.class.php 第 103 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000050s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.012454s ]
+NOTIC: [8] Undefined variable: keyword /mnt/wwwroot/yikang.mubantang.com/Application/Runtime/Cache/Admin/1de6446ae7d2b2aec8b988d31334127b.php 第 31 行.
+NOTIC: [8] Undefined variable: name /mnt/wwwroot/yikang.mubantang.com/Application/Runtime/Cache/Admin/1de6446ae7d2b2aec8b988d31334127b.php 第 34 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011441s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.003519s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000009s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.014872s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000356s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000393s ]
+
+[ 2017-01-05T21:31:46+08:00 ] 140.205.201.37 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000261s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000353s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000392s ]
+SQL: SHOW COLUMNS FROM `yk_set` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `yk_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yk_cms_set` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `yk_cms_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_shop_set` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `yk_shop_set` LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2017-01-05T21:31:51+08:00 ] 140.205.201.37 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000259s ]
+
+[ 2017-01-05T21:31:51+08:00 ] 140.205.201.37 /editors/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000257s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000348s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000385s ]
+ERR: 无法加载控制器:Editors
+
+[ 2017-01-05T21:32:08+08:00 ] 140.205.201.37 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000300s ]
+
+[ 2017-01-05T21:32:27+08:00 ] 140.205.201.37 /LICENSE.txt
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000271s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000331s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000369s ]
+ERR: 无法加载控制器:LICENSE
+
+[ 2017-01-05T21:32:27+08:00 ] 140.205.201.37 /skin/frontend/base/default/favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000304s ]
+
+[ 2017-01-05T21:32:29+08:00 ] 140.205.201.37 /extensions/kindeditor/themes/default/default.png)
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000259s ]
+NOTIC: [2] preg_replace(): Compilation failed: unmatched parentheses at offset 5 /mnt/wwwroot/yikang.mubantang.com/ThinkPHP/Library/Think/Dispatcher.class.php 第 127 行.
+NOTIC: [2] preg_replace(): Compilation failed: unmatched parentheses at offset 5 /mnt/wwwroot/yikang.mubantang.com/ThinkPHP/Library/Think/Dispatcher.class.php 第 207 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000323s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000358s ]
+SQL: SHOW COLUMNS FROM `yk_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yk_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yk_cms_set` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yk_cms_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_shop_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yk_shop_set` LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2017-01-05T21:32:29+08:00 ] 140.205.201.37 /Admin/Public/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000260s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000476s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000513s ]
+SQL: SHOW COLUMNS FROM `yk_set` [ RunTime:0.0024s ]
+SQL: SELECT * FROM `yk_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yk_cms_set` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yk_cms_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_shop_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yk_shop_set` LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: uid /mnt/wwwroot/yikang.mubantang.com/Application/Admin/Controller/PublicController.class.php 第 49 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000044s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000083s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004951s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004987s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000118s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000149s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000352s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000405s ]
+
+[ 2017-01-05T22:02:11+08:00 ] 116.19.61.73 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000259s ]
+
+[ 2017-01-05T22:02:19+08:00 ] 116.19.61.73 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000262s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000340s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000378s ]
+SQL: SHOW COLUMNS FROM `yk_set` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `yk_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yk_cms_set` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yk_cms_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_shop_set` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `yk_shop_set` LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2017-01-05T22:02:19+08:00 ] 116.19.61.73 /Admin/Public/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000262s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000325s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000363s ]
+SQL: SHOW COLUMNS FROM `yk_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yk_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yk_cms_set` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yk_cms_set` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yk_shop_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yk_shop_set` LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: uid /mnt/wwwroot/yikang.mubantang.com/Application/Admin/Controller/PublicController.class.php 第 49 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000047s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000086s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004743s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004778s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000119s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000169s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000356s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000390s ]
+

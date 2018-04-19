@@ -1,0 +1,47 @@
+<div class="weui-tab__bd-item weui-tab__bd-item--active" id="list">
+    		<volist name="cache" id="vo">
+      		<div class="weui-cells">
+		<div class="weui-cell">
+               <div class="weui-cell__bd">
+                   <p>订单编号：{$vo.oid}</p>
+               </div>
+               <div class="weui-cell__ft color3">
+               </div>
+           </div>
+           <volist name="vo.items" id="vt">
+           <a href="javascript:void(0);" class="weui-media-box weui-media-box_appmsg bz_wrap">
+                  <div class="weui-media-box__hd">
+                      <img class="weui-media-box__thumb" src="{$vt.pic}" alt="" onerror="this.src='/Public/App/img/nopic.jpg'">
+                  </div>
+                  <div class="weui-media-box__bd fz_14">
+                      <p>{$vt.name}</p>
+                      <notempty name="vt.skuattr">
+				<p>{$vt.skuattr}</p>
+				</notempty>
+                  </div>
+                  <div class=" ovflw ">
+                            <p><i class="color3">￥{$vt.price}</i></p>
+                            <p class="text_r fonts85">X{$vt.num}</p>
+                        </div>
+              </a>
+              </volist>
+              <div class="weui-cell fz_14">
+	                <div class="weui-cell__bd">
+	                    <p>会员昵称：{$vo.nickname}</p>
+	                </div>
+	                <div class="weui-cell__ft">推荐人：{$vo.pname}</div>
+	            </div>
+               <div class="weui-cell fz_14">
+               <div class="weui-cell__bd">
+                   <p>收货人：{$vo.vipname}</p>
+               </div>
+               <div class="weui-cell__ft">下单时间：{$vo.ctime|date="Y-m-d H:i:s",###}</div>
+           </div>
+              <div class="weui-cell fz_14">
+               <div class="weui-cell__bd">
+                   <p>共<i>{$vo.totalnum}</i>件商品</p>
+               </div>
+               <div class="weui-cell__ft">合计：￥<i>{$vo.payprice}</i></div>
+           </div>
+	</div>
+</volist>

@@ -1,0 +1,18 @@
+<volist name="cache" id="vo">
+     <div class="weui-cells weui_cells_checkbox pd_lr10">
+    	   <div class="weui-cells_access mg_0 w_100">                  
+                  <div class="weui-media-box_appmsg weui_cell_primary w_100">
+                  	<div class="weui-cell c_float w_20">
+                	<img class="weui-media-box__thumb" src="{$vo.headimgurl}" onerror="this.src='/Public/App/img/default.jpg'">
+            	</div>
+            	<div class=" c_float w_80 userinfo">
+                      <p class="color_gray fz_14">微信昵称： {$vo.nickname}</p>
+                      <p class="color_gray fz_14">订单数：{$vo.total_num}</p>
+                      <p class="color_gray fz_14">成交额：{$vo.total_buy}</p>
+                      <p class="color_gray fz_14">注册时间：{$vo.ctime|date="Y-m-d H:i:s",###}</p>
+                     </div>
+                  </div>                       
+                </div>
+         </label>
+     </div>
+</volist>
